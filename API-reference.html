@@ -1186,26 +1186,26 @@
 <br></p>
 <p class="bold">※文字列値内の改行は、「CR+LF」または「LFのみ」の両方が混在する場合があります。詳細は「レスポンスの改行コード」を参照ください。</p>
 <br></p>
-<p class="bold">リクエストの例</p>
-<p class="p12">GET	http://api.r-assistance.go.jp/v1/api.svc/getSupportInformationSummaries?appkey=0&amp;ids=1|2</p>
-<br></p>
-<p class="p17">&lt;?xml version="1.0" encoding="utf-8" ?&gt; </p>
-<p class="p17">&lt;ArrayOfSupportInformationSummary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;</p>
-<p class="p17"> &lt;SupportInformationSummary ID=”05”&gt;</p>
-<p class="p17">    &lt;Title&gt;○○制度&lt;/Title&gt; </p>
-<p class="p17">    &lt;Contact&gt;市町村&lt;/Contact&gt; </p>
-<p class="p17">    &lt;IntendedArea&gt;03000,04000,07000&lt;/IntendedArea&gt; </p>
-<p class="p17">    &lt;Summary&gt;○○をサポートします。&lt;/Summary&gt; </p>
-<p class="p17"> &lt;/SupportInformationSummary&gt;</p>
-<p class="p17">&lt;SupportInformationSummary&gt;</p>
-<p class="p17">    &lt;Title&gt;○○制度&lt;/Title&gt; </p>
-<p class="p17">    &lt;Contact&gt;市町村&lt;/Contact&gt; </p>
-<p class="p17">    &lt;IntendedArea&gt;03000,04000,07000&lt;/IntendedArea&gt; </p>
-<p class="p17">    &lt;Summary&gt;○○をサポートします。&lt;/Summary&gt; </p>
-<p class="p17"> &lt;/SupportInformationSummary&gt;</p>
-<p class="p18">　・・・</p>
-<p class="p17">&lt;/ArrayOfSupportInformationSummary&gt; </p>
-<p class="p12"></p>
+<h4>リクエストの例</h4>
+<blockquote>GET	http://api.r-assistance.go.jp/v1/api.svc/getSupportInformationSummaries?appkey=0&amp;ids=1|2</blockquote>
+<blockquote class="code"><pre>
+&lt;?xml version="1.0" encoding="utf-8" ?&gt; 
+&lt;ArrayOfSupportInformationSummary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+ &lt;SupportInformationSummary ID=”05”&gt;
+    &lt;Title&gt;○○制度&lt;/Title&gt; 
+    &lt;Contact&gt;市町村&lt;/Contact&gt; 
+    &lt;IntendedArea&gt;03000,04000,07000&lt;/IntendedArea&gt; 
+    &lt;Summary&gt;○○をサポートします。&lt;/Summary&gt; 
+ &lt;/SupportInformationSummary&gt;
+&lt;SupportInformationSummary&gt;
+    &lt;Title&gt;○○制度&lt;/Title&gt; 
+    &lt;Contact&gt;市町村&lt;/Contact&gt; 
+    &lt;IntendedArea&gt;03000,04000,07000&lt;/IntendedArea&gt; 
+    &lt;Summary&gt;○○をサポートします。&lt;/Summary&gt; 
+ &lt;/SupportInformationSummary&gt;
+　・・・
+&lt;/ArrayOfSupportInformationSummary&gt; 
+</pre></blockquote>
 </div>
 
 <h3><a name="getSupportInformationNotifications">getSupportInformationNotifications</a></h3>
@@ -1237,15 +1237,14 @@
 <td>文字列
 </table>
 <br></p>
-<p class="bold">リクエストの例</p>
-<p class="p12">GET	http://api.r-assistance.go.jp/v1/api.svc/getSupportInformationNotifications?appkey=0&amp;id=1</p>
-<br></p>
-<p class="bold">&lt;?xml version="1.0" encoding="utf-8" ?&gt; </p>
-<p class="bold">&lt;SupportInformationNotifications xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;</p>
-<p class="bold"> &lt;IDs&gt;1,5&lt;/IDs&gt;</p>
-<p class="p17">&lt;/SupportInformationNotifications&gt;</p>
-<p class="p20"><br></p>
-<p class="p12"></p>
+<h4>リクエストの例</h4>
+<blockquote>GET	http://api.r-assistance.go.jp/v1/api.svc/getSupportInformationNotifications?appkey=0&amp;id=1</blockquote>
+<blockquote class="code"><pre>
+&lt;?xml version="1.0" encoding="utf-8" ?&gt; 
+&lt;SupportInformationNotifications xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+ &lt;IDs&gt;1,5&lt;/IDs&gt;
+&lt;/SupportInformationNotifications&gt;
+</pre></blockquote>
 </div>
 
 <h3><a name="getNotification">getNotification</a></h3>
@@ -1349,29 +1348,29 @@
 <br></p>
 <p class="bold">※文字列値内の改行は、「CR+LF」または「LFのみ」の両方が混在する場合があります。詳細は「レスポンスの改行コード」を参照ください。</p>
 <br></p>
-<p class="bold">リクエストの例</p>
-<p class="bold">GET	http://api.r-assistance.go.jp/v1/api.svc/getNotification?appkey=0&amp;id=1</p>
-<br></p>
-<p class="p17">&lt;?xml version="1.0" encoding="utf-8"?&gt;</p>
-<p class="p17">&lt;UM:UmDocument xmlns:UM="urn:UMDocument"&gt;</p>
-<p class="p17">&lt;UM:DocumentContent uuid="4a2d12b3-78d0-43d4-b88b-211f0478c6c4"&gt;</p>
-<p class="p17">&lt;UM:author&gt;事務局&lt;/UM:author&gt;</p>
-<p class="p17">&lt;UM:local_gov_id&gt;&lt;/UM:local_gov_id&gt;</p>
-<p class="p17">&lt;UM:local_gov_name&gt;&lt;/UM:local_gov_name&gt;</p>
-<p class="p17">&lt;UM:document_number&gt;第000号&lt;/UM:document_number&gt;</p>
-<p class="p17">&lt;UM:document_date&gt;2012-02-18T00:00:00+09:00&lt;/UM:document_date&gt;</p>
-<p class="p17">&lt;UM:document_destination&gt;○○○○殿&amp;#xD;</p>
-<p class="p17">××××殿&lt;/UM:document_destination&gt;</p>
-<p class="p17">&lt;UM:document_sender&gt;△△△△&lt;/UM:document_sender&gt;</p>
-<p class="p17">&lt;UM:document_name&gt;○○○○○○○○○の取り扱いについて&lt;/UM:document_name&gt;</p>
-<p class="p17">&lt;UM:document_body&gt;○○○○○○に係る××××××の取り扱いに関しては、遺漏のないようよろしくお願いする。&lt;/UM:document_body&gt;</p>
-<p class="p17">&lt;UM:intended_service_name&gt;○○制度&lt;/UM:intended_service_name&gt;</p>
-<p class="p17">&lt;UM:update_at&gt;2012-02-18T09:23:00+09:00&lt;/UM:update_at&gt;</p>
-<p class="p17">&lt;UM:meta name="update_comment" value=""/&gt;</p>
-<p class="p17">&lt;UM:meta name="update_kind" value="0"/&gt;</p>
-<p class="p17">&lt;/UM:DocumentContent&gt;</p>
-<p class="p17">&lt;/UM:UmDocument&gt;</p>
-<p class="p20"><br></p>
+<h4>リクエストの例</h4>
+<blockquote>GET	http://api.r-assistance.go.jp/v1/api.svc/getNotification?appkey=0&amp;id=1</blockquote>
+<blockquote class="code"><pre>
+&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;UM:UmDocument xmlns:UM="urn:UMDocument"&gt;
+&lt;UM:DocumentContent uuid="4a2d12b3-78d0-43d4-b88b-211f0478c6c4"&gt;
+&lt;UM:author&gt;事務局&lt;/UM:author&gt;
+&lt;UM:local_gov_id&gt;&lt;/UM:local_gov_id&gt;
+&lt;UM:local_gov_name&gt;&lt;/UM:local_gov_name&gt;
+&lt;UM:document_number&gt;第000号&lt;/UM:document_number&gt;
+&lt;UM:document_date&gt;2012-02-18T00:00:00+09:00&lt;/UM:document_date&gt;
+&lt;UM:document_destination&gt;○○○○殿&amp;#xD;
+××××殿&lt;/UM:document_destination&gt;
+&lt;UM:document_sender&gt;△△△△&lt;/UM:document_sender&gt;
+&lt;UM:document_name&gt;○○○○○○○○○の取り扱いについて&lt;/UM:document_name&gt;
+&lt;UM:document_body&gt;○○○○○○に係る××××××の取り扱いに関しては、遺漏のないようよろしくお願いする。&lt;/UM:document_body&gt;
+&lt;UM:intended_service_name&gt;○○制度&lt;/UM:intended_service_name&gt;
+&lt;UM:update_at&gt;2012-02-18T09:23:00+09:00&lt;/UM:update_at&gt;
+&lt;UM:meta name="update_comment" value=""/&gt;
+&lt;UM:meta name="update_kind" value="0"/&gt;
+&lt;/UM:DocumentContent&gt;
+&lt;/UM:UmDocument&gt;
+</pre></blockquote>
 </div>
 
 <h3><a name="getContactsText">getContactsText</a></h3>
@@ -1405,21 +1404,19 @@
 <br></p>
 <p class="bold">※文字列値内の改行は、「CR+LF」または「LFのみ」の両方が混在する場合があります。詳細は「レスポンスの改行コード」を参照ください。</p>
 <br></p>
-<p class="bold">リクエストの例　（一覧名”ハローワーク”の情報を取得）</p>
-<p class="p12">GET	http://api.r-assistance.go.jp/v1/api.svc/getContactsText?appkey=0</p>
-<p class="p12">&amp;name=%e3%83%8f%e3%83%ad%e3%83%bc%e3%83%af%e3%83%bc%e3%82%af</p>
-<br></p>
-<p class="p17"> &lt;?xml version="1.0" encoding="utf-8"?&gt;</p>
-<p class="p17">&lt;ContactsText xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;</p>
-<p class="p17">&lt;Text&gt;                                   電話番号  　　　　　FAX番号&amp;#xD;</p>
-<p class="p17">〈岩手県〉&amp;#xD;</p>
-<p class="p17">盛岡 　　　 　 　　　　　　　　　019-651-8811  　　　019-654-9305&amp;#xD;</p>
-<p class="p17">沼宮内  　　  　　　　　　　　　 0195-62-2139  　　　0195-62-1312&amp;#xD;</p>
-<p class="p18">・・・</p>
-<p class="p17">&lt;/Text&gt;</p>
-<p class="p17">&lt;/ContactsText&gt;</p>
-<p class="p12"></p>
-<br></p>
+<h4>リクエストの例　（一覧名”ハローワーク”の情報を取得）</h4>
+<blockquote>GET	http://api.r-assistance.go.jp/v1/api.svc/getContactsText?appkey=0&amp;name=%e3%83%8f%e3%83%ad%e3%83%bc%e3%83%af%e3%83%bc%e3%82%af</blockquote>
+<blockquote class="code"><pre>
+ &lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;ContactsText xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+&lt;Text&gt;                                   電話番号  　　　　　FAX番号&amp;#xD;
+〈岩手県〉&amp;#xD;
+盛岡 　　　 　 　　　　　　　　　019-651-8811  　　　019-654-9305&amp;#xD;
+沼宮内  　　  　　　　　　　　　 0195-62-2139  　　　0195-62-1312&amp;#xD;
+・・・
+&lt;/Text&gt;
+&lt;/ContactsText&gt;
+</pre></blockquote>
 </div>
 
 <hr>
