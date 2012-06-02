@@ -842,27 +842,34 @@ GET	http://api.r-assistance.go.jp/v1/api.svc/getSupportTargets?appkey=0
 <td>43</p>
 <td>businesses _situation</p>
 <td>事業者向け：状況</p>
-<td>
+<td>※1
 </table>
 
-<p class="p12">※1</p>
 <br></p>
 <br></p>
-<p class="p12">※1：ContentItem型について</p>
+<p class="bold">※1：ContentItem型について</p>
 <p class="bold">備考欄に※1と記載されている項目は、OpenUM形式のContentItem型として出力されます。（OpenUMの定義については、補足資料「OpenUMの定義説明」を参照してください。）</p>
 <p class="bold">下表は、ContentItem型への設定内容です。　（記載のない要素は出力しません。）</p>
-<p class="bold">要素/属性</p>
-<p class="bold">設定内容</p>
-<p class="p19">uuid</p>
-<p class="p12">項目のUUID</p>
-<p class="bold">title</p>
-<p class="bold">項目の名称</p>
-<p class="bold">title_short</p>
-<p class="bold">（設定されません。）</p>
-<p class="p17">summary</p>
-<p class="bold">（設定されません。）</p>
-<p class="p17">body</p>
-<p class="bold">項目の値</p>
+<table class="table">
+<tr>
+<td>要素/属性</p>
+<td>設定内容</p>
+<tr>
+<td>uuid</p>
+<td>項目のUUID</p>
+<tr>
+<td>title</p>
+<td>項目の名称</p>
+<tr>
+<td>title_short</p>
+<td>（設定されません。）</p>
+<tr>
+<td>summary</p>
+<td>（設定されません。）</p>
+<tr>
+<td>body</p>
+<td>項目の値</p>
+</table>
 <p class="bold">※intended_area (No.12：対象地域) は、地方公共団体コードが設定されます。複数の場合、カンマ( , )区切りで設定されます。未設定の場合、全国が対象であることを示します。</p>
 <p class="bold">※contact_list (No.29：お問合せ先一覧) は、一覧名が設定されます。複数の場合、2重スラッシュ( // )区切りで設定されます。一覧名に対応する情報は、getContactsTextリクエストで取得できます。</p>
 <p class="bold">※抽出用項目(No.34～43)は、項目の名称が設定されます。複数の場合、2重スラッシュ( // )区切りで設定されます。</p>
@@ -890,14 +897,14 @@ GET	http://api.r-assistance.go.jp/v1/api.svc/getSupportTargets?appkey=0
 <p class="bold">「URL項目要素」の値は改行区切りで複数設定される場合があり、その場合は、「対応する項目」を改行区切りで分割した、行数が一致する値に対するURLを示します。（※改行数が一致しない場合や、URL以外の値が設定される場合があります。）</p>
 <p class="bold">設定例は後述の「リクエストの例」を参照下さい。</p>
 <br></p>
-<p class="p12">※3：metaについて</p>
+<p class="bold">※3：metaについて</p>
 <p class="bold">次のmeta要素が設定されます。</p>
-<p class="p12">name</p>
-<p class="p12">Value</p>
+<p class="bold">name</p>
+<p class="bold">Value</p>
 <p class="p30">update_kind</p>
 <p class="bold">更新種別を表す数値が設定されます。</p>
 <p class="bold">0=追加、1=更新</p>
-<p class="p12">update_comment</p>
+<p class="bold">update_comment</p>
 <p class="bold">更新コメントが設定されます。</p>
 <br></p>
 <p class="bold">※文字列値内の改行は、「CR+LF」または「LFのみ」の両方が混在する場合があります。詳細は「レスポンスの改行コード」を参照ください。</p>
