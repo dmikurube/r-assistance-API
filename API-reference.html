@@ -1209,67 +1209,83 @@ GET	http://api.r-assistance.go.jp/v1/api.svc/getSupportTargets?appkey=0
 <p class="bold">OpenUMの定義については補足資料「OpenUMの定義説明」を参照してください。</p>
 <br></p>
 <p class="p12"><b>DocumentContent</b><b>型への設定内容</b></p>
-<p class="bold">要素/属性</p>
-<p class="bold">設定内容</p>
-<p class="bold">備考</p>
-<p class="p12">uuid</p>
-<p class="p12">通達のUUID</p>
-<br></p>
-<p class="bold">author</p>
-<p class="bold">通達の作成者（組織名）</p>
-<br></p>
-<p class="p9">local_gov_id</p>
-<p class="bold">（設定されません。）</p>
-<br></p>
-<p class="p9">local_gov_name</p>
-<p class="bold">（設定されません。）</p>
-<br></p>
-<p class="p9">document_number</p>
-<p class="p10">番号</p>
-<p class="p11"><br></p>
-<p class="p9">document_date</p>
-<p class="p10">日付</p>
-<p class="p11"><br></p>
-<p class="p9">document_destination</p>
-<p class="p10">宛先</p>
-<p class="p11"><br></p>
-<p class="p9">document_sender</p>
-<p class="p10">発信者</p>
-<p class="p11"><br></p>
-<p class="p9">document_name</p>
-<p class="p10">タイトル</p>
-<p class="p11"><br></p>
-<p class="p9">document_body</p>
-<p class="p10">本文</p>
-<p class="p11"><br></p>
-<p class="p9">intended_service_name</p>
-<p class="p10">対象制度</p>
-<p class="p12">※1</p>
-<p class="p9">updated_at</p>
-<p class="p10">通達の更新日</p>
-<p class="p11"><br></p>
-<p class="p9">meta</p>
-<p class="bold">メタ情報 </p>
-<p class="p12">※2</p>
+<table class="table">
+<tr>
+<td>要素/属性</p>
+<td>設定内容</p>
+<td>備考</p>
+<tr>
+<td>uuid</p>
+<td>通達のUUID</p>
+<td><br></p>
+<tr>
+<td>author</p>
+<td>通達の作成者（組織名）</p>
+<td><br></p>
+<tr>
+<td>local_gov_id</p>
+<td>（設定されません。）</p>
+<td><br></p>
+<tr>
+<td>local_gov_name</p>
+<td>（設定されません。）</p>
+<td><br></p>
+<tr>
+<td>document_number</p>
+<td>番号</p>
+<td><br></p>
+<tr>
+<td>document_date</p>
+<td>日付</p>
+<td><br></p>
+<tr>
+<td>document_destination</p>
+<td>宛先</p>
+<td><br></p>
+<tr>
+<td>document_sender</p>
+<td>発信者</p>
+<td><br></p>
+<tr>
+<td>document_name</p>
+<td>タイトル</p>
+<td><br></p>
+<tr>
+<td>document_body</p>
+<td>本文</p>
+<td><br></p>
+<tr>
+<td>intended_service_name</p>
+<td>対象制度</p>
+<td>※1</p>
+<tr>
+<td>updated_at</p>
+<td>通達の更新日</p>
+<td><br></p>
+<tr>
+<td>meta</p>
+<td>メタ情報 </p>
+<td>※2</p>
+</table>
 <br></p>
 <br></p>
 <p class="bold"><b>※</b><b>1</b><b>：対象制度について</b></p>
 <p class="bold"><b>通達の対象となる制度名が、「</b><b>//</b><b>」区切りで設定されます。</b></p>
 <b></b><br></p>
-<p class="p12">※2：metaについて</p>
+<p class="bold">※2：metaについて</p>
 <p class="bold">次のmeta要素が設定されます。</p>
-<p class="p12">name</p>
-<p class="p12">Value</p>
+<p class="bold">name</p>
+<p class="bold">Value</p>
 <p class="p30">update_kind</p>
 <p class="bold">更新種別を表す数値が設定されます。</p>
 <p class="bold">0=追加、1=更新</p>
-<p class="p12">update_comment</p>
+<p class="bold">update_comment</p>
 <p class="bold">更新コメントが設定されます。</p>
 <br></p>
 <p class="bold">※文字列値内の改行は、「CR+LF」または「LFのみ」の両方が混在する場合があります。詳細は「レスポンスの改行コード」を参照ください。</p>
 <br></p>
 <p class="bold">リクエストの例</p>
-<p class="p12">GET	http://api.r-assistance.go.jp/v1/api.svc/getNotification?appkey=0&amp;id=1</p>
+<p class="bold">GET	http://api.r-assistance.go.jp/v1/api.svc/getNotification?appkey=0&amp;id=1</p>
 <br></p>
 <p class="p17">&lt;?xml version="1.0" encoding="utf-8"?&gt;</p>
 <p class="p17">&lt;UM:UmDocument xmlns:UM="urn:UMDocument"&gt;</p>
