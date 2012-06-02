@@ -7,8 +7,8 @@
   <meta name="Generator" content="Cocoa HTML Writer">
   <meta name="CocoaVersion" content="1138.47">
   <style type="text/css">
-    div.item { margin: 1em; padding: 0.5em; border: solid 1px gray }
-    div.block { margin: 1em }
+    div.item { margin: 0em 1em 1em 3em; padding: 2px }
+    div.block { margin: 0em 1em 1.5em 1em }
     table.table { margin-left: 2em; border: 1px #E3E3E3 solid; border-collapse: collapse; border-spacing: 0; }
     table.table th {
     padding: 5px;
@@ -18,12 +18,15 @@
     font-weight: bold;
     line-height: 120%;
     }
+    p { margin: 2px; padding: 2px }
+    blockquote { margin: 1px 1em 1em 3em; padding: 2px; background: lightgray }
+    pre { margin: 0px; padding: 0px }
     table.table td {
     padding: 5px;
     border: 1px #E3E3E3 solid;
     border-width: 0 0 1px 1px;
     }
-    blockquote.code { margin: 1em; padding: 0.5em; border: solid 1px black }
+    blockquote.code { border: solid 1px black }
     h1 { text-align: center; font-size: 150% }
     p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
     p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 20.0px 'Hiragino Mincho ProN'}
@@ -92,19 +95,19 @@
 <li><a href="#getSearchCategories">getSearchCategories</a>
 <li><a href="#getSearchConditionItems">getSearchConditionItems</a>
 <li><a href="#getPrefectures">getPrefectures</a>
-<li><a href="#getMunicipalities">getMunicipalities</a>	10
-<li><a href="#searchSupportInformations">searchSupportInformations</a>	13
-<li><a href="#getSupportInformation">getSupportInformation</a>	16
-<li><a href="#getSupportInformationSummaries">getSupportInformationSummaries</a>	24
-<li><a href="#getSupportInformationNotifications">getSupportInformationNotifications</a>	27
-<li><a href="#getNotification">getNotification</a>	28
-<li><a href="#getContactsText">getContactsText</a>	30
+<li><a href="#getMunicipalities">getMunicipalities</a>
+<li><a href="#searchSupportInformations">searchSupportInformations</a>
+<li><a href="#getSupportInformation">getSupportInformation</a>
+<li><a href="#getSupportInformationSummaries">getSupportInformationSummaries</a>
+<li><a href="#getSupportInformationNotifications">getSupportInformationNotifications</a>
+<li><a href="#getNotification">getNotification</a>
+<li><a href="#getContactsText">getContactsText</a>
 </ul>
-<li><a href="#supplemental-materials">補足資料</a>	32
+<li><a href="#supplemental-materials">補足資料</a>
 <ul>
-<li><a href="#openum-definition">OpenUMの定義説明</a>	32
+<li><a href="#openum-definition">OpenUMの定義説明</a>
 </ul>
-<li><a href="#update-history">更新履歴</a>	40
+<li><a href="#update-history">更新履歴</a>
 </ul>
 </ul>
 
@@ -116,36 +119,40 @@
 
 <div class="block">
 <p>各APIの説明に記載されているURLにアクセスすることで、APIの実行結果を受け取ることができます。
-<br>例
+<p>例</p>
 <blockquote>http://api.r-assistance.go.jp/v1/api.svc/searchSupportInfomations</blockquote>
 ※URLの大文字・小文字は区別されません。
 </p>
 </div>
 
-<p>
-APIにパラメータを指定する場合は、APIのURLに「?」を連結し、「パラメータ名=パラメータ値」の形式で指定します。
-<br>例
+<div class="block">
+<p>APIにパラメータを指定する場合は、APIのURLに「?」を連結し、「パラメータ名=パラメータ値」の形式で指定します。</p>
+<p>例</p>
 <blockquote>http://api.r-assistance.go.jp/v1/api.svc/searchSupportInformations?maxcount=50</blockquote>
-複数のパラメータを指定する場合は、2つ目以降のパラメータを「&amp;」で連結します。
-</p>
+</div>
 
-<p>
-例
-<p class="p12">http://api.r-assistance.go.jp/v1/api.svc/searchSupportInformations?maxcount=50&amp;pageno=1</p>
-<p class="p15"><br></p>
-リファレンスに記載のないパラメータが指定された場合、そのパラメータは無視されます。</p>
-省略不可のパラメータを省略した場合、<i>(400)</i>エラーとなります。</p>
-<i></i><br></p>
-<i></i><br></p>
+<div class="block">
+<p>複数のパラメータを指定する場合は、2つ目以降のパラメータを「&amp;」で連結します。</p>
+<p>例</p>
+<blockquote>http://api.r-assistance.go.jp/v1/api.svc/searchSupportInformations?maxcount=50&amp;pageno=1</blockquote>
+</div>
+
+<div class="block">
+<p>リファレンスに記載のないパラメータが指定された場合、そのパラメータは無視されます。</p>
+<p>省略不可のパラメータを省略した場合、<i>(400)</i>エラーとなります。</p>
+</div>
 </div>
 
 <h3><a name="response">レスポンス</a></h3>
 <div class="item">
+<div class="block">
 <p>APIのレスポンスは、XMLで出力されます。詳細は、各APIの説明を参照ください。</p>
+</div>
 </div>
 
 <h3><a name="newline-code-in-response">レスポンスの改行コード</a></h3>
 <div class="item">
+<div class="block">
 <p>APIのレスポンス (XML) に含まれる文字列値において、文字列内の改行を示すために、「CRLF(復帰と改行)」 または 「LF(改行)」 のいずれかの改行コードが使用されます。</p>
 <ul>
 <li>※「CRLF(復帰と改行)」または「LF(改行)」は、同一レスポンス内であっても混在する場合があります。</li>
@@ -153,10 +160,15 @@ APIにパラメータを指定する場合は、APIのURLに「?」を連結し�
 <li>※XML属性値内では、「CR(復帰)」は文字参照” &amp;#xD;” として出力され、「LF(改行)」は文字参照” &amp;#xA;” として出力されます。</li>
 </ul>
 </div>
+</div>
 
 <h3><a name="response-in-error">エラー時のレスポンス</a></h3>
 <div class="item">
+<div class="block">
 <p>APIのリクエストでエラーが発生した場合は、次のエラーコードおよびレスポンスを出力します。</p>
+</div>
+
+<div class="block">
 <p>エラーコード</p>
 <table class="table">
 <tr><th>コード</th><th>説明</th></tr>
@@ -167,7 +179,9 @@ APIにパラメータを指定する場合は、APIのURLに「?」を連結し�
 <tr><td>500<td>Internal Server Error. サーバーの内部エラーなどの問題によってデータを返すことができない場合。</tr>
 <tr><td>503<td>Service unavailable. サーバーが高負荷の状態や、メンテナンス中などの理由によりデータを返すことができない場合。</tr>
 </table>
+</div>
 
+<div class="block">
 <p>エラー時のレスポンス</p>
 <blockquote class="code"><pre>
 &lt;?xml version="1.0" encoding="utf-8"?&gt;
@@ -176,31 +190,50 @@ APIにパラメータを指定する場合は、APIのURLに「?」を連結し�
 &lt;/Error&gt;
 </pre></blockquote>
 </div>
+</div>
 
 <h3><a name="about-appkey">appkeyについて</a></h3>
 <div class="item">
-<p>すべてのAPIは、パラメータappkeyが必須となっています。現在は、常にパラメータappkeyには0を指定してください。
-<br>例
+<div class="block">
+<p>すべてのAPIは、パラメータappkeyが必須となっています。現在は、常にパラメータappkeyには0を指定してください。</p>
+</div>
+<div class="block">
+<p>例</p>
 <blockquote>http://api.r-assistance.go.jp/v1/api.svc/searchSupportInformations?appkey=0&amp;maxcount=50</blockquote>
-</p>
+</div>
+<div class="block">
 <p>※’appkey’に不正な値を指定した場合、(401)エラーが返されます。</p>
+</div>
 </div>
 
 <h3><a name="api-limit">利用回数制限</a></h3>
 <div class="item">
-<p>APIは呼び出し元IPアドレス毎に利用回数制限を設けています。1時間あたり、5,000回を超えてアクセスした場合、エラーコード403(Forbidden)が返ります。</p>
+<div class="block">
+<p>APIは呼び出し元IPアドレス毎に利用回数制限を設けています。</p>
+<p>1時間あたり、5,000回を超えてアクセスした場合、エラーコード403(Forbidden)が返ります。</p>
+</div>
+<div class="block">
 <p>※制限の単位時間および回数は、予告なく変更する場合があります。</p>
+</div>
+<div class="block">
 <p>同じAPIを同じパラメータで何度も呼び出さないようにしたり、一度取得した結果はキャッシュしておく等、APIの呼び出し回数をなるべく減らすなどして利用されることを推奨します。</p>
+</div>
 </div>
 
 <hr>
 
 <h2><a name="api-reference"APIリファレンス</a></h2>
+
 <h3><a name="getSupportTargets">getSupportTargets</a></h3>
 <div class="item">
+<div class="block">
 <p>支援対象の配列を取得します。<br>支援対象は、制度の大分類である「個人向け」や「事業者向け」を表します。</p>
+</div>
+<div class="block">
 <h4>URL</h4>
-<p>http://api.r-assistance.go.jp/v1/api.svc/getSupportTargets</p>
+<blockquote>http://api.r-assistance.go.jp/v1/api.svc/getSupportTargets</blockquote>
+</div>
+<div class="block">
 <h4>パラメータ</h4>
 <ul>
 <li>appkey
@@ -208,6 +241,8 @@ APIにパラメータを指定する場合は、APIのURLに「?」を連結し�
 <li>省略不可。指定する値は「appkeyについて」を参照ください。
 </ul>
 </ul>
+</div>
+<div class="block">
 <h4>戻り値</h4>
 (ArrayOf)SupportTarget</p>
 <table class="table">
@@ -225,12 +260,10 @@ APIにパラメータを指定する場合は、APIのURLに「?」を連結し�
 <td>文字列
 </tr>
 </table>
-
+</div>
+<div class="block">
 <h4>リクエストの例</h4>
-<blockquote>
-GET	http://api.r-assistance.go.jp/v1/api.svc/getSupportTargets?appkey=0
-</blockquote>
-
+<blockquote>GET	http://api.r-assistance.go.jp/v1/api.svc/getSupportTargets?appkey=0</blockquote>
 <blockquote class="code"><pre>
 &lt;?xml version="1.0" encoding="utf-8" ?&gt; 
 &lt;ArrayOfSupportTarget xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
@@ -246,12 +279,18 @@ GET	http://api.r-assistance.go.jp/v1/api.svc/getSupportTargets?appkey=0
 &lt;/ArrayOfSupportTarget&gt; 
 </pre></blockquote>
 </div>
+</div>
 
 <h3><a name="getSearchCategories">getSearchCategories</a></h3>
 <div class="item">
+<div class="block">
 <p>指定した支援対象に含まれる検索カテゴリの配列を取得します。</p>
+</div>
+<div class="block">
 <h4>URL</h4>
 <blockquote>http://api.r-assistance.go.jp/v1/api.svc/getSearchCategories</blockquote>
+</div>
+<div class="block">
 <h4>パラメータ</h4>
 <p class="p12">appkey</p>
 <p class="p16">省略不可。指定する値は「appkeyについて」を参照ください。</p>
@@ -261,47 +300,54 @@ GET	http://api.r-assistance.go.jp/v1/api.svc/getSupportTargets?appkey=0
 <p class="bold">　　　※数値以外の値を指定した場合、<i>(400)</i>エラーとなります。</p>
 <p class="bold">　　　※指定した<i>ID</i>のデータが存在しない場合、該当データが含まれない配列が返ります。</p>
 <i></i><br></p>
-
+</div>
+<div class="block">
 <h4>戻り値</h4>
-(ArrayOf)SearchCategory</p>
+<p>(ArrayOf)SearchCategory</p>
 <table class="table">
 <tr>
-<td>要素/属性</p>
-<td>データの内容</p>
-<td>データ型</p>
+<th>要素/属性
+<th>データの内容
+<th>データ型
 <tr>
-<td>ID</p>
-<td>検索カテゴリのID</p>
-<td>数値</p>
+<td>ID
+<td>検索カテゴリのID
+<td>数値
 <tr>
-<td>Name</p>
-<td>検索カテゴリの名称</p>
-<td>文字列</p>
+<td>Name
+<td>検索カテゴリの名称
+<td>文字列
 </table>
-<br></p>
-<p class="bold">リクエストの例</p>
-<p class="p12">GET	http://api.r-assistance.go.jp/v1/api.svc/getSearchCategories?appkey=0&amp;supporttarget=1</p>
-<br></p>
-<p class="p17">&lt;?xml version="1.0" encoding="utf-8" ?&gt; </p>
-<p class="p17">&lt;ArrayOfSearchCategory xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;</p>
-<p class="p17">&lt;SearchCategory ID="2"&gt;</p>
-<p class="p17">&lt;Name&gt;住まいのこと&lt;/Name&gt; </p>
-<p class="p17">&lt;/SearchCategory&gt;</p>
-<p class="p17">&lt;SearchCategory ID="3"&gt;</p>
-<p class="p17">&lt;Name&gt;仕事のこと&lt;/Name&gt; </p>
-<p class="p17">&lt;/SearchCategory&gt;</p>
-<p class="p18">・・・</p>
-<p class="p17">&lt;/ArrayOfSearchCategory&gt; </p>
+</div>
+<div class="block">
+<h4>リクエストの例</h4>
+<blockquote>GET	http://api.r-assistance.go.jp/v1/api.svc/getSearchCategories?appkey=0&amp;supporttarget=1</blockquote>
+<blockquote class="code"><pre>
+&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;ArrayOfSearchCategory xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+&lt;SearchCategory ID="2"&gt;
+&lt;Name&gt;住まいのこと&lt;/Name&gt;
+&lt;/SearchCategory&gt;
+&lt;SearchCategory ID="3"&gt;
+&lt;Name&gt;仕事のこと&lt;/Name&gt;
+&lt;/SearchCategory&gt;
+・・・
+>&lt;/ArrayOfSearchCategory&gt;
+</pre></blockquote>
+</div>
 </div>
 
 <h3><a name="">getSearchConditionItems</a></h3>
 <div class="item">
-<p class="bold">指定した検索カテゴリに含まれる抽出項目の配列を取得します。</p>
-<p class="bold">抽出項目のIDをsearchSupportInformationsリクエストで指定することにより、該当する制度情報を検索できます。</p>
-<br></p>
+<div class="block">
+<p>指定した検索カテゴリに含まれる抽出項目の配列を取得します。</p>
+<p>抽出項目のIDをsearchSupportInformationsリクエストで指定することにより、該当する制度情報を検索できます。</p>
+</div>
+<div class="block">
 <h4>URL</h4>
-<p class="p12">http://api.r-assistance.go.jp/v1/api.svc/getSearchConditionItems</p>
-<br></p>
+<blockquote>http://api.r-assistance.go.jp/v1/api.svc/getSearchConditionItems</blockquote>
+</div>
+<div class="block">
 <h4>パラメータ</h4>
 <p class="p12">appkey</p>
 <p class="p16">省略不可。指定する値は「appkeyについて」を参照ください。</p>
@@ -310,37 +356,41 @@ GET	http://api.r-assistance.go.jp/v1/api.svc/getSupportTargets?appkey=0
 <p class="p16">getSearchCategoriesリクエストで取得されたSearchCategory要素のID属性の値を指定します。</p>
 <p class="bold">　　　※数値以外の値を指定した場合、<i>(400)</i>エラーとなります。</p>
 <p class="bold">　　　※指定した<i>ID</i>のデータが存在しない場合、該当データが含まれない配列が返ります。</p>
-<i></i><br></p>
+</div>
+<div class="block">
 <h4>戻り値</h4>
-<p class="p17">(ArrayOf)SearchConditionItem</p>
+<p>(ArrayOf)SearchConditionItem</p>
 <table class="table">
 <tr>
-<td>要素/属性</p>
-<td>データの内容</p>
-<td>データ型</p>
+<th>要素/属性
+<th>データの内容
+<th>データ型
 <tr>
-<td>ID</p>
-<td>抽出項目のID</p>
-<td>数値</p>
+<td>ID
+<td>抽出項目のID
+<td>数値
 <tr>
 <td>Name
 <td>抽出項目の名称
 <td>文字列
 </table>
-<br></p>
-<p class="bold">リクエストの例</p>
-<p class="p12">GET	http://api.r-assistance.go.jp/v1/api.svc/getSearchConditionItems?appkey=0&amp;category=2</p>
-<br></p>
-<p class="p17">&lt;?xml version="1.0" encoding="utf-8" ?&gt; </p>
-<p class="p17">&lt;ArrayOfSearchConditionItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;</p>
-<p class="p17"> &lt;SearchConditionItem ID="10"&gt;</p>
-<p class="p17">  &lt;Name&gt;建設したい（増築・改築含む）&lt;/Name&gt; </p>
-<p class="p17"> &lt;/SearchConditionItem&gt;</p>
-<p class="p17">&lt;SearchConditionItem ID="11"&gt;</p>
-<p class="p17">  &lt;Name&gt;購入したい&lt;/Name&gt; </p>
-<p class="p17"> &lt;/SearchConditionItem&gt;</p>
-<p class="p18">　　・・・</p>
-<p class="p17">&lt;/ArrayOfSearchConditionItem&gt; </p>
+</div>
+<div class="block">
+<h4>リクエストの例</h4>
+<blockquote>GET	http://api.r-assistance.go.jp/v1/api.svc/getSearchConditionItems?appkey=0&amp;category=2</blockquote>
+<blockquote class="code"><pre>
+&lt;?xml version="1.0" encoding="utf-8" ?&gt; 
+&lt;ArrayOfSearchConditionItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+ &lt;SearchConditionItem ID="10"&gt;
+  &lt;Name&gt;建設したい（増築・改築含む）&lt;/Name&gt; 
+ &lt;/SearchConditionItem&gt;
+&lt;SearchConditionItem ID="11"&gt;
+  &lt;Name&gt;購入したい&lt;/Name&gt; 
+ &lt;/SearchConditionItem&gt;
+・・・
+&lt;/ArrayOfSearchConditionItem&gt; 
+</pre></blockquote>
+</div>
 </div>
 
 <h3><a name="getPrefectures">getPrefectures</a></h3>
