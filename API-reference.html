@@ -154,7 +154,7 @@ APIにパラメータを指定する場合は、APIのURLに「?」を連結し�
 </ul>
 </div>
 
-<h3><a name="">エラー時のレスポンス</a></h3>
+<h3><a name="response-in-error">エラー時のレスポンス</a></h3>
 <div class="item">
 <p>APIのリクエストでエラーが発生した場合は、次のエラーコードおよびレスポンスを出力します。</p>
 <p>エラーコード</p>
@@ -177,7 +177,7 @@ APIにパラメータを指定する場合は、APIのURLに「?」を連結し�
 </pre></blockquote>
 </div>
 
-<h3><a name="">appkeyについて</a></h3>
+<h3><a name="about-appkey">appkeyについて</a></h3>
 <div class="item">
 <p>すべてのAPIは、パラメータappkeyが必須となっています。現在は、常にパラメータappkeyには0を指定してください。
 <br>例
@@ -186,7 +186,7 @@ APIにパラメータを指定する場合は、APIのURLに「?」を連結し�
 <p>※’appkey’に不正な値を指定した場合、(401)エラーが返されます。</p>
 </div>
 
-<h3><a name="">利用回数制限</a></h3>
+<h3><a name="api-limit">利用回数制限</a></h3>
 <div class="item">
 <p>APIは呼び出し元IPアドレス毎に利用回数制限を設けています。1時間あたり、5,000回を超えてアクセスした場合、エラーコード403(Forbidden)が返ります。</p>
 <p>※制限の単位時間および回数は、予告なく変更する場合があります。</p>
@@ -195,8 +195,8 @@ APIにパラメータを指定する場合は、APIのURLに「?」を連結し�
 
 <hr>
 
-<h2>APIリファレンス</h2>
-<h3><a name="">getSupportTargets</a></h3>
+<h2><a name="api-reference"APIリファレンス</a></h2>
+<h3><a name="getSupportTargets">getSupportTargets</a></h3>
 <div class="item">
 <p>支援対象の配列を取得します。<br>支援対象は、制度の大分類である「個人向け」や「事業者向け」を表します。</p>
 <h4>URL</h4>
@@ -245,7 +245,7 @@ GET	http://api.r-assistance.go.jp/v1/api.svc/getSupportTargets?appkey=0
 </pre></blockquote>
 </div>
 
-<h3><a name="">getSearchCategories</a></h3>
+<h3><a name="getSearchCategories">getSearchCategories</a></h3>
 <div class="item">
 <p>指定した支援対象に含まれる検索カテゴリの配列を取得します。</p>
 <h4>URL</h4>
@@ -331,7 +331,7 @@ GET	http://api.r-assistance.go.jp/v1/api.svc/getSupportTargets?appkey=0
 <p class="p17">&lt;/ArrayOfSearchConditionItem&gt; </p>
 </div>
 
-<h3><a name="">getPrefectures</a></h3>
+<h3><a name="getPrefectures">getPrefectures</a></h3>
 <div class="item">
 <p class="bold">都道府県を表す地方公共団体（コードおよび名称）の配列を取得します。</p>
 <br></p>
@@ -386,7 +386,7 @@ GET	http://api.r-assistance.go.jp/v1/api.svc/getSupportTargets?appkey=0
 <p class="p20"><br></p>
 </div>
 
-<h3><a name="">getMunicipalities</a></h3>
+<h3><a name="getMunicipalities">getMunicipalities</a></h3>
 <div class="item">
 <p class="bold">市町村を表す地方公共団体（コードおよび名称）を取得します。</p>
 <br></p>
@@ -469,7 +469,7 @@ GET	http://api.r-assistance.go.jp/v1/api.svc/getSupportTargets?appkey=0
 <p class="p12"></p>
 </div>
 
-<h3><a name="">searchSupportInformations</a></h3>
+<h3><a name="searchSupportInformations">searchSupportInformations</a></h3>
 <div class="item">
 <p class="bold">指定した条件に該当する制度情報を検索します。条件に該当する制度IDを返します。</p>
 <br></p>
@@ -571,7 +571,7 @@ GET	http://api.r-assistance.go.jp/v1/api.svc/getSupportTargets?appkey=0
 <p class="p12"></p>
 </div>
 
-<h3><a name="">getSupportInformation</a></h3>
+<h3><a name="getSupportInformation">getSupportInformation</a></h3>
 <div class="item">
 <p class="bold">指定したIDの制度情報をOpenUMの形式で取得します。</p>
 <br></p>
@@ -978,7 +978,7 @@ GET	http://api.r-assistance.go.jp/v1/api.svc/getSupportTargets?appkey=0
 <p class="p12"></p>
 </div>
 
-<h3><a name="">getSupportInformationSummaries</a></h3>
+<h3><a name="getSupportInformationSummaries">getSupportInformationSummaries</a></h3>
 <div class="item">
 <p class="bold">指定したIDの制度情報の概要を取得します。</p>
 <br></p>
@@ -1063,7 +1063,7 @@ GET	http://api.r-assistance.go.jp/v1/api.svc/getSupportTargets?appkey=0
 <p class="p12"></p>
 </div>
 
-<h3><a name="">getSupportInformationNotifications</a></h3>
+<h3><a name="getSupportInformationNotifications">getSupportInformationNotifications</a></h3>
 <div class="item">
 <p class="bold">指定した制度を対象とする通達のID配列を取得します。</p>
 <br></p>
@@ -1099,7 +1099,7 @@ GET	http://api.r-assistance.go.jp/v1/api.svc/getSupportTargets?appkey=0
 <p class="p12"></p>
 </div>
 
-<h3><a name="">getNotification</a></h3>
+<h3><a name="getNotification">getNotification</a></h3>
 <div class="item">
 <p class="bold">指定したIDの通達をOpenUMの形式で取得します。</p>
 <br></p>
@@ -1205,7 +1205,7 @@ GET	http://api.r-assistance.go.jp/v1/api.svc/getSupportTargets?appkey=0
 <p class="p20"><br></p>
 </div>
 
-<h3><a name="">getContactsText</a></h3>
+<h3><a name="getContactsText">getContactsText</a></h3>
 <div class="item">
 <p class="bold">指定された名前のお問合せ先一覧（テキスト形式）を取得します。</p>
 <br></p>
@@ -1252,8 +1252,8 @@ GET	http://api.r-assistance.go.jp/v1/api.svc/getSupportTargets?appkey=0
 
 <hr>
 
-<h2>補足資料</h2>
-<h3><a name="">OpenUMの定義説明</a></h3>
+<h2><a name="supplemental-materials">補足資料</a></h2>
+<h3><a name="openum-definition">OpenUMの定義説明</a></h3>
 <h3><a name="">「復旧復興支援制度データベース」XMLスキーマ</a></h3>
 <h4>UM（Universal Menu)文書型(UmDocument型)</h4>
 <table class="table">
@@ -2506,7 +2506,7 @@ GET	http://api.r-assistance.go.jp/v1/api.svc/getSupportTargets?appkey=0
 
 <hr>
 
-<h2>更新履歴</h2>
+<h2><a name="update-history">更新履歴</a></h2>
 <p>ドキュメントの更新履歴について記載しています。</p>
 
 <table class="table">
