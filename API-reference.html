@@ -876,36 +876,51 @@ GET	http://api.r-assistance.go.jp/v1/api.svc/getSupportTargets?appkey=0
 <br></p>
 <p class="bold">※2：URL項目について</p>
 <p class="bold">下記「URL項目要素」に値が設定されている場合、値は「対応する項目要素」のURLを示します。</p>
-<p class="bold">URL項目要素</p>
-<p class="bold">対応する項目要素</p>
-<p class="p9">governing_law_url  </p>
-<p class="p9">(根拠法URL)</p>
-<p class="p9">governing_law</p>
-<p class="p10">(根拠法)</p>
-<p class="p9">application_form_url</p>
-<p class="p10">(申請書類入手URL)</p>
-<p class="p9">application_form</p>
-<p class="p10">(申請書類)</p>
-<p class="p9">related_link_url</p>
-<p class="p9">(詳細URL)</p>
-<p class="p9">related_link</p>
-<p class="p10">(詳細参照先名)</p>
-<p class="p9">e_application_url</p>
-<p class="p9">(電子申請URL)</p>
-<p class="p9">e_application</p>
-<p class="p10">(電子申請名称)</p>
+<table class="table">
+<tr>
+<td>URL項目要素</p>
+<td>対応する項目要素</p>
+<tr>
+<td>governing_law_url  </p>
+<td>(根拠法URL)</p>
+<tr>
+<td>governing_law</p>
+<td>(根拠法)</p>
+<tr>
+<td>application_form_url</p>
+<td>(申請書類入手URL)</p>
+<tr>
+<td>application_form</p>
+<td>(申請書類)</p>
+<tr>
+<td>related_link_url</p>
+<td>(詳細URL)</p>
+<tr>
+<td>related_link</p>
+<td>(詳細参照先名)</p>
+<tr>
+<td>e_application_url</p>
+<td>(電子申請URL)</p>
+<tr>
+<td>e_application</p>
+<td>(電子申請名称)</p>
+</table>
 <p class="bold">「URL項目要素」の値は改行区切りで複数設定される場合があり、その場合は、「対応する項目」を改行区切りで分割した、行数が一致する値に対するURLを示します。（※改行数が一致しない場合や、URL以外の値が設定される場合があります。）</p>
 <p class="bold">設定例は後述の「リクエストの例」を参照下さい。</p>
 <br></p>
 <p class="bold">※3：metaについて</p>
 <p class="bold">次のmeta要素が設定されます。</p>
-<p class="bold">name</p>
-<p class="bold">Value</p>
-<p class="p30">update_kind</p>
-<p class="bold">更新種別を表す数値が設定されます。</p>
-<p class="bold">0=追加、1=更新</p>
-<p class="bold">update_comment</p>
-<p class="bold">更新コメントが設定されます。</p>
+<table class="table">
+<tr>
+<td>name</p>
+<td>Value</p>
+<tr>
+<td>update_kind</p>
+<td>更新種別を表す数値が設定されます。0=追加、1=更新</p>
+<tr>
+<td>update_comment</p>
+<td>更新コメントが設定されます。</p>
+</table>
 <br></p>
 <p class="bold">※文字列値内の改行は、「CR+LF」または「LFのみ」の両方が混在する場合があります。詳細は「レスポンスの改行コード」を参照ください。</p>
 <br></p>
