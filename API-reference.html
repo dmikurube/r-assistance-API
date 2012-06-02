@@ -209,8 +209,9 @@ APIにパラメータを指定する場合は、APIのURLに「?」を連結し�
 </ul>
 </ul>
 <h4>戻り値</h4>
+(ArrayOf)SupportTarget</p>
 <table class="table">
-<tr>(ArrayOf)SupportTarget</p>
+<tr>
 <th>要素/属性
 <th>データの内容
 <th>データ型
@@ -222,6 +223,7 @@ APIにパラメータを指定する場合は、APIのURLに「?」を連結し�
 <td>Name
 <td>支援対象の名前
 <td>文字列
+</tr>
 </table>
 
 <h4>リクエストの例</h4>
@@ -261,16 +263,21 @@ GET	http://api.r-assistance.go.jp/v1/api.svc/getSupportTargets?appkey=0
 <i></i><br></p>
 
 <h4>戻り値</h4>
-<p class="p17">(ArrayOf)SearchCategory</p>
-<p class="bold">要素/属性</p>
-<p class="bold">データの内容</p>
-<p class="bold">データ型</p>
-<p class="p17">ID</p>
-<p class="bold">検索カテゴリのID</p>
-<p class="bold">数値</p>
-<p class="p17">Name</p>
-<p class="bold">検索カテゴリの名称</p>
-<p class="bold">文字列</p>
+(ArrayOf)SearchCategory</p>
+<table class="table">
+<tr>
+<td>要素/属性</p>
+<td>データの内容</p>
+<td>データ型</p>
+<tr>
+<td>ID</p>
+<td>検索カテゴリのID</p>
+<td>数値</p>
+<tr>
+<td>Name</p>
+<td>検索カテゴリの名称</p>
+<td>文字列</p>
+</table>
 <br></p>
 <p class="bold">リクエストの例</p>
 <p class="p12">GET	http://api.r-assistance.go.jp/v1/api.svc/getSearchCategories?appkey=0&amp;supporttarget=1</p>
@@ -306,15 +313,20 @@ GET	http://api.r-assistance.go.jp/v1/api.svc/getSupportTargets?appkey=0
 <i></i><br></p>
 <h4>戻り値</h4>
 <p class="p17">(ArrayOf)SearchConditionItem</p>
-<p class="bold">要素/属性</p>
-<p class="bold">データの内容</p>
-<p class="bold">データ型</p>
-<p class="p17">ID</p>
-<p class="bold">抽出項目のID</p>
-<p class="bold">数値</p>
-<p class="p17">Name</p>
-<p class="bold">抽出項目の名称</p>
-<p class="bold">文字列</p>
+<table class="table">
+<tr>
+<td>要素/属性</p>
+<td>データの内容</p>
+<td>データ型</p>
+<tr>
+<td>ID</p>
+<td>抽出項目のID</p>
+<td>数値</p>
+<tr>
+<td>Name
+<td>抽出項目の名称
+<td>文字列
+</table>
 <br></p>
 <p class="bold">リクエストの例</p>
 <p class="p12">GET	http://api.r-assistance.go.jp/v1/api.svc/getSearchConditionItems?appkey=0&amp;category=2</p>
@@ -349,18 +361,24 @@ GET	http://api.r-assistance.go.jp/v1/api.svc/getSupportTargets?appkey=0
 <i></i><br></p>
 <h4>戻り値</h4>
 <p class="p17">(ArrayOf)LocalGoverment</p>
-<p class="bold">要素/属性</p>
-<p class="bold">データの内容</p>
-<p class="bold">データ型</p>
-<p class="p17">PrefCode</p>
-<p class="bold">都道府県コード</p>
-<p class="bold">文字列</p>
-<p class="p17">LocalGovCode</p>
-<p class="bold">地方公共団体コード</p>
-<p class="bold">文字列</p>
-<p class="p19">LocalGovName</p>
-<p class="bold">地方公共団体名</p>
-<p class="bold">文字列</p>
+<table class="table">
+<tr>
+<td>要素/属性</p>
+<td>データの内容</p>
+<td>データ型</p>
+<tr>
+<td>PrefCode</p>
+<td>都道府県コード</p>
+<td>文字列</p>
+<tr>
+<td>LocalGovCode</p>
+<td>地方公共団体コード</p>
+<td>文字列</p>
+<tr>
+<td>LocalGovName</p>
+<td>地方公共団体名</p>
+<td>文字列</p>
+</table>
 <p class="bold">※配列は、復旧・復興支援制度データベースで指定された順序で返します。</p>
 <br></p>
 <p class="bold">リクエストの例</p>
@@ -411,19 +429,25 @@ GET	http://api.r-assistance.go.jp/v1/api.svc/getSupportTargets?appkey=0
 <p class="bold">※戻り値には、都道府県を示す地方公共団体は含まれません。</p>
 <br></p>
 <h4>戻り値</h4>
-<p class="p17">(ArrayOf)LocalGoverment</p>
-<p class="bold">要素/属性</p>
-<p class="bold">データの内容</p>
-<p class="bold">データ型</p>
-<p class="p17">PrefCode</p>
-<p class="bold">都道府県コード</p>
-<p class="bold">文字列</p>
-<p class="p17">LocalGovCode</p>
-<p class="bold">地方公共団体コード</p>
-<p class="bold">文字列</p>
-<p class="p17">LocalGovName</p>
-<p class="bold">地方公共団体名</p>
-<p class="bold">文字列</p>
+<p class="bold">(ArrayOf)LocalGoverment</p>
+<table class="table">
+<tr>
+<td>要素/属性</p>
+<td>データの内容</p>
+<td>データ型</p>
+<tr>
+<td>PrefCode</p>
+<td>都道府県コード</p>
+<td>文字列</p>
+<tr>
+<td>LocalGovCode</p>
+<td>地方公共団体コード</p>
+<td>文字列</p>
+<tr>
+<td>LocalGovName</p>
+<td>地方公共団体名</p>
+<td>文字列</p>
+</table>
 <br></p>
 <p class="bold">リクエストの例1</p>
 <p class="bold">岩手県（PrefCode=03）の全ての市町村を取得する例</p>
@@ -545,16 +569,21 @@ GET	http://api.r-assistance.go.jp/v1/api.svc/getSupportTargets?appkey=0
 <p class="bold">※各検索パラメータ間の検索条件はAND条件となります。</p>
 <br></p>
 <h4>戻り値</h4>
-<p class="p17">SearchResult</p>
-<p class="bold">要素/属性</p>
-<p class="bold">データの内容</p>
-<p class="bold">データ型</p>
-<p class="p17">IDs</p>
-<p class="bold">該当する制度情報のID。該当の制度が複数ある場合は、各IDがカンマで区切られます。</p>
-<p class="bold">文字列</p>
-<p class="p17">TotalCount</p>
-<p class="bold">該当する制度情報の総件数</p>
-<p class="bold">数値</p>
+<td>SearchResult</p>
+<table class="table">
+<tr>
+<td>要素/属性</p>
+<td>データの内容</p>
+<td>データ型</p>
+<tr>
+<td>IDs</p>
+<td>該当する制度情報のID。該当の制度が複数ある場合は、各IDがカンマで区切られます。</p>
+<td>文字列</p>
+<tr>
+<td>TotalCount</p>
+<td>該当する制度情報の総件数</p>
+<td>数値</p>
+</table>
 <br></p>
 <p class="bold">該当する制度が無い場合は、TotalCountの値=0、IDsは空要素となります。</p>
 <br></p>
@@ -588,186 +617,234 @@ GET	http://api.r-assistance.go.jp/v1/api.svc/getSupportTargets?appkey=0
 <p class="p16">※指定した<i>ID</i>のデータが存在しない場合、<i>r-assistance_Content </i>要素を含まないデータが返されます。</p>
 <i></i><br></p>
 <h4>戻り値</h4>
-<p class="p17">XMLDocument（OpenUM形式）</p>
-<p class="p12">※制度情報は、OpenUM形式のr-assistance_Content型として出力されます。</p>
+<p class="bold">XMLDocument（OpenUM形式）</p>
+<p class="bold">※制度情報は、OpenUM形式のr-assistance_Content型として出力されます。</p>
 <p class="bold">OpenUMの定義については、補足資料「OpenUMの定義説明」を参照してください。</p>
 <br></p>
 <p class="bold">r-assistance_Content型への設定内容　（記載のない要素は出力しません。）</p>
-<p class="p12">No.</p>
-<p class="bold">要素/属性</p>
-<p class="bold">設定内容</p>
-<p class="bold">備考</p>
-<p class="p12">1</p>
-<p class="p12">uuid</p>
-<p class="bold">制度情報のUUID</p>
+<table class="table">
+<tr>
+<td>No.</p>
+<td>要素/属性</p>
+<td>設定内容</p>
+<td>備考</p>
+<tr>
+<td>1</p>
+<td>uuid</p>
+<td>制度情報のUUID</p>
+<td><br></p>
+<tr>
+<td>2</p>
+<td>author</p>
+<td>制度情報の作成者（組織名）</p>
+<td><br></p>
+<tr>
+<td>3</p>
+<td>local_gov_id</p>
+<td>（設定されません。）</p>
+<td><br></p>
+<tr>
+<td>4</p>
+<td>local_gov_name</p>
+<td>（設定されません。）</p>
+<td><br></p>
+<tr>
+<td>5</p>
+<td>governing_law </p>
+<td>根拠法</p>
+<td>※1</p>
+<tr>
+<td>6</p>
+<td>governing_law_url</p>
+<td>根拠法URL</p>
+<td>※1、※2</p>
+<tr>
+<td>7</p>
+<td>service name</p>
+<td>制度名</p>
+<td><br></p>
+<tr>
+<td>8</p>
+<td>title</p>
+<td>自治体独自名</p>
+<td>※1</p>
+<tr>
+<td>9</p>
+<td>general_info</p>
+<td>内容</p>
+<td>※1</p>
+<tr>
+<td>10</p>
+<td>general_list</p>
+<td>概要</p>
+<td>※1</p>
+<tr>
+<td>11</p>
+<td>intended_person</p>
+<td>対象者</p>
+<td>※1</p>
+<tr>
+<td>12</p>
+<td>intended_area</p>
+<td>対象地域</p>
+<td>※1</p>
+<tr>
+<td>13</p>
+<td>application_procedure</p>
+<td>申請・届出方法</p>
+<td>※1</p>
+<tr>
+<td>14</p>
+<td>applicatipon_deadline</p>
+<td>申請期限</p>
+<td>※1</p>
+<tr>
+<td>15</p>
+<td>support_term</p>
+<td>支援期間</p>
+<td>※1</p>
+<tr>
+<td>16</p>
+<td>application_form</p>
+<td>申請書類</p>
+<td>※1</p>
+<tr>
+<td>17</p>
+<td>application_form_url</p>
+<td>申請書類入手URL</p>
+<td>※1、※2</p>
+<tr>
+<td>18</p>
+<td>related_link</p>
+<td>詳細参照先名</p>
+<td>※1</p>
+<tr>
+<td>19</p>
+<td>related_link_url</p>
+<td>詳細URL</p>
+<td>※1、※2</p>
+<tr>
+<td>20</p>
+<td>e_application</p>
+<td>電子申請名称</p>
+<td>※1</p>
+<tr>
+<td>21</p>
+<td>e_application_url</p>
+<td>電子申請URL</p>
+<td>※1、※2</p>
+<tr>
+<td>22</p>
+<td>contact</p>
+<td>お問合せ（組織・窓口名称）</p>
+<td>※1</p>
+<tr>
+<td>23</p>
+<td>contact_postal_code</p>
+<td>お問合せ（郵便番号）</p>
+<td>※1</p>
+<tr>
+<td>24</p>
+<td>contact_address</p>
+<td>お問合せ（住所）</p>
+<td>※1</p>
+<tr>
+<td>25</p>
+<td>contact_tel</p>
+<td>お問合せ（TEL）</p>
+<td>※1</p>
+<tr>
+<td>26</p>
+<td>contact_fax</p>
+<td>お問合せ（FAX）</p>
+<td>※1</p>
+<tr>
+<td>27</p>
+<td>contact_mail</p>
+<td>お問合せ（メール）</p>
+<td>※1</p>
+<tr>
+<td>28</p>
+<td>contact_free_description</p>
+<td>お問合せ（自由記述）</p>
+<td>※1</p>
+<tr>
+<td>29</p>
+<td>contact_list</p>
+<td>お問合せ先一覧</p>
+<td>※1</p>
+<tr>
+<td>30</p>
+<td>budget</p>
+<td>予算枠の有無</p>
+<td>※1</p>
+<tr>
+<td>31</p>
+<td>meta</p>
+<td>メタ情報 </p>
+<td>※3</p>
+<tr>
+<td>32</p>
+<td>created_at</p>
+<td>制度情報の作成日</p>
 <br></p>
-<p class="p29">2</p>
-<p class="p29">author</p>
-<p class="bold">制度情報の作成者（組織名）</p>
+<tr>
+<td>33</p>
+<td>updated_at</p>
+<td>制度情報の更新日</p>
 <br></p>
-<p class="p9">3</p>
-<p class="p9">local_gov_id</p>
-<p class="bold">（設定されません。）</p>
-<br></p>
-<p class="p9">4</p>
-<p class="p9">local_gov_name</p>
-<p class="bold">（設定されません。）</p>
-<br></p>
-<p class="p9">5</p>
-<p class="p9">governing_law </p>
-<p class="bold">根拠法</p>
-<p class="p12">※1</p>
-<p class="p9">6</p>
-<p class="p9">governing_law_url</p>
-<p class="p12">根拠法URL</p>
-<p class="p12">※1、※2</p>
-<p class="p9">7</p>
-<p class="p9">service name</p>
-<p class="bold">制度名</p>
-<br></p>
-<p class="p9">8</p>
-<p class="p9">title</p>
-<p class="bold">自治体独自名</p>
-<p class="p12">※1</p>
-<p class="p9">9</p>
-<p class="p9">general_info</p>
-<p class="bold">内容</p>
-<p class="p12">※1</p>
-<p class="p9">10</p>
-<p class="p9">general_list</p>
-<p class="bold">概要</p>
-<p class="p12">※1</p>
-<p class="p9">11</p>
-<p class="p9">intended_person</p>
-<p class="bold">対象者</p>
-<p class="p12">※1</p>
-<p class="p9">12</p>
-<p class="p9">intended_area</p>
-<p class="bold">対象地域</p>
-<p class="p12">※1</p>
-<p class="p9">13</p>
-<p class="p9">application_procedure</p>
-<p class="bold">申請・届出方法</p>
-<p class="p12">※1</p>
-<p class="p9">14</p>
-<p class="p9">applicatipon_deadline</p>
-<p class="bold">申請期限</p>
-<p class="p12">※1</p>
-<p class="p9">15</p>
-<p class="p9">support_term</p>
-<p class="p10">支援期間</p>
-<p class="p12">※1</p>
-<p class="p9">16</p>
-<p class="p9">application_form</p>
-<p class="bold">申請書類</p>
-<p class="p12">※1</p>
-<p class="p9">17</p>
-<p class="p9">application_form_url</p>
-<p class="p10">申請書類入手URL</p>
-<p class="p12">※1、※2</p>
-<p class="p9">18</p>
-<p class="p9">related_link</p>
-<p class="bold">詳細参照先名</p>
-<p class="p12">※1</p>
-<p class="p9">19</p>
-<p class="p9">related_link_url</p>
-<p class="p9">詳細URL</p>
-<p class="p12">※1、※2</p>
-<p class="p9">20</p>
-<p class="p9">e_application</p>
-<p class="bold">電子申請名称</p>
-<p class="p12">※1</p>
-<p class="p9">21</p>
-<p class="p9">e_application_url</p>
-<p class="p10">電子申請URL</p>
-<p class="p12">※1、※2</p>
-<p class="p9">22</p>
-<p class="p9">contact</p>
-<p class="p10">お問合せ（組織・窓口名称）</p>
-<p class="p12">※1</p>
-<p class="p9">23</p>
-<p class="p9">contact_postal_code</p>
-<p class="p10">お問合せ（郵便番号）</p>
-<p class="p12">※1</p>
-<p class="p9">24</p>
-<p class="p9">contact_address</p>
-<p class="p10">お問合せ（住所）</p>
-<p class="p12">※1</p>
-<p class="p9">25</p>
-<p class="p9">contact_tel</p>
-<p class="p10">お問合せ（TEL）</p>
-<p class="p12">※1</p>
-<p class="p9">26</p>
-<p class="p9">contact_fax</p>
-<p class="p10">お問合せ（FAX）</p>
-<p class="p12">※1</p>
-<p class="p9">27</p>
-<p class="p9">contact_mail</p>
-<p class="p10">お問合せ（メール）</p>
-<p class="p12">※1</p>
-<p class="p9">28</p>
-<p class="p9">contact_free_description</p>
-<p class="p10">お問合せ（自由記述）</p>
-<p class="p12">※1</p>
-<p class="p9">29</p>
-<p class="p9">contact_list</p>
-<p class="bold">お問合せ先一覧</p>
-<p class="p12">※1</p>
-<p class="p9">30</p>
-<p class="p9">budget</p>
-<p class="bold">予算枠の有無</p>
-<p class="p12">※1</p>
-<p class="p29">31</p>
-<p class="p29">meta</p>
-<p class="bold">メタ情報 </p>
-<p class="p12">※3</p>
-<p class="p29">32</p>
-<p class="p29">created_at</p>
-<p class="bold">制度情報の作成日</p>
-<br></p>
-<p class="p29">33</p>
-<p class="p29">updated_at</p>
-<p class="bold">制度情報の更新日</p>
-<br></p>
-<p class="p9">34</p>
-<p class="p9">assistance_type</p>
-<p class="bold">支援の種類</p>
-<p class="p12">※1</p>
-<p class="p9">35</p>
-<p class="p9">citizens_housing</p>
-<p class="p10">個人向け：住まいのこと</p>
-<p class="p12">※1</p>
-<p class="p9">36</p>
-<p class="p9">citizens_work</p>
-<p class="p10">個人向け：仕事のこと</p>
-<p class="p12">※1</p>
-<p class="p9">37</p>
-<p class="p9">citizens_medical_welfare</p>
-<p class="p10">個人向け：医療・福祉のこと</p>
-<p class="p12">※1</p>
-<p class="p9">38</p>
-<p class="p9">citizens_nurturing_education</p>
-<p class="p10">個人向け：子育て・教育のこと</p>
-<p class="p12">※1</p>
-<p class="p9">39</p>
-<p class="p9">citizens_money</p>
-<p class="p10">個人向け：おかねのこと</p>
-<p class="p12">※1</p>
-<p class="p9">40</p>
-<p class="p9">citizens_others_living</p>
-<p class="p10">個人向け：その他・暮らしにかかわること</p>
-<p class="p12">※1</p>
-<p class="p9">41</p>
-<p class="p9">citizens_nuclear_power</p>
-<p class="p10">個人向け：原発関係のこと</p>
-<p class="p12">※1</p>
-<p class="p9">42</p>
-<p class="p9">businesses _segments</p>
-<p class="p10">事業者向け：事業区分</p>
-<p class="p12">※1</p>
-<p class="p9">43</p>
-<p class="p9">businesses _situation</p>
-<p class="p10">事業者向け：状況</p>
+<tr>
+<td>34</p>
+<td>assistance_type</p>
+<td>支援の種類</p>
+<td>※1</p>
+<tr>
+<td>35</p>
+<td>citizens_housing</p>
+<td>個人向け：住まいのこと</p>
+<td>※1</p>
+<tr>
+<td>36</p>
+<td>citizens_work</p>
+<td>個人向け：仕事のこと</p>
+<td>※1</p>
+<tr>
+<td>37</p>
+<td>citizens_medical_welfare</p>
+<td>個人向け：医療・福祉のこと</p>
+<td>※1</p>
+<tr>
+<td>38</p>
+<td>citizens_nurturing_education</p>
+<td>個人向け：子育て・教育のこと</p>
+<td>※1</p>
+<tr>
+<td>39</p>
+<td>citizens_money</p>
+<td>個人向け：おかねのこと</p>
+<td>※1</p>
+<tr>
+<td>40</p>
+<td>citizens_others_living</p>
+<td>個人向け：その他・暮らしにかかわること</p>
+<td>※1</p>
+<tr>
+<td>41</p>
+<td>citizens_nuclear_power</p>
+<td>個人向け：原発関係のこと</p>
+<td>※1</p>
+<tr>
+<td>42</p>
+<td>businesses _segments</p>
+<td>事業者向け：事業区分</p>
+<td>※1</p>
+<tr>
+<td>43</p>
+<td>businesses _situation</p>
+<td>事業者向け：状況</p>
+<td>
+</table>
+
 <p class="p12">※1</p>
 <br></p>
 <br></p>
@@ -778,9 +855,9 @@ GET	http://api.r-assistance.go.jp/v1/api.svc/getSupportTargets?appkey=0
 <p class="bold">設定内容</p>
 <p class="p19">uuid</p>
 <p class="p12">項目のUUID</p>
-<p class="p17">title</p>
+<p class="bold">title</p>
 <p class="bold">項目の名称</p>
-<p class="p17">title_short</p>
+<p class="bold">title_short</p>
 <p class="bold">（設定されません。）</p>
 <p class="p17">summary</p>
 <p class="bold">（設定されません。）</p>
@@ -1018,26 +1095,33 @@ GET	http://api.r-assistance.go.jp/v1/api.svc/getSupportTargets?appkey=0
 <p class="p16">※<i>1</i>以外の値を指定した場合、戻り値に制度の概要は含まれません。</p>
 <i></i><br></p>
 <h4>戻り値</h4>
-<p class="p17">(ArrayOf)SupportInformationSummary</p>
-<p class="bold">要素/属性</p>
-<p class="bold">データの内容</p>
-<p class="bold">データ型</p>
-<p class="p19">ID</p>
-<p class="bold">制度のID。</p>
-<p class="bold">数値</p>
-<p class="p17">Title</p>
-<p class="bold">制度名。</p>
-<p class="bold">※自治体独自名が存在する制度の場合、自治体独自名が返ります。</p>
-<p class="bold">文字列</p>
-<p class="p17">Contact</p>
-<p class="bold">制度のお問合せ先。</p>
-<p class="bold">文字列</p>
-<p class="p17">IntendedArea</p>
-<p class="bold">制度の対象地域を表す地方公共団体コード。複数の場合、カンマ( , )区切りで設定されます。未設定の場合、全国が対象であることを示します。</p>
-<p class="bold">文字列</p>
-<p class="p17">Summary</p>
-<p class="bold">制度の概要。</p>
-<p class="bold">文字列</p>
+<p class="bold">(ArrayOf)SupportInformationSummary</p>
+<table class="table">
+<tr>
+<td>要素/属性</p>
+<td>データの内容</p>
+<td>データ型</p>
+<tr>
+<td>ID</p>
+<td>制度のID。</p>
+<td>数値</p>
+<tr>
+<td>Title</p>
+<td>制度名。※自治体独自名が存在する制度の場合、自治体独自名が返ります。</p>
+<td>文字列</p>
+<tr>
+<td>Contact</p>
+<td>制度のお問合せ先。</p>
+<td>文字列</p>
+<tr>
+<td>IntendedArea</p>
+<td>制度の対象地域を表す地方公共団体コード。複数の場合、カンマ( , )区切りで設定されます。未設定の場合、全国が対象であることを示します。
+<td>文字列</p>
+<tr>
+<td>Summary</p>
+<td>制度の概要。</p>
+<td>文字列</p>
+</table>
 <br></p>
 <p class="bold">※文字列値内の改行は、「CR+LF」または「LFのみ」の両方が混在する場合があります。詳細は「レスポンスの改行コード」を参照ください。</p>
 <br></p>
@@ -1080,20 +1164,24 @@ GET	http://api.r-assistance.go.jp/v1/api.svc/getSupportTargets?appkey=0
 <p class="p16">※指定した<i>ID</i>のデータが存在しない場合、空のデータが返されます。</p>
 <i></i><br></p>
 <h4>戻り値</h4>
-<p class="p17">SupportInformationNotifications</p>
-<p class="bold">要素/属性</p>
-<p class="bold">データの内容</p>
-<p class="bold">データ型</p>
-<p class="p17">IDs</p>
-<p class="bold">通達のID（カンマ区切り）</p>
-<p class="bold">文字列</p>
+<p class="bold">SupportInformationNotifications</p>
+<table class="table">
+<tr>
+<td>要素/属性</p>
+<td>データの内容</p>
+<td>データ型</p>
+<tr>
+<td>IDs</p>
+<td>通達のID（カンマ区切り）</p>
+<td>文字列</p>
+</table>
 <br></p>
 <p class="bold">リクエストの例</p>
 <p class="p12">GET	http://api.r-assistance.go.jp/v1/api.svc/getSupportInformationNotifications?appkey=0&amp;id=1</p>
 <br></p>
-<p class="p17">&lt;?xml version="1.0" encoding="utf-8" ?&gt; </p>
-<p class="p17">&lt;SupportInformationNotifications xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;</p>
-<p class="p17"> &lt;IDs&gt;1,5&lt;/IDs&gt;</p>
+<p class="bold">&lt;?xml version="1.0" encoding="utf-8" ?&gt; </p>
+<p class="bold">&lt;SupportInformationNotifications xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;</p>
+<p class="bold"> &lt;IDs&gt;1,5&lt;/IDs&gt;</p>
 <p class="p17">&lt;/SupportInformationNotifications&gt;</p>
 <p class="p20"><br></p>
 <p class="p12"></p>
@@ -1127,7 +1215,7 @@ GET	http://api.r-assistance.go.jp/v1/api.svc/getSupportTargets?appkey=0
 <p class="p12">uuid</p>
 <p class="p12">通達のUUID</p>
 <br></p>
-<p class="p29">author</p>
+<p class="bold">author</p>
 <p class="bold">通達の作成者（組織名）</p>
 <br></p>
 <p class="p9">local_gov_id</p>
@@ -1222,14 +1310,17 @@ GET	http://api.r-assistance.go.jp/v1/api.svc/getSupportTargets?appkey=0
 <p class="p16">※文字列はURLエンコード（UTF-8）する必要があります。URLエンコードしていない場合は正しい検索結果が得られません。</p>
 <br></p>
 <h4>戻り値</h4>
-<p class="p17">ContactsText</p>
-<p class="bold">要素/属性</p>
-<p class="bold">データの内容</p>
-<p class="bold">データ型</p>
-<p class="p12">Text</p>
-<p class="bold">お問合せ先一覧(テキスト形式)。</p>
-<p class="bold">※スペースおよび改行で位置合わせされたテキストです。</p>
-<p class="bold">文字列</p>
+<p class="bold">ContactsText</p>
+<table class="table">
+<tr>
+<td>要素/属性</p>
+<td>データの内容</p>
+<td>データ型</p>
+<tr>
+<td>Text</p>
+<td>お問合せ先一覧(テキスト形式)。</p>※スペースおよび改行で位置合わせされたテキストです。</p>
+<td>文字列</p>
+</table>
 <br></p>
 <p class="bold">※文字列値内の改行は、「CR+LF」または「LFのみ」の両方が混在する場合があります。詳細は「レスポンスの改行コード」を参照ください。</p>
 <br></p>
