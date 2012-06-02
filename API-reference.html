@@ -1,0 +1,2459 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1138.47">
+  <style type="text/css">
+    div.item { margin: 1em; padding: 0.5em; border: solid 1px gray }
+    div.block { margin: 1em }
+    table.table { border: 1px #E3E3E3 solid; border-collapse: collapse; border-spacing: 0; }
+    table.table th {
+    padding: 5px;
+    border: #E3E3E3 solid;
+    border-width: 0 0 1px 1px;
+    background: #F5F5F5;
+    font-weight: bold;
+    line-height: 120%;
+    }
+    table.table td {
+    padding: 5px;
+    border: 1px #E3E3E3 solid;
+    border-width: 0 0 1px 1px;
+    }
+    blockquote.code { margin: 1em; padding: 0.5em; border: solid 1px black }
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 20.0px 'Hiragino Mincho ProN'}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 20.0px 'Hiragino Mincho ProN'}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 20.0px Times; min-height: 24.0px}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 20.0px Times; min-height: 24.0px}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 14.0px 'Hiragino Mincho ProN'}
+    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; min-height: 18.0px}
+    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Hiragino Mincho ProN'}
+    p.p9 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px Times}
+    p.p10 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px 'Hiragino Mincho ProN'}
+    p.p11 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px Times; min-height: 11.0px}
+    p.p12 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times}
+    p.p13 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; min-height: 14.0px}
+    p.p14 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #2900ff}
+    p.p15 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #2900ff; min-height: 14.0px}
+    p.p16 {margin: 0.0px 0.0px 0.0px 18.0px; font: 12.0px 'Hiragino Mincho ProN'}
+    p.p17 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #000000}
+    p.p18 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Hiragino Mincho ProN'; color: #000000}
+    p.p19 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #00000b}
+    p.p20 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #000000; min-height: 14.0px}
+    p.p21 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px Arial}
+    p.p22 {margin: 0.0px 0.0px 0.0px 18.0px; font: 9.0px 'Hiragino Mincho ProN'}
+    p.p23 {margin: 0.0px 0.0px 0.0px 18.0px; font: 12.0px 'Hiragino Mincho ProN'; color: #000000}
+    p.p24 {margin: 0.0px 0.0px 0.0px 28.4px; font: 9.0px 'Hiragino Mincho ProN'}
+    p.p25 {margin: 0.0px 0.0px 0.0px 18.0px; font: 9.0px 'Hiragino Mincho ProN'; color: #000000}
+    p.p26 {margin: 0.0px 0.0px 0.0px 18.0px; font: 12.0px Times}
+    p.p27 {margin: 0.0px 0.0px 0.0px 49.6px; font: 12.0px 'Hiragino Mincho ProN'}
+    p.p28 {margin: 0.0px 0.0px 0.0px 18.0px; font: 12.0px Times; min-height: 14.0px}
+    p.p29 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px Times; color: #000000}
+    p.p30 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px Times; color: #00000b}
+    p.p31 {margin: 0.0px 0.0px 0.0px 18.0px; font: 9.0px Times}
+    p.p32 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Times}
+    p.p33 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Times; min-height: 13.0px}
+    p.p34 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px Times}
+    p.p35 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px 'Hiragino Mincho ProN'}
+    p.p36 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px 'Hiragino Mincho ProN'}
+    p.p37 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 11.0px Times}
+    p.p38 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 11.0px 'Hiragino Mincho ProN'}
+  </style>
+</head>
+<body>
+<p class="p2">復旧・復興支援制度データベース</p>
+<p class="p3">APIリファレンス</p>
+<p class="p4"><br></p>
+<p class="p5"><br></p>
+<p class="p6"><b>経済産業省商務情報政策局情報プロジェクト室</b></p>
+<p class="p7"><b></b><br></p>
+<p class="p7"><b></b><br></p>
+
+<hr>
+
+<h2>目次</h2>
+<ul>
+<li>API共通仕様   3</li>
+<ul>
+<li>リクエスト 3
+<li>レスポンス 3
+<li>レスポンスの改行コード 3
+<li>エラー時のレスポンス 4
+<li>appkeyについて 4
+<li>利用回数制限 5
+</ul>
+<li>APIリファレンス 6
+<ul>
+<li>getSupportTargets	6
+<li>getSearchCategories	7
+<li>getSearchConditionItems	8
+<li>getPrefectures	9
+<li>getMunicipalities	10
+<li>searchSupportInformations	13
+<li>getSupportInformation	16
+<li>getSupportInformationSummaries	24
+<li>getSupportInformationNotifications	27
+<li>getNotification	28
+<li>getContactsText	30
+</ul>
+<li>補足資料	32
+<ul>
+<li>OpenUMの定義説明	32
+</ul>
+<li>更新履歴	40
+</ul>
+</ul>
+
+<hr>
+
+<h2>API共通仕様</h2>
+<h3>リクエスト</h3>
+<div class="item">
+
+<div class="block">
+<p>各APIの説明に記載されているURLにアクセスすることで、APIの実行結果を受け取ることができます。
+<br>例
+<blockquote>http://api.r-assistance.go.jp/v1/api.svc/searchSupportInfomations</blockquote>
+※URLの大文字・小文字は区別されません。
+</p>
+</div>
+
+<p>
+APIにパラメータを指定する場合は、APIのURLに「?」を連結し、「パラメータ名=パラメータ値」の形式で指定します。
+<br>例
+<blockquote>http://api.r-assistance.go.jp/v1/api.svc/searchSupportInformations?maxcount=50</blockquote>
+複数のパラメータを指定する場合は、2つ目以降のパラメータを「&amp;」で連結します。
+</p>
+
+<p>
+例
+<p class="p12">http://api.r-assistance.go.jp/v1/api.svc/searchSupportInformations?maxcount=50&amp;pageno=1</p>
+<p class="p15"><br></p>
+リファレンスに記載のないパラメータが指定された場合、そのパラメータは無視されます。</p>
+省略不可のパラメータを省略した場合、<i>(400)</i>エラーとなります。</p>
+<i></i><br></p>
+<i></i><br></p>
+</div>
+
+<h3>レスポンス</h3>
+<div class="item">
+<p>APIのレスポンスは、XMLで出力されます。詳細は、各APIの説明を参照ください。</p>
+</div>
+
+<h3>レスポンスの改行コード</h3>
+<div class="item">
+<p>APIのレスポンス (XML) に含まれる文字列値において、文字列内の改行を示すために、「CRLF(復帰と改行)」 または 「LF(改行)」 のいずれかの改行コードが使用されます。</p>
+<ul>
+<li>※「CRLF(復帰と改行)」または「LF(改行)」は、同一レスポンス内であっても混在する場合があります。</li>
+<li>※XML要素値内では、「CR(復帰)」は文字参照” &amp;#xD;” として出力され、「LF(改行)」は改行コード(LF)がそのまま出力されます。</li>
+<li>※XML属性値内では、「CR(復帰)」は文字参照” &amp;#xD;” として出力され、「LF(改行)」は文字参照” &amp;#xA;” として出力されます。</li>
+</ul>
+</div>
+
+<h3>エラー時のレスポンス</h3>
+<div class="item">
+<p>APIのリクエストでエラーが発生した場合は、次のエラーコードおよびレスポンスを出力します。</p>
+<p>エラーコード</p>
+<table class="table">
+<tr><th>コード</th><th>説明</th></tr>
+<tr><td>400<td>Bad request. 渡されたパラメータの内容が APIで期待されたものと一致しない場合。
+<tr><td>401</p><td>Unauthorized. 許可されていないアクセスであった場合。
+<tr><td>403</p><td>Forbidden. APIの利用回数制限を超えている場合。
+<tr><td>404<td>Not found. 指定されたURLが存在しない場合。
+<tr><td>500<td>Internal Server Error. サーバーの内部エラーなどの問題によってデータを返すことができない場合。</tr>
+<tr><td>503<td>Service unavailable. サーバーが高負荷の状態や、メンテナンス中などの理由によりデータを返すことができない場合。</tr>
+</table>
+
+<p>エラー時のレスポンス</p>
+<blockquote class="code"><pre>
+&lt;?xml version="1.0" encoding="utf-8"?&gt;
+>&lt;Error xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+&lt;Message&gt;エラーメッセージ&lt;/Message&gt;
+&lt;/Error&gt;
+</pre></blockquote>
+</div>
+
+<h3>appkeyについて</h3>
+<div class="item">
+<p>すべてのAPIは、パラメータappkeyが必須となっています。現在は、常にパラメータappkeyには0を指定してください。
+<br>例
+<blockquote>http://api.r-assistance.go.jp/v1/api.svc/searchSupportInformations?appkey=0&amp;maxcount=50</blockquote>
+</p>
+<p>※’appkey’に不正な値を指定した場合、(401)エラーが返されます。</p>
+</div>
+
+<h3>利用回数制限</h3>
+<div class="item">
+<p>APIは呼び出し元IPアドレス毎に利用回数制限を設けています。1時間あたり、5,000回を超えてアクセスした場合、エラーコード403(Forbidden)が返ります。</p>
+<p>※制限の単位時間および回数は、予告なく変更する場合があります。</p>
+<p>同じAPIを同じパラメータで何度も呼び出さないようにしたり、一度取得した結果はキャッシュしておく等、APIの呼び出し回数をなるべく減らすなどして利用されることを推奨します。</p>
+</div>
+
+<hr>
+
+<h2>APIリファレンス</h2>
+<br></p>
+<h3>getSupportTargets</h3>
+<div class="item">
+支援対象の配列を取得します。</p>
+支援対象は、制度の大分類である「個人向け」や「事業者向け」を表します。</p>
+<br></p>
+<p class="p12">URL</p>
+<p class="p12">http://api.r-assistance.go.jp/v1/api.svc/getSupportTargets</p>
+<br></p>
+パラメータ</p>
+<p class="p12">appkey</p>
+<p class="p16">省略不可。指定する値は「appkeyについて」を参照ください。</p>
+<br></p>
+<p class="p8"><b>戻り値</b></p>
+<p class="p17">(ArrayOf)SupportTarget</p>
+<p class="p8">要素/属性</p>
+<p class="p8">データの内容</p>
+<p class="p8">データ型</p>
+<p class="p17">ID</p>
+<p class="p8">支援対象のID</p>
+<p class="p8">数値</p>
+<p class="p17">Name</p>
+<p class="p8">支援対象の名前</p>
+<p class="p8">文字列</p>
+<br></p>
+<p class="p8">リクエストの例</p>
+<p class="p12">GET	http://api.r-assistance.go.jp/v1/api.svc/getSupportTargets?appkey=0</p>
+<br></p>
+<p class="p17">&lt;?xml version="1.0" encoding="utf-8" ?&gt; </p>
+<p class="p17">&lt;ArrayOfSupportTarget xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;</p>
+<p class="p17">&lt;SupportTarget ID=”1”&gt;</p>
+<p class="p17">&lt;Name&gt;個人向け&lt;/Name&gt;</p>
+<p class="p17">&lt;/SupportTarget&gt;</p>
+<p class="p17">&lt;SupportTarget ID=”2”&gt;</p>
+<p class="p17">&lt;Name&gt;事業者向け&lt;/Name&gt;</p>
+<p class="p17">&lt;/SupportTarget&gt;</p>
+<p class="p17">&lt;SupportTarget ID=”3”&gt;</p>
+<p class="p17">&lt;Name&gt;地方公共団体向け&lt;/Name&gt;</p>
+<p class="p17">&lt;/SupportTarget&gt;</p>
+<p class="p17">&lt;/ArrayOfSupportTarget&gt; </p>
+</div>
+
+<h3>getSearchCategories</h3>
+<div class="item">
+<p class="p8">指定した支援対象に含まれる検索カテゴリの配列を取得します。</p>
+<br></p>
+<p class="p12">URL</p>
+<p class="p12">http://api.r-assistance.go.jp/v1/api.svc/getSearchCategories</p>
+<br></p>
+<p class="p8">パラメータ</p>
+<p class="p12">appkey</p>
+<p class="p16">省略不可。指定する値は「appkeyについて」を参照ください。</p>
+<p class="p12">supporttarget</p>
+<p class="p16">省略可。支援対象のID。省略した場合、共通の検索カテゴリを取得します。</p>
+<p class="p16">getSupportTargetsリクエストで取得されたSupportTarget要素のID属性の値を指定します。</p>
+<p class="p8">　　　※数値以外の値を指定した場合、<i>(400)</i>エラーとなります。</p>
+<p class="p8">　　　※指定した<i>ID</i>のデータが存在しない場合、該当データが含まれない配列が返ります。</p>
+<i></i><br></p>
+<p class="p8"><b>戻り値</b></p>
+<p class="p17">(ArrayOf)SearchCategory</p>
+<p class="p8">要素/属性</p>
+<p class="p8">データの内容</p>
+<p class="p8">データ型</p>
+<p class="p17">ID</p>
+<p class="p8">検索カテゴリのID</p>
+<p class="p8">数値</p>
+<p class="p17">Name</p>
+<p class="p8">検索カテゴリの名称</p>
+<p class="p8">文字列</p>
+<br></p>
+<p class="p8">リクエストの例</p>
+<p class="p12">GET	http://api.r-assistance.go.jp/v1/api.svc/getSearchCategories?appkey=0&amp;supporttarget=1</p>
+<br></p>
+<p class="p17">&lt;?xml version="1.0" encoding="utf-8" ?&gt; </p>
+<p class="p17">&lt;ArrayOfSearchCategory xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;</p>
+<p class="p17">&lt;SearchCategory ID="2"&gt;</p>
+<p class="p17">&lt;Name&gt;住まいのこと&lt;/Name&gt; </p>
+<p class="p17">&lt;/SearchCategory&gt;</p>
+<p class="p17">&lt;SearchCategory ID="3"&gt;</p>
+<p class="p17">&lt;Name&gt;仕事のこと&lt;/Name&gt; </p>
+<p class="p17">&lt;/SearchCategory&gt;</p>
+<p class="p18">・・・</p>
+<p class="p17">&lt;/ArrayOfSearchCategory&gt; </p>
+</div>
+
+<h3>getSearchConditionItems</h3>
+<div class="item">
+<p class="p8">指定した検索カテゴリに含まれる抽出項目の配列を取得します。</p>
+<p class="p8">抽出項目のIDをsearchSupportInformationsリクエストで指定することにより、該当する制度情報を検索できます。</p>
+<br></p>
+<p class="p12">URL</p>
+<p class="p12">http://api.r-assistance.go.jp/v1/api.svc/getSearchConditionItems</p>
+<br></p>
+<p class="p8">パラメータ</p>
+<p class="p12">appkey</p>
+<p class="p16">省略不可。指定する値は「appkeyについて」を参照ください。</p>
+<p class="p12">category</p>
+<p class="p16">省略不可。検索カテゴリのID。</p>
+<p class="p16">getSearchCategoriesリクエストで取得されたSearchCategory要素のID属性の値を指定します。</p>
+<p class="p8">　　　※数値以外の値を指定した場合、<i>(400)</i>エラーとなります。</p>
+<p class="p8">　　　※指定した<i>ID</i>のデータが存在しない場合、該当データが含まれない配列が返ります。</p>
+<i></i><br></p>
+<p class="p8"><b>戻り値</b></p>
+<p class="p17">(ArrayOf)SearchConditionItem</p>
+<p class="p8">要素/属性</p>
+<p class="p8">データの内容</p>
+<p class="p8">データ型</p>
+<p class="p17">ID</p>
+<p class="p8">抽出項目のID</p>
+<p class="p8">数値</p>
+<p class="p17">Name</p>
+<p class="p8">抽出項目の名称</p>
+<p class="p8">文字列</p>
+<br></p>
+<p class="p8">リクエストの例</p>
+<p class="p12">GET	http://api.r-assistance.go.jp/v1/api.svc/getSearchConditionItems?appkey=0&amp;category=2</p>
+<br></p>
+<p class="p17">&lt;?xml version="1.0" encoding="utf-8" ?&gt; </p>
+<p class="p17">&lt;ArrayOfSearchConditionItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;</p>
+<p class="p17"> &lt;SearchConditionItem ID="10"&gt;</p>
+<p class="p17">  &lt;Name&gt;建設したい（増築・改築含む）&lt;/Name&gt; </p>
+<p class="p17"> &lt;/SearchConditionItem&gt;</p>
+<p class="p17">&lt;SearchConditionItem ID="11"&gt;</p>
+<p class="p17">  &lt;Name&gt;購入したい&lt;/Name&gt; </p>
+<p class="p17"> &lt;/SearchConditionItem&gt;</p>
+<p class="p18">　　・・・</p>
+<p class="p17">&lt;/ArrayOfSearchConditionItem&gt; </p>
+</div>
+
+<h3>getPrefectures</h3>
+<div class="item">
+<p class="p8">都道府県を表す地方公共団体（コードおよび名称）の配列を取得します。</p>
+<br></p>
+<p class="p12">URL</p>
+<p class="p12">http://api.r-assistance.go.jp/v1/api.svc/getPrefectures</p>
+<br></p>
+<p class="p8">パラメータ</p>
+<p class="p12">appkey</p>
+<p class="p16">省略不可。指定する値は「appkeyについて」を参照ください。</p>
+<p class="p12"><i>prefcodes</i></p>
+<p class="p8">省略可。都道府県コード。</p>
+<p class="p8">複数のコードを指定する場合は、パイプ( | )文字で区切ります。</p>
+<p class="p8">省略した場合は、全ての都道府県が対象となります。</p>
+<p class="p8">　　　※指定したコードのデータが存在しない場合、該当データが含まれない配列が返ります。</p>
+<i></i><br></p>
+<p class="p8"><b>戻り値</b></p>
+<p class="p17">(ArrayOf)LocalGoverment</p>
+<p class="p8">要素/属性</p>
+<p class="p8">データの内容</p>
+<p class="p8">データ型</p>
+<p class="p17">PrefCode</p>
+<p class="p8">都道府県コード</p>
+<p class="p8">文字列</p>
+<p class="p17">LocalGovCode</p>
+<p class="p8">地方公共団体コード</p>
+<p class="p8">文字列</p>
+<p class="p19">LocalGovName</p>
+<p class="p8">地方公共団体名</p>
+<p class="p8">文字列</p>
+<p class="p8">※配列は、復旧・復興支援制度データベースで指定された順序で返します。</p>
+<br></p>
+<p class="p8">リクエストの例</p>
+<p class="p12">GET	http://api.r-assistance.go.jp/v1/api.svc/getPrefectures?appkey=0</p>
+<br></p>
+<p class="p17">&lt;?xml version="1.0" encoding="utf-8"?&gt;</p>
+<p class="p17">&lt;ArrayOfLocalGoverment xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;</p>
+<p class="p17">  &lt;LocalGoverment PrefCode="03" LocalGovCode="03000"&gt;</p>
+<p class="p17">    &lt;LocalGovName&gt;岩手県&lt;/LocalGovName&gt;</p>
+<p class="p17">  &lt;/LocalGoverment&gt;</p>
+<p class="p17">  &lt;LocalGoverment PrefCode="04" LocalGovCode="04000"&gt;</p>
+<p class="p17">    &lt;LocalGovName&gt;宮城県&lt;/LocalGovName&gt;</p>
+<p class="p17">  &lt;/LocalGoverment&gt;</p>
+<p class="p17">  &lt;LocalGoverment PrefCode="07" LocalGovCode="07000"&gt;</p>
+<p class="p17">    &lt;LocalGovName&gt;福島県&lt;/LocalGovName&gt;</p>
+<p class="p17">  &lt;/LocalGoverment&gt;</p>
+<p class="p17">  &lt;LocalGoverment PrefCode="01" LocalGovCode="01000"&gt;</p>
+<p class="p17">    &lt;LocalGovName&gt;北海道&lt;/LocalGovName&gt;</p>
+<p class="p17">  &lt;/LocalGoverment&gt;</p>
+<p class="p17">  …</p>
+<p class="p17">&lt;/ArrayOfLocalGoverment&gt;</p>
+<p class="p20"><br></p>
+<p class="p20"><br></p>
+</div>
+
+<h3>getMunicipalities</h3>
+<div class="item">
+<p class="p8">市町村を表す地方公共団体（コードおよび名称）を取得します。</p>
+<br></p>
+<p class="p12">URL</p>
+<p class="p12">http://api.r-assistance.go.jp/v1/api.svc/getMunicipalities</p>
+<br></p>
+<p class="p8">パラメータ</p>
+<p class="p12">appkey</p>
+<p class="p16">省略不可。指定する値は「appkeyについて」を参照ください。</p>
+<p class="p12"><i>prefcode</i></p>
+<p class="p16">省略可。都道府県コード。</p>
+<p class="p16">getPrefecturesリクエストで取得されたLocalGoverment要素のPrefCode属性の値を指定します。</p>
+<p class="p16">※指定したコードのデータが存在しない場合、該当データが含まれない配列が返ります。</p>
+<p class="p12"><i>localgovcodes</i></p>
+<p class="p16">省略可。地方公共団体コード。</p>
+<p class="p16">複数のコードを指定する場合は、パイプ( | )文字で区切ります。</p>
+<p class="p8">    ※指定したコードのデータが存在しない場合、該当データが含まれない配列が返ります。</p>
+<i></i><br></p>
+<p class="p8">※都道府県コードから関連する地方公共団体のコードおよび名前を取得する場合は、prefcodeのみ指定します。</p>
+<p class="p8">※地方公共団体コードから名前を取得する場合は、localgovcodesのみ指定します。</p>
+<p class="p8">※両方のパラメータを指定した場合は、(400)エラーとなります。</p>
+<p class="p8">※戻り値には、都道府県を示す地方公共団体は含まれません。</p>
+<br></p>
+<p class="p8"><b>戻り値</b></p>
+<p class="p17">(ArrayOf)LocalGoverment</p>
+<p class="p8">要素/属性</p>
+<p class="p8">データの内容</p>
+<p class="p8">データ型</p>
+<p class="p17">PrefCode</p>
+<p class="p8">都道府県コード</p>
+<p class="p8">文字列</p>
+<p class="p17">LocalGovCode</p>
+<p class="p8">地方公共団体コード</p>
+<p class="p8">文字列</p>
+<p class="p17">LocalGovName</p>
+<p class="p8">地方公共団体名</p>
+<p class="p8">文字列</p>
+<br></p>
+<p class="p8">リクエストの例1</p>
+<p class="p8">岩手県（PrefCode=03）の全ての市町村を取得する例</p>
+<br></p>
+<p class="p12">GET	http://api.r-assistance.go.jp/v1/api.svc/getMunicipalities?appkey=0&amp;prefcode=03</p>
+<br></p>
+<p class="p17">&lt;?xml version="1.0" encoding="utf-8"?&gt;</p>
+<p class="p17">&lt;ArrayOfLocalGoverment xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;</p>
+<p class="p17">  &lt;LocalGoverment PrefCode="03" LocalGovCode="03201"&gt;</p>
+<p class="p17">    &lt;LocalGovName&gt;盛岡市&lt;/LocalGovName&gt;</p>
+<p class="p17">  &lt;/LocalGoverment&gt;</p>
+<p class="p17">  &lt;LocalGoverment PrefCode="03" LocalGovCode="03202"&gt;</p>
+<p class="p17">    &lt;LocalGovName&gt;宮古市&lt;/LocalGovName&gt;</p>
+<p class="p17">  &lt;/LocalGoverment&gt;</p>
+<p class="p17">  &lt;LocalGoverment PrefCode="03" LocalGovCode="03203"&gt;</p>
+<p class="p17">    &lt;LocalGovName&gt;大船渡市&lt;/LocalGovName&gt;</p>
+<p class="p17">  &lt;/LocalGoverment&gt;</p>
+<p class="p17">  &lt;LocalGoverment PrefCode="03" LocalGovCode="03205"&gt;</p>
+<p class="p17">    &lt;LocalGovName&gt;花巻市&lt;/LocalGovName&gt;</p>
+<p class="p17">  &lt;/LocalGoverment&gt;</p>
+<p class="p17">  &lt;LocalGoverment PrefCode="03" LocalGovCode="03206"&gt;</p>
+<p class="p17">    &lt;LocalGovName&gt;北上市&lt;/LocalGovName&gt;</p>
+<p class="p17">  &lt;/LocalGoverment&gt;</p>
+<p class="p17">  …</p>
+<p class="p17">&lt;/ArrayOfLocalGoverment&gt;</p>
+<p class="p20"><br></p>
+<p class="p20"><br></p>
+<p class="p8">リクエストの例2</p>
+<p class="p8">岩手県（PrefCode=03）の特定の市町村を指定して取得する例</p>
+<br></p>
+<p class="p12">GET</p>
+<p class="p12">http://api.r-assistance.go.jp/v1/api.svc/getMunicipalities?appkey=0&amp;localgovcodes=03201|03205</p>
+<br></p>
+<p class="p17">&lt;ArrayOfLocalGoverment xmlns="http://schemas.datacontract.org/2004/07/SSDB.Site" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"&gt;</p>
+<p class="p17"> &lt;LocalGoverment PrefCode="03" IsPref="false" LocalGovCode="03201"&gt;</p>
+<p class="p17">    &lt;LocalGovName&gt;盛岡市&lt;/LocalGovName&gt; </p>
+<p class="p17">  &lt;/LocalGoverment&gt;</p>
+<p class="p17">&lt;LocalGoverment PrefCode="03" IsPref="false" LocalGovCode="03205"&gt;</p>
+<p class="p17">    &lt;LocalGovName&gt;花巻市&lt;/LocalGovName&gt; </p>
+<p class="p17">  &lt;/LocalGoverment&gt;</p>
+<p class="p17">&lt;/ArrayOfLocalGovInfo&gt;</p>
+<p class="p20"><br></p>
+<p class="p12"></p>
+</div>
+
+<h3>searchSupportInformations</h3>
+<div class="item">
+<p class="p8">指定した条件に該当する制度情報を検索します。条件に該当する制度IDを返します。</p>
+<br></p>
+<p class="p12">URL</p>
+<p class="p12">http://api.r-assistance.go.jp/v1/api.svc/searchSupportInformations</p>
+<br></p>
+<p class="p8">パラメータ</p>
+<p class="p12">appkey</p>
+<p class="p16">省略不可。指定する値は「appkeyについて」を参照ください。</p>
+<p class="p21"><i>maxcount</i></p>
+<p class="p22">省略可。1度のAPIの呼び出しで取得するデータの最大取得件数を指定します。</p>
+<p class="p22">総件数のみ取得する場合は、0を指定します。</p>
+<p class="p22">省略時は10として処理されます。</p>
+<p class="p22">maxcountに100を超える値を指定した場合、100として処理されます。</p>
+<p class="p16">※指定した値が<i>0</i>未満の数値、または数値ではない場合、<i>(400)</i>エラーとなります。</p>
+<p class="p21"><i>pageno</i></p>
+<p class="p22">省略可。データの総件数とmaxCountからデータを分割した時に、取得するページ数を指定します。</p>
+<p class="p16">pagenoを省略または0を指定した場合は、pageno=1とみなし、1ページ目が対象となります。</p>
+<p class="p22">指定したpagenoが存在しない場合は、総件数のみ取得されます。</p>
+<p class="p16">※指定した値が<i>0</i>未満の数値、または数値ではない場合、<i>(400)</i>エラーとなります。</p>
+<p class="p21"><i>supporttarget</i></p>
+<p class="p16">省略可。支援対象のIDを指定します。</p>
+<p class="p23">複数指定する場合は、パイプ( | )文字で区切ります。OR条件。</p>
+<p class="p16">※パイプ( | )文字で区切られたIDに数値以外の値を指定した場合、<i>(400)</i>エラーとなります。</p>
+<p class="p21"><i>q</i></p>
+<p class="p16">省略可。フリーワード検索の条件文字列を指定します。</p>
+<p class="p16">複数の文字列による検索を指定する場合は、文字列を全角スペース（‘　’）または半角スペース（‘ ’）で区切ります。</p>
+<p class="p16">条件文字列はURLエンコード（UTF-8）する必要があります。URLエンコードしていない場合は正しい検索結果が得られません。</p>
+<p class="p8">※全体で100文字を超える値を指定した場合、<i>(400)</i>エラーとなります。</p>
+<p class="p24">※全角または半角スペース(‘　’,' ')区切りで複数指定した条件の個数が5項目を超える場合、<i>(400)</i>エラーとなります。</p>
+<p class="p21"><i>qmode</i></p>
+<p class="p22">省略可。フリーワード検索の検索モードを指定します。</p>
+<p class="p22">0または省略:AND検索、1:OR検索</p>
+<p class="p22">パラメータqで指定した条件文字列が複数ある場合のみ有効です。</p>
+<p class="p22">※0,1以外の値を設定した場合は0:AND扱いとなります。</p>
+<p class="p16">※数値以外の値を指定した場合、<i>(400)</i>エラーとなります。</p>
+<p class="p21"><i>conditionitems</i></p>
+<p class="p22">省略可。抽出項目のIDを指定します。</p>
+<p class="p23">複数のIDを指定する場合は、パイプ( | )文字またはカンマ( , )で区切ります。</p>
+<p class="p25">パイプ( | )文字で区切ったIDは、OR条件となります。</p>
+<p class="p25">カンマで区切ったIDは、AND条件となります。</p>
+<p class="p25">パイプ( | )文字およびカンマを混合指定した場合、カンマで分割したグループ内がOR条件となり、各グループがAND条件で評価されます。</p>
+<p class="p26">例：　<i>1|2,3,4|5|6 </i>の場合、<i>(1 OR 2) AND 3 AND (4 OR 5 OR 6) </i>と評価されます。</p>
+<p class="p16">※パイプ( | )文字またはカンマ( , )で区切られたIDに数値以外の値を指定した場合、<i>(400)</i>エラーとなります。</p>
+<p class="p21"><i>localgovcodes</i></p>
+<p class="p22">省略可。地方公共団体コードを指定します。</p>
+<p class="p22">指定されたコードが対象地域となっているデータを取得します。</p>
+<p class="p16">複数のコードを指定する場合は、パイプ( | )文字で区切ります。OR条件。</p>
+<p class="p25">※指定した地方公共団体コードのデータと、対象地域が設定されていない(全国)のデータが検索されます。</p>
+<p class="p22">※都道府県に該当する地方公共団体コードを指定した場合、指定した都道府県内の市町村の地方公共団体　　</p>
+<p class="p22">　　コードも検索の対象となります。</p>
+<p class="p22">※市町村に該当する地方公共団体コードを指定した場合、市町村が属する都道府県の地方公共団体コード</p>
+<p class="p22">　　も検索の対象となります。</p>
+<p class="p21"><i>date_from</i></p>
+<p class="p22">省略可。日付を指定します。フォーマット（yyyyMMdd）</p>
+<p class="p22">指定した日付以降の更新履歴を持つデータを取得する場合、指定します。</p>
+<p class="p16">※日付以外の値を指定した場合、<i>(400)</i>エラーとなります。</p>
+<p class="p16">※指定されたフォーマット以外の形式で値が設定された場合、<i>(400)</i>エラーとなります。</p>
+<p class="p21"><i>date_to</i></p>
+<p class="p22">省略可。日付を指定します。フォーマット（yyyyMMdd）</p>
+<p class="p22">指定した日付以前の更新履歴を持つデータを取得する場合、指定します。</p>
+<p class="p16">※日付以外の値を指定した場合、<i>(400)</i>エラーとなります。</p>
+<p class="p16">※指定されたフォーマット以外の形式で値が設定された場合、<i>(400)</i>エラーとなります。</p>
+<p class="p21"><i>sortmode</i></p>
+<p class="p16">省略可。データの並び順を指定します。</p>
+<p class="p16">０ または省略：　復旧・復興支援制度データベースで既定の並び順</p>
+<p class="p27">※現在、復旧・復興支援制度データベースでは、よく利用される制度が上位に並びます。既定の並び順は、予告なく変更される可能性があります。</p>
+<p class="p16">1:更新日降順 + 制度名昇順</p>
+<p class="p28"><br></p>
+<p class="p16">※上記の値以外を指定した場合、省略時と同じ並び順になります。</p>
+<p class="p16">※数値以外の値を指定した場合、<i>(400)</i>エラーとなります。</p>
+<i></i><br></p>
+<p class="p8">※各検索パラメータ間の検索条件はAND条件となります。</p>
+<br></p>
+<p class="p8"><b>戻り値</b></p>
+<p class="p17">SearchResult</p>
+<p class="p8">要素/属性</p>
+<p class="p8">データの内容</p>
+<p class="p8">データ型</p>
+<p class="p17">IDs</p>
+<p class="p8">該当する制度情報のID。該当の制度が複数ある場合は、各IDがカンマで区切られます。</p>
+<p class="p8">文字列</p>
+<p class="p17">TotalCount</p>
+<p class="p8">該当する制度情報の総件数</p>
+<p class="p8">数値</p>
+<br></p>
+<p class="p8">該当する制度が無い場合は、TotalCountの値=0、IDsは空要素となります。</p>
+<br></p>
+<p class="p8">リクエストの例</p>
+<p class="p12">GET	http://api.r-assistance.go.jp/v1/api.svc/searchSupportInformations?appkey=0</p>
+<p class="p12">&amp;maxcount=10&amp;pageno=1&amp;supporttarget=1</p>
+<br></p>
+<p class="p17">&lt;?xml version="1.0" encoding="utf-8" ?&gt; </p>
+<p class="p17">&lt;SearchResult xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;</p>
+<p class="p17"> &lt;IDs&gt;86,103,110&lt;/IDs&gt;</p>
+<p class="p17">&lt;TotalCount&gt;84&lt;/TotalCount&gt; </p>
+<p class="p17">&lt;/SearchResult&gt; </p>
+<p class="p20"><br></p>
+<p class="p12"></p>
+</div>
+
+<h3>getSupportInformation</h3>
+<div class="item">
+<p class="p8">指定したIDの制度情報をOpenUMの形式で取得します。</p>
+<br></p>
+<p class="p12">URL</p>
+<p class="p12">http://api.r-assistance.go.jp/v1/api.svc/getSupportInformation</p>
+<br></p>
+<p class="p8">パラメータ</p>
+<p class="p12">appkey</p>
+<p class="p16">省略不可。指定する値は「appkeyについて」を参照ください。</p>
+<p class="p21"><i>id</i></p>
+<p class="p16">省略不可。対象となる制度の<i>ID</i>を指定します。</p>
+<p class="p16">制度のIDを取得する方法は、searchSupportInformationsリクエストを参照して下さい。</p>
+<p class="p16">※数値以外の値を指定した場合、<i>(400)</i>エラーとなります。</p>
+<p class="p16">※指定した<i>ID</i>のデータが存在しない場合、<i>r-assistance_Content </i>要素を含まないデータが返されます。</p>
+<i></i><br></p>
+<p class="p8"><b>戻り値</b></p>
+<p class="p17">XMLDocument（OpenUM形式）</p>
+<p class="p12">※制度情報は、OpenUM形式のr-assistance_Content型として出力されます。</p>
+<p class="p8">OpenUMの定義については、補足資料「OpenUMの定義説明」を参照してください。</p>
+<br></p>
+<p class="p8">r-assistance_Content型への設定内容　（記載のない要素は出力しません。）</p>
+<p class="p12">No.</p>
+<p class="p8">要素/属性</p>
+<p class="p8">設定内容</p>
+<p class="p8">備考</p>
+<p class="p12">1</p>
+<p class="p12">uuid</p>
+<p class="p8">制度情報のUUID</p>
+<br></p>
+<p class="p29">2</p>
+<p class="p29">author</p>
+<p class="p8">制度情報の作成者（組織名）</p>
+<br></p>
+<p class="p9">3</p>
+<p class="p9">local_gov_id</p>
+<p class="p8">（設定されません。）</p>
+<br></p>
+<p class="p9">4</p>
+<p class="p9">local_gov_name</p>
+<p class="p8">（設定されません。）</p>
+<br></p>
+<p class="p9">5</p>
+<p class="p9">governing_law </p>
+<p class="p8">根拠法</p>
+<p class="p12">※1</p>
+<p class="p9">6</p>
+<p class="p9">governing_law_url</p>
+<p class="p12">根拠法URL</p>
+<p class="p12">※1、※2</p>
+<p class="p9">7</p>
+<p class="p9">service name</p>
+<p class="p8">制度名</p>
+<br></p>
+<p class="p9">8</p>
+<p class="p9">title</p>
+<p class="p8">自治体独自名</p>
+<p class="p12">※1</p>
+<p class="p9">9</p>
+<p class="p9">general_info</p>
+<p class="p8">内容</p>
+<p class="p12">※1</p>
+<p class="p9">10</p>
+<p class="p9">general_list</p>
+<p class="p8">概要</p>
+<p class="p12">※1</p>
+<p class="p9">11</p>
+<p class="p9">intended_person</p>
+<p class="p8">対象者</p>
+<p class="p12">※1</p>
+<p class="p9">12</p>
+<p class="p9">intended_area</p>
+<p class="p8">対象地域</p>
+<p class="p12">※1</p>
+<p class="p9">13</p>
+<p class="p9">application_procedure</p>
+<p class="p8">申請・届出方法</p>
+<p class="p12">※1</p>
+<p class="p9">14</p>
+<p class="p9">applicatipon_deadline</p>
+<p class="p8">申請期限</p>
+<p class="p12">※1</p>
+<p class="p9">15</p>
+<p class="p9">support_term</p>
+<p class="p10">支援期間</p>
+<p class="p12">※1</p>
+<p class="p9">16</p>
+<p class="p9">application_form</p>
+<p class="p8">申請書類</p>
+<p class="p12">※1</p>
+<p class="p9">17</p>
+<p class="p9">application_form_url</p>
+<p class="p10">申請書類入手URL</p>
+<p class="p12">※1、※2</p>
+<p class="p9">18</p>
+<p class="p9">related_link</p>
+<p class="p8">詳細参照先名</p>
+<p class="p12">※1</p>
+<p class="p9">19</p>
+<p class="p9">related_link_url</p>
+<p class="p9">詳細URL</p>
+<p class="p12">※1、※2</p>
+<p class="p9">20</p>
+<p class="p9">e_application</p>
+<p class="p8">電子申請名称</p>
+<p class="p12">※1</p>
+<p class="p9">21</p>
+<p class="p9">e_application_url</p>
+<p class="p10">電子申請URL</p>
+<p class="p12">※1、※2</p>
+<p class="p9">22</p>
+<p class="p9">contact</p>
+<p class="p10">お問合せ（組織・窓口名称）</p>
+<p class="p12">※1</p>
+<p class="p9">23</p>
+<p class="p9">contact_postal_code</p>
+<p class="p10">お問合せ（郵便番号）</p>
+<p class="p12">※1</p>
+<p class="p9">24</p>
+<p class="p9">contact_address</p>
+<p class="p10">お問合せ（住所）</p>
+<p class="p12">※1</p>
+<p class="p9">25</p>
+<p class="p9">contact_tel</p>
+<p class="p10">お問合せ（TEL）</p>
+<p class="p12">※1</p>
+<p class="p9">26</p>
+<p class="p9">contact_fax</p>
+<p class="p10">お問合せ（FAX）</p>
+<p class="p12">※1</p>
+<p class="p9">27</p>
+<p class="p9">contact_mail</p>
+<p class="p10">お問合せ（メール）</p>
+<p class="p12">※1</p>
+<p class="p9">28</p>
+<p class="p9">contact_free_description</p>
+<p class="p10">お問合せ（自由記述）</p>
+<p class="p12">※1</p>
+<p class="p9">29</p>
+<p class="p9">contact_list</p>
+<p class="p8">お問合せ先一覧</p>
+<p class="p12">※1</p>
+<p class="p9">30</p>
+<p class="p9">budget</p>
+<p class="p8">予算枠の有無</p>
+<p class="p12">※1</p>
+<p class="p29">31</p>
+<p class="p29">meta</p>
+<p class="p8">メタ情報 </p>
+<p class="p12">※3</p>
+<p class="p29">32</p>
+<p class="p29">created_at</p>
+<p class="p8">制度情報の作成日</p>
+<br></p>
+<p class="p29">33</p>
+<p class="p29">updated_at</p>
+<p class="p8">制度情報の更新日</p>
+<br></p>
+<p class="p9">34</p>
+<p class="p9">assistance_type</p>
+<p class="p8">支援の種類</p>
+<p class="p12">※1</p>
+<p class="p9">35</p>
+<p class="p9">citizens_housing</p>
+<p class="p10">個人向け：住まいのこと</p>
+<p class="p12">※1</p>
+<p class="p9">36</p>
+<p class="p9">citizens_work</p>
+<p class="p10">個人向け：仕事のこと</p>
+<p class="p12">※1</p>
+<p class="p9">37</p>
+<p class="p9">citizens_medical_welfare</p>
+<p class="p10">個人向け：医療・福祉のこと</p>
+<p class="p12">※1</p>
+<p class="p9">38</p>
+<p class="p9">citizens_nurturing_education</p>
+<p class="p10">個人向け：子育て・教育のこと</p>
+<p class="p12">※1</p>
+<p class="p9">39</p>
+<p class="p9">citizens_money</p>
+<p class="p10">個人向け：おかねのこと</p>
+<p class="p12">※1</p>
+<p class="p9">40</p>
+<p class="p9">citizens_others_living</p>
+<p class="p10">個人向け：その他・暮らしにかかわること</p>
+<p class="p12">※1</p>
+<p class="p9">41</p>
+<p class="p9">citizens_nuclear_power</p>
+<p class="p10">個人向け：原発関係のこと</p>
+<p class="p12">※1</p>
+<p class="p9">42</p>
+<p class="p9">businesses _segments</p>
+<p class="p10">事業者向け：事業区分</p>
+<p class="p12">※1</p>
+<p class="p9">43</p>
+<p class="p9">businesses _situation</p>
+<p class="p10">事業者向け：状況</p>
+<p class="p12">※1</p>
+<br></p>
+<br></p>
+<p class="p12">※1：ContentItem型について</p>
+<p class="p8">備考欄に※1と記載されている項目は、OpenUM形式のContentItem型として出力されます。（OpenUMの定義については、補足資料「OpenUMの定義説明」を参照してください。）</p>
+<p class="p8">下表は、ContentItem型への設定内容です。　（記載のない要素は出力しません。）</p>
+<p class="p8">要素/属性</p>
+<p class="p8">設定内容</p>
+<p class="p19">uuid</p>
+<p class="p12">項目のUUID</p>
+<p class="p17">title</p>
+<p class="p8">項目の名称</p>
+<p class="p17">title_short</p>
+<p class="p8">（設定されません。）</p>
+<p class="p17">summary</p>
+<p class="p8">（設定されません。）</p>
+<p class="p17">body</p>
+<p class="p8">項目の値</p>
+<p class="p8">※intended_area (No.12：対象地域) は、地方公共団体コードが設定されます。複数の場合、カンマ( , )区切りで設定されます。未設定の場合、全国が対象であることを示します。</p>
+<p class="p8">※contact_list (No.29：お問合せ先一覧) は、一覧名が設定されます。複数の場合、2重スラッシュ( // )区切りで設定されます。一覧名に対応する情報は、getContactsTextリクエストで取得できます。</p>
+<p class="p8">※抽出用項目(No.34～43)は、項目の名称が設定されます。複数の場合、2重スラッシュ( // )区切りで設定されます。</p>
+<br></p>
+<p class="p8">※2：URL項目について</p>
+<p class="p8">下記「URL項目要素」に値が設定されている場合、値は「対応する項目要素」のURLを示します。</p>
+<p class="p8">URL項目要素</p>
+<p class="p8">対応する項目要素</p>
+<p class="p9">governing_law_url  </p>
+<p class="p9">(根拠法URL)</p>
+<p class="p9">governing_law</p>
+<p class="p10">(根拠法)</p>
+<p class="p9">application_form_url</p>
+<p class="p10">(申請書類入手URL)</p>
+<p class="p9">application_form</p>
+<p class="p10">(申請書類)</p>
+<p class="p9">related_link_url</p>
+<p class="p9">(詳細URL)</p>
+<p class="p9">related_link</p>
+<p class="p10">(詳細参照先名)</p>
+<p class="p9">e_application_url</p>
+<p class="p9">(電子申請URL)</p>
+<p class="p9">e_application</p>
+<p class="p10">(電子申請名称)</p>
+<p class="p8">「URL項目要素」の値は改行区切りで複数設定される場合があり、その場合は、「対応する項目」を改行区切りで分割した、行数が一致する値に対するURLを示します。（※改行数が一致しない場合や、URL以外の値が設定される場合があります。）</p>
+<p class="p8">設定例は後述の「リクエストの例」を参照下さい。</p>
+<br></p>
+<p class="p12">※3：metaについて</p>
+<p class="p8">次のmeta要素が設定されます。</p>
+<p class="p12">name</p>
+<p class="p12">Value</p>
+<p class="p30">update_kind</p>
+<p class="p8">更新種別を表す数値が設定されます。</p>
+<p class="p8">0=追加、1=更新</p>
+<p class="p12">update_comment</p>
+<p class="p8">更新コメントが設定されます。</p>
+<br></p>
+<p class="p8">※文字列値内の改行は、「CR+LF」または「LFのみ」の両方が混在する場合があります。詳細は「レスポンスの改行コード」を参照ください。</p>
+<br></p>
+<p class="p8">リクエストの例</p>
+<p class="p12">GET	http://api.r-assistance.go.jp/v1/api.svc/getSupportInformation?appkey=0&amp;id=1</p>
+<br></p>
+<p class="p17">&lt;?xml version="1.0" encoding="utf-8"?&gt;</p>
+<p class="p17">&lt;UM:UmDocument xmlns:UM="urn:UMDocument"&gt;</p>
+<p class="p17">  &lt;UM:r-assistance_Content uuid="29957cef-b51d-4954-9fbc-41939a349df3"&gt;</p>
+<p class="p17">    &lt;UM:service_name uuid="9c541990-8e6b-4cc6-b2c7-b4f827149b38"&gt;</p>
+<p class="p17">      &lt;UM:title&gt;制度名&lt;/UM:title&gt;</p>
+<p class="p17">      &lt;UM:title_short&gt;&lt;/UM:title_short&gt;</p>
+<p class="p17">      &lt;UM:summary&gt;&lt;/UM:summary&gt;</p>
+<p class="p17">      &lt;UM:body&gt;災害関係保証&lt;/UM:body&gt;</p>
+<p class="p17">    &lt;/UM:service_name&gt;</p>
+<p class="p17">    &lt;UM:general_list uuid="bd1cc782-8c0d-45fa-97c2-8f1b7a88a7bf"&gt;</p>
+<p class="p17">      &lt;UM:title&gt;概要&lt;/UM:title&gt;</p>
+<p class="p17">      &lt;UM:title_short&gt;&lt;/UM:title_short&gt;</p>
+<p class="p17">      &lt;UM:summary&gt;&lt;/UM:summary&gt;</p>
+<p class="p18">      &lt;UM:body&gt;●金融機関から事業の再建に必要な資金の借入を行う場合、信用保証協会が一般保証とは別枠で保証する制度です。&lt;/UM:body&gt;</p>
+<p class="p17">    &lt;/UM:general_list&gt;</p>
+<p class="p17">    &lt;UM:general_info uuid="ccdf796a-2d8a-4e0b-9d73-a25ebe39fb4a"&gt;</p>
+<p class="p17">      &lt;UM:title&gt;内容&lt;/UM:title&gt;</p>
+<p class="p17">      &lt;UM:title_short&gt;&lt;/UM:title_short&gt;</p>
+<p class="p17">      &lt;UM:summary&gt;&lt;/UM:summary&gt;</p>
+<p class="p17">      &lt;UM:body&gt;</p>
+<p class="p18">        ●金融機関から事業の再建に必要な資金の借入を行う場合、信用保証協会が一般保証とは別枠で保証する制度です。</p>
+<p class="p18">        ●融資額の全額を保証（１００％）し、保証料率は概ね０．７％～１．０％です。</p>
+<p class="p18">        ●無担保８千万円、最大で２億８千万円まで一般保証とは別枠で利用できます。</p>
+<p class="p18">        ＜出典：【内閣府】被災者支援に関する各種制度の概要（東日本大震災編）＞</p>
+<p class="p18">        ■ 保証限度額：無担保８千万円、最大で２億８千万円。</p>
+<p class="p18">        　　        　　一般保証とは、別枠。セーフティネット保証と同枠。</p>
+<p class="p18">        ■ 保証料率  ：概ね０．７％～１．０％　</p>
+<p class="p18">        ※詳しくは、各信用保証協会にお問い合わせください。</p>
+<p class="p18">        ■ 資金使途  ：事業再建に必要な資金</p>
+<p class="p18">        ■ 保証割合  ：借入額の全額（１００％）</p>
+<p class="p18">        ■　保証人    ：代表者保証のみ（第三者保証人については、原則不要。）</p>
+<p class="p18">        ＜出典：【中小企業庁】平成23年度　中小企業施策利用ガイドブック＞</p>
+<p class="p17">      &lt;/UM:body&gt;</p>
+<p class="p17">    &lt;/UM:general_info&gt;</p>
+<p class="p17">    &lt;UM:governing_law uuid="6e2700f5-7b91-40d1-bed8-e91ae410d363"&gt;</p>
+<p class="p17">      &lt;UM:title&gt;根拠法&lt;/UM:title&gt;</p>
+<p class="p17">      &lt;UM:title_short&gt;&lt;/UM:title_short&gt;</p>
+<p class="p17">      &lt;UM:summary&gt;&lt;/UM:summary&gt;</p>
+<p class="p17">      &lt;UM:body&gt;</p>
+<p class="p18">        中小企業信用保険法</p>
+<p class="p18">        激甚災害に対処するための特別の財政援助等に関する法律</p>
+<p class="p17">      &lt;/UM:body&gt;</p>
+<p class="p17">    &lt;/UM:governing_law&gt;</p>
+<p class="p17">    &lt;UM:governing_law_url uuid="31939bc8-e616-4855-819b-b04dc5431e1e"&gt;</p>
+<p class="p17">      &lt;UM:title&gt;根拠法URL&lt;/UM:title&gt;</p>
+<p class="p17">      &lt;UM:title_short&gt;&lt;/UM:title_short&gt;</p>
+<p class="p17">      &lt;UM:summary&gt;&lt;/UM:summary&gt;</p>
+<p class="p17">      &lt;UM:body&gt;</p>
+<p class="p17">        http://law.e-gov.go.jp/htmldata/S25/S25HO264.html</p>
+<p class="p17">        http://law.e-gov.go.jp/htmldata/S37/S37HO150.html</p>
+<p class="p17">      &lt;/UM:body&gt;</p>
+<p class="p17">    &lt;/UM:governing_law_url&gt;</p>
+<p class="p17">    &lt;UM:intended_person uuid="2acc6a5c-278b-4498-99c1-e3482e08c117"&gt;</p>
+<p class="p17">      &lt;UM:title&gt;対象者&lt;/UM:title&gt;</p>
+<p class="p17">      &lt;UM:title_short&gt;&lt;/UM:title_short&gt;</p>
+<p class="p17">      &lt;UM:summary&gt;&lt;/UM:summary&gt;</p>
+<p class="p17">      &lt;UM:body&gt;</p>
+<p class="p18">        下記のいずれかに該当する方</p>
+<p class="p18">        ・地震・津波等により直接被害を受けた方。</p>
+<p class="p18">        　→　市区町村等の罹災証明が必要。 （写しで可、事後提出可）</p>
+<p class="p18">        ・原発事故に係る警戒区域、計画的避難区域、緊急時避難準備区域の区域内の方。</p>
+<p class="p18">        　→ 　納税証明、商業登記簿等の確認書面が必要。 （写しで可、事後提出可）</p>
+<p class="p17">      &lt;/UM:body&gt;</p>
+<p class="p17">    &lt;/UM:intended_person&gt;</p>
+<p class="p17">    &lt;UM:application_procedure uuid="e2383cb8-4255-43cc-8d3a-0ba23db037e6"&gt;</p>
+<p class="p17">      &lt;UM:title&gt;申請・届出方法&lt;/UM:title&gt;</p>
+<p class="p17">      &lt;UM:title_short&gt;&lt;/UM:title_short&gt;</p>
+<p class="p17">      &lt;UM:summary&gt;&lt;/UM:summary&gt;</p>
+<p class="p17">      &lt;UM:body&gt;窓口にお問合せください。&lt;/UM:body&gt;</p>
+<p class="p17">    &lt;/UM:application_procedure&gt;</p>
+<p class="p17">    &lt;UM:applicatipon_deadline uuid="7e782f0f-d45d-4256-b561-4068a3b824a5"&gt;</p>
+<p class="p17">      &lt;UM:title&gt;申請期限&lt;/UM:title&gt;</p>
+<p class="p17">      &lt;UM:title_short&gt;&lt;/UM:title_short&gt;</p>
+<p class="p17">      &lt;UM:summary&gt;&lt;/UM:summary&gt;</p>
+<p class="p17">      &lt;UM:body&gt;窓口にお問合せください。&lt;/UM:body&gt;</p>
+<p class="p17">    &lt;/UM:applicatipon_deadline&gt;</p>
+<p class="p17">    &lt;UM:related_link uuid="33127bbd-5e87-4be5-9ff0-d59dba394ef3"&gt;</p>
+<p class="p17">      &lt;UM:title&gt;詳細参照先名&lt;/UM:title&gt;</p>
+<p class="p17">      &lt;UM:title_short&gt;&lt;/UM:title_short&gt;</p>
+<p class="p17">      &lt;UM:summary&gt;&lt;/UM:summary&gt;</p>
+<p class="p17">      &lt;UM:body&gt;</p>
+<p class="p18">        【内閣府】被災者支援に関する各種制度の概要（東日本大震災編）</p>
+<p class="p18">        【中小企業庁】平成23年度　中小企業施策利用ガイドブック</p>
+<p class="p17">      &lt;/UM:body&gt;</p>
+<p class="p17">    &lt;/UM:related_link&gt;</p>
+<p class="p17">    &lt;UM:related_link_url uuid="457b53b0-b5a9-467b-9203-241b5f0fc2c8"&gt;</p>
+<p class="p17">      &lt;UM:title&gt;詳細URL&lt;/UM:title&gt;</p>
+<p class="p17">      &lt;UM:title_short&gt;&lt;/UM:title_short&gt;</p>
+<p class="p17">      &lt;UM:summary&gt;&lt;/UM:summary&gt;</p>
+<p class="p17">      &lt;UM:body&gt;</p>
+<p class="p17">        http://www.bousai.go.jp/fukkou/kakusyuseido.pdf</p>
+<p class="p17">        http://www.chusho.meti.go.jp/pamflet/g_book/h23/pdf/111005Eq-v2.pdf</p>
+<p class="p17">      &lt;/UM:body&gt;</p>
+<p class="p17">    &lt;/UM:related_link_url&gt;</p>
+<p class="p17">    &lt;UM:contact uuid="2a41d0cc-b292-4e8d-8c60-9758b165d8e8"&gt;</p>
+<p class="p17">      &lt;UM:title&gt;お問合せ（組織・窓口名称）&lt;/UM:title&gt;</p>
+<p class="p17">      &lt;UM:title_short&gt;&lt;/UM:title_short&gt;</p>
+<p class="p17">      &lt;UM:summary&gt;&lt;/UM:summary&gt;</p>
+<p class="p17">      &lt;UM:body&gt;信用保証協会&lt;/UM:body&gt;</p>
+<p class="p17">    &lt;/UM:contact&gt;</p>
+<p class="p17">    &lt;UM:contact_free_description uuid="c9fded57-a88f-4220-89be-b829e33b5c37"&gt;</p>
+<p class="p17">      &lt;UM:title&gt;お問合せ（自由記述）&lt;/UM:title&gt;</p>
+<p class="p17">      &lt;UM:title_short&gt;&lt;/UM:title_short&gt;</p>
+<p class="p17">      &lt;UM:summary&gt;&lt;/UM:summary&gt;</p>
+<p class="p17">      &lt;UM:body&gt;</p>
+<p class="p18">        各都道府県等の信用保証協会</p>
+<p class="p17">        URL：http://www.zenshinhoren.or.jp/others/nearest.html</p>
+<p class="p17">      &lt;/UM:body&gt;</p>
+<p class="p17">    &lt;/UM:contact_free_description&gt;</p>
+<p class="p17">&lt;UM:contact_list uuid="7e526cb2-94b6-4b7c-b1bd-b9a0c5365cb9"&gt;</p>
+<p class="p17">&lt;UM:title&gt;お問合せ先一覧&lt;/UM:title&gt;</p>
+<p class="p17">&lt;UM:title_short&gt;&lt;/UM:title_short&gt;</p>
+<p class="p17">&lt;UM:summary&gt;&lt;/UM:summary&gt;</p>
+<p class="p18">&lt;UM:body&gt;岩手県//岩手県（税関係）//宮城県//宮城県（税関係）//福島県//福島県（税関係）&lt;/UM:body&gt;</p>
+<p class="p17">&lt;/UM:contact_list&gt;</p>
+<p class="p17">    &lt;UM:intended_area uuid="790c94e5-cafc-4166-bc47-158b77f3a9a1"&gt;</p>
+<p class="p17">      &lt;UM:title&gt;対象地域&lt;/UM:title&gt;</p>
+<p class="p17">      &lt;UM:title_short&gt;&lt;/UM:title_short&gt;</p>
+<p class="p17">      &lt;UM:summary&gt;&lt;/UM:summary&gt;</p>
+<p class="p17">      &lt;UM:body&gt;03000,04000,07000&lt;/UM:body&gt;</p>
+<p class="p17">    &lt;/UM:intended_area&gt;</p>
+<p class="p17">    &lt;UM:assistance_type uuid="858d880a-fbf4-42e9-a85e-0eaa94e81a63"&gt;</p>
+<p class="p17">      &lt;UM:title&gt;支援の種類&lt;/UM:title&gt;</p>
+<p class="p17">      &lt;UM:title_short&gt;&lt;/UM:title_short&gt;</p>
+<p class="p17">      &lt;UM:summary&gt;&lt;/UM:summary&gt;</p>
+<p class="p17">      &lt;UM:body&gt;信用保証&lt;/UM:body&gt;</p>
+<p class="p17">    &lt;/UM:assistance_type&gt;</p>
+<p class="p17">    &lt;UM:businesses_segments uuid="0f079875-24d3-4ab2-b15c-0f95837e7c90"&gt;</p>
+<p class="p17">      &lt;UM:title&gt;事業区分&lt;/UM:title&gt;</p>
+<p class="p17">      &lt;UM:title_short&gt;&lt;/UM:title_short&gt;</p>
+<p class="p17">      &lt;UM:summary&gt;&lt;/UM:summary&gt;</p>
+<p class="p17">      &lt;UM:body&gt;すべての事業主のみなさま&lt;/UM:body&gt;</p>
+<p class="p17">    &lt;/UM:businesses_segments&gt;</p>
+<p class="p17">    &lt;UM:businesses_situation uuid="1b481f15-52bb-46b8-a342-de78725918a8"&gt;</p>
+<p class="p17">      &lt;UM:title&gt;状況&lt;/UM:title&gt;</p>
+<p class="p17">      &lt;UM:title_short&gt;&lt;/UM:title_short&gt;</p>
+<p class="p17">      &lt;UM:summary&gt;&lt;/UM:summary&gt;</p>
+<p class="p17">      &lt;UM:body&gt;資金繰りの支援&lt;/UM:body&gt;</p>
+<p class="p17">    &lt;/UM:businesses_situation&gt;</p>
+<p class="p17">    &lt;UM:author&gt;事務局&lt;/UM:author&gt;</p>
+<p class="p17">    &lt;UM:created_at&gt;2012-01-16T07:26:00+09:00&lt;/UM:created_at&gt;</p>
+<p class="p17">    &lt;UM:updated_at&gt;2012-01-16T07:26:00+09:00&lt;/UM:updated_at&gt;</p>
+<p class="p17">    &lt;UM:meta name="update_kind" value="0"/&gt;</p>
+<p class="p17">&lt;UM:meta name="update_comment" value="対象者が更新されました。"/&gt;</p>
+<p class="p17">  &lt;/UM:r-assistance_Content&gt;</p>
+<p class="p17">&lt;/UM:UmDocument&gt;</p>
+<p class="p20"><br></p>
+<p class="p12"></p>
+</div>
+
+<h3>getSupportInformationSummaries</h3>
+<div class="item">
+<p class="p8">指定したIDの制度情報の概要を取得します。</p>
+<br></p>
+<p class="p12">URL</p>
+<p class="p12">http://api.r-assistance.go.jp/v1/api.svc/getSupportInformationSummaries</p>
+<br></p>
+<p class="p8">パラメータ</p>
+<p class="p12">appkey</p>
+<p class="p16">省略不可。指定する値は「appkeyについて」を参照ください。</p>
+<p class="p21"><i>ids</i></p>
+<p class="p16">省略不可。対象となる制度の<i>ID</i>を指定します。</p>
+<p class="p16">複数の<i>ID</i>を指定する場合はパイプ( | )文字で区切ります。</p>
+<p class="p22">一度に指定できるIDの数は最大で100です。</p>
+<p class="p16">制度のIDを取得する方法は、searchSupportInformationsリクエストを参照して下さい。</p>
+<p class="p8">※パイプ( | )文字で区切られたIDに数値以外の値が設定された場合、<i>(400)</i>エラーとなります。</p>
+<p class="p22">※指定したIDの個数が100を超える場合、<i>(400)</i>エラーとなります。</p>
+<p class="p16">※指定した<i>ID</i>のデータが存在しない場合、該当データを含まない配列が返ります。</p>
+<p class="p21"><i>get_title</i></p>
+<p class="p16">省略可。制度のタイトル（制度名<i>or</i>自治体独自名）を取得する場合、<i>1</i>を指定します。</p>
+<p class="p16">省略した場合、<i>1</i>が指定されます。</p>
+<p class="p16">※数値以外の値を指定した場合、<i>(400)</i>エラーとなります。</p>
+<p class="p16">※<i>1</i>以外の値を指定した場合、戻り値に制度のタイトルは含まれません。</p>
+<p class="p21"><i>get_contact</i></p>
+<p class="p16">省略可。制度のお問合せ先を取得する場合、<i>1</i>を指定します。</p>
+<p class="p16">省略した場合、<i>1</i>が指定されます。</p>
+<p class="p16">※数値以外の値を指定した場合、<i>(400)</i>エラーとなります。</p>
+<p class="p16">※<i>1</i>以外の値を指定した場合、戻り値に制度のお問合せ先は含まれません。</p>
+<p class="p21"><i>get_intendedarea</i></p>
+<p class="p16">省略可。制度の対象地域を取得する場合、<i>1</i>を指定します。</p>
+<p class="p16">省略した場合、<i>1</i>が指定されます。</p>
+<p class="p16">※数値以外の値を指定した場合、<i>(400)</i>エラーとなります。</p>
+<p class="p16">※<i>1</i>以外の値を指定した場合、戻り値に制度の対象地域は含まれません。</p>
+<p class="p21"><i>get_summary</i></p>
+<p class="p16">省略可。制度の概要を取得する場合、<i>1</i>を指定します。</p>
+<p class="p16">省略した場合、<i>1</i>が指定されます。</p>
+<p class="p16">※数値以外の値を指定した場合、<i>(400)</i>エラーとなります。</p>
+<p class="p16">※<i>1</i>以外の値を指定した場合、戻り値に制度の概要は含まれません。</p>
+<i></i><br></p>
+<p class="p8"><b>戻り値</b></p>
+<p class="p17">(ArrayOf)SupportInformationSummary</p>
+<p class="p8">要素/属性</p>
+<p class="p8">データの内容</p>
+<p class="p8">データ型</p>
+<p class="p19">ID</p>
+<p class="p8">制度のID。</p>
+<p class="p8">数値</p>
+<p class="p17">Title</p>
+<p class="p8">制度名。</p>
+<p class="p8">※自治体独自名が存在する制度の場合、自治体独自名が返ります。</p>
+<p class="p8">文字列</p>
+<p class="p17">Contact</p>
+<p class="p8">制度のお問合せ先。</p>
+<p class="p8">文字列</p>
+<p class="p17">IntendedArea</p>
+<p class="p8">制度の対象地域を表す地方公共団体コード。複数の場合、カンマ( , )区切りで設定されます。未設定の場合、全国が対象であることを示します。</p>
+<p class="p8">文字列</p>
+<p class="p17">Summary</p>
+<p class="p8">制度の概要。</p>
+<p class="p8">文字列</p>
+<br></p>
+<p class="p8">※文字列値内の改行は、「CR+LF」または「LFのみ」の両方が混在する場合があります。詳細は「レスポンスの改行コード」を参照ください。</p>
+<br></p>
+<p class="p8">リクエストの例</p>
+<p class="p12">GET	http://api.r-assistance.go.jp/v1/api.svc/getSupportInformationSummaries?appkey=0&amp;ids=1|2</p>
+<br></p>
+<p class="p17">&lt;?xml version="1.0" encoding="utf-8" ?&gt; </p>
+<p class="p17">&lt;ArrayOfSupportInformationSummary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;</p>
+<p class="p17"> &lt;SupportInformationSummary ID=”05”&gt;</p>
+<p class="p17">    &lt;Title&gt;○○制度&lt;/Title&gt; </p>
+<p class="p17">    &lt;Contact&gt;市町村&lt;/Contact&gt; </p>
+<p class="p17">    &lt;IntendedArea&gt;03000,04000,07000&lt;/IntendedArea&gt; </p>
+<p class="p17">    &lt;Summary&gt;○○をサポートします。&lt;/Summary&gt; </p>
+<p class="p17"> &lt;/SupportInformationSummary&gt;</p>
+<p class="p17">&lt;SupportInformationSummary&gt;</p>
+<p class="p17">    &lt;Title&gt;○○制度&lt;/Title&gt; </p>
+<p class="p17">    &lt;Contact&gt;市町村&lt;/Contact&gt; </p>
+<p class="p17">    &lt;IntendedArea&gt;03000,04000,07000&lt;/IntendedArea&gt; </p>
+<p class="p17">    &lt;Summary&gt;○○をサポートします。&lt;/Summary&gt; </p>
+<p class="p17"> &lt;/SupportInformationSummary&gt;</p>
+<p class="p18">　・・・</p>
+<p class="p17">&lt;/ArrayOfSupportInformationSummary&gt; </p>
+<p class="p12"></p>
+</div>
+
+<h3>getSupportInformationNotifications</h3>
+<div class="item">
+<p class="p8">指定した制度を対象とする通達のID配列を取得します。</p>
+<br></p>
+<p class="p12">URL</p>
+<p class="p12">http://api.r-assistance.go.jp/v1/api.svc/getSupportInformationNotifications</p>
+<br></p>
+<p class="p8">パラメータ</p>
+<p class="p12">appkey</p>
+<p class="p16">省略不可。指定する値は「appkeyについて」を参照ください。</p>
+<p class="p21"><i>id</i></p>
+<p class="p16">省略不可。対象となる制度の<i>ID</i>を指定します。</p>
+<p class="p16">制度のIDを取得する方法は、searchSupportInformationsリクエストを参照して下さい。</p>
+<p class="p16">※数値以外の値を指定した場合、<i>(400)</i>エラーとなります。</p>
+<p class="p16">※指定した<i>ID</i>のデータが存在しない場合、空のデータが返されます。</p>
+<i></i><br></p>
+<p class="p8"><b>戻り値</b></p>
+<p class="p17">SupportInformationNotifications</p>
+<p class="p8">要素/属性</p>
+<p class="p8">データの内容</p>
+<p class="p8">データ型</p>
+<p class="p17">IDs</p>
+<p class="p8">通達のID（カンマ区切り）</p>
+<p class="p8">文字列</p>
+<br></p>
+<p class="p8">リクエストの例</p>
+<p class="p12">GET	http://api.r-assistance.go.jp/v1/api.svc/getSupportInformationNotifications?appkey=0&amp;id=1</p>
+<br></p>
+<p class="p17">&lt;?xml version="1.0" encoding="utf-8" ?&gt; </p>
+<p class="p17">&lt;SupportInformationNotifications xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;</p>
+<p class="p17"> &lt;IDs&gt;1,5&lt;/IDs&gt;</p>
+<p class="p17">&lt;/SupportInformationNotifications&gt;</p>
+<p class="p20"><br></p>
+<p class="p12"></p>
+</div>
+
+<h3>getNotification</h3>
+<div class="item">
+<p class="p8">指定したIDの通達をOpenUMの形式で取得します。</p>
+<br></p>
+<p class="p12">URL</p>
+<p class="p12">http://api.r-assistance.go.jp/v1/api.svc/getNotification</p>
+<br></p>
+<p class="p8">パラメータ</p>
+<p class="p12">appkey</p>
+<p class="p16">省略不可。指定する値は「appkeyについて」を参照ください。</p>
+<p class="p21"><i>id</i></p>
+<p class="p16">省略不可。通達の<i>ID</i>を指定します。</p>
+<p class="p31">通達のIDを取得する方法は、getSupportInformationNotificationsリクエストを参照して下さい。</p>
+<p class="p16">※数値以外の値を指定した場合、<i>(400)</i>エラーとなります。</p>
+<p class="p16">※指定した<i>ID</i>のデータが存在しない場合、DocumentContent要素を含まないデータが返ります。</p>
+<i></i><br></p>
+<p class="p8"><b>戻り値</b></p>
+<p class="p17">XMLDocument（OpenUM）</p>
+<p class="p12">※通達は、OpenUM形式のDocumentContent型として出力されます。</p>
+<p class="p8">OpenUMの定義については補足資料「OpenUMの定義説明」を参照してください。</p>
+<br></p>
+<p class="p12"><b>DocumentContent</b><b>型への設定内容</b></p>
+<p class="p8">要素/属性</p>
+<p class="p8">設定内容</p>
+<p class="p8">備考</p>
+<p class="p12">uuid</p>
+<p class="p12">通達のUUID</p>
+<br></p>
+<p class="p29">author</p>
+<p class="p8">通達の作成者（組織名）</p>
+<br></p>
+<p class="p9">local_gov_id</p>
+<p class="p8">（設定されません。）</p>
+<br></p>
+<p class="p9">local_gov_name</p>
+<p class="p8">（設定されません。）</p>
+<br></p>
+<p class="p9">document_number</p>
+<p class="p10">番号</p>
+<p class="p11"><br></p>
+<p class="p9">document_date</p>
+<p class="p10">日付</p>
+<p class="p11"><br></p>
+<p class="p9">document_destination</p>
+<p class="p10">宛先</p>
+<p class="p11"><br></p>
+<p class="p9">document_sender</p>
+<p class="p10">発信者</p>
+<p class="p11"><br></p>
+<p class="p9">document_name</p>
+<p class="p10">タイトル</p>
+<p class="p11"><br></p>
+<p class="p9">document_body</p>
+<p class="p10">本文</p>
+<p class="p11"><br></p>
+<p class="p9">intended_service_name</p>
+<p class="p10">対象制度</p>
+<p class="p12">※1</p>
+<p class="p9">updated_at</p>
+<p class="p10">通達の更新日</p>
+<p class="p11"><br></p>
+<p class="p9">meta</p>
+<p class="p8">メタ情報 </p>
+<p class="p12">※2</p>
+<br></p>
+<br></p>
+<p class="p8"><b>※</b><b>1</b><b>：対象制度について</b></p>
+<p class="p8"><b>通達の対象となる制度名が、「</b><b>//</b><b>」区切りで設定されます。</b></p>
+<b></b><br></p>
+<p class="p12">※2：metaについて</p>
+<p class="p8">次のmeta要素が設定されます。</p>
+<p class="p12">name</p>
+<p class="p12">Value</p>
+<p class="p30">update_kind</p>
+<p class="p8">更新種別を表す数値が設定されます。</p>
+<p class="p8">0=追加、1=更新</p>
+<p class="p12">update_comment</p>
+<p class="p8">更新コメントが設定されます。</p>
+<br></p>
+<p class="p8">※文字列値内の改行は、「CR+LF」または「LFのみ」の両方が混在する場合があります。詳細は「レスポンスの改行コード」を参照ください。</p>
+<br></p>
+<p class="p8">リクエストの例</p>
+<p class="p12">GET	http://api.r-assistance.go.jp/v1/api.svc/getNotification?appkey=0&amp;id=1</p>
+<br></p>
+<p class="p17">&lt;?xml version="1.0" encoding="utf-8"?&gt;</p>
+<p class="p17">&lt;UM:UmDocument xmlns:UM="urn:UMDocument"&gt;</p>
+<p class="p17">&lt;UM:DocumentContent uuid="4a2d12b3-78d0-43d4-b88b-211f0478c6c4"&gt;</p>
+<p class="p17">&lt;UM:author&gt;事務局&lt;/UM:author&gt;</p>
+<p class="p17">&lt;UM:local_gov_id&gt;&lt;/UM:local_gov_id&gt;</p>
+<p class="p17">&lt;UM:local_gov_name&gt;&lt;/UM:local_gov_name&gt;</p>
+<p class="p17">&lt;UM:document_number&gt;第000号&lt;/UM:document_number&gt;</p>
+<p class="p17">&lt;UM:document_date&gt;2012-02-18T00:00:00+09:00&lt;/UM:document_date&gt;</p>
+<p class="p17">&lt;UM:document_destination&gt;○○○○殿&amp;#xD;</p>
+<p class="p17">××××殿&lt;/UM:document_destination&gt;</p>
+<p class="p17">&lt;UM:document_sender&gt;△△△△&lt;/UM:document_sender&gt;</p>
+<p class="p17">&lt;UM:document_name&gt;○○○○○○○○○の取り扱いについて&lt;/UM:document_name&gt;</p>
+<p class="p17">&lt;UM:document_body&gt;○○○○○○に係る××××××の取り扱いに関しては、遺漏のないようよろしくお願いする。&lt;/UM:document_body&gt;</p>
+<p class="p17">&lt;UM:intended_service_name&gt;○○制度&lt;/UM:intended_service_name&gt;</p>
+<p class="p17">&lt;UM:update_at&gt;2012-02-18T09:23:00+09:00&lt;/UM:update_at&gt;</p>
+<p class="p17">&lt;UM:meta name="update_comment" value=""/&gt;</p>
+<p class="p17">&lt;UM:meta name="update_kind" value="0"/&gt;</p>
+<p class="p17">&lt;/UM:DocumentContent&gt;</p>
+<p class="p17">&lt;/UM:UmDocument&gt;</p>
+<p class="p20"><br></p>
+</div>
+
+<h3>getContactsText</h3>
+<div class="item">
+<p class="p8">指定された名前のお問合せ先一覧（テキスト形式）を取得します。</p>
+<br></p>
+<p class="p12">URL</p>
+<p class="p12">http://api.r-assistance.go.jp/v1/api.svc/getContactsText</p>
+<br></p>
+<p class="p8">パラメータ</p>
+<p class="p12">appkey</p>
+<p class="p16">省略不可。指定する値は「appkeyについて」を参照ください。</p>
+<p class="p21"><i>name</i></p>
+<p class="p16">省略不可。お問合せ先一覧の名前を指定します。</p>
+<p class="p16">getSupportInformationで取得したr-assistance_Content型のcontact_list要素（お問い合わせ先一覧）の値から１つの名称を指定します。</p>
+<p class="p16">※指定した名前のデータが存在しない場合、<i>Text</i>が空の<i>ContactsText</i>が返ります。</p>
+<p class="p16">※文字列はURLエンコード（UTF-8）する必要があります。URLエンコードしていない場合は正しい検索結果が得られません。</p>
+<br></p>
+<p class="p8"><b>戻り値</b></p>
+<p class="p17">ContactsText</p>
+<p class="p8">要素/属性</p>
+<p class="p8">データの内容</p>
+<p class="p8">データ型</p>
+<p class="p12">Text</p>
+<p class="p8">お問合せ先一覧(テキスト形式)。</p>
+<p class="p8">※スペースおよび改行で位置合わせされたテキストです。</p>
+<p class="p8">文字列</p>
+<br></p>
+<p class="p8">※文字列値内の改行は、「CR+LF」または「LFのみ」の両方が混在する場合があります。詳細は「レスポンスの改行コード」を参照ください。</p>
+<br></p>
+<p class="p8">リクエストの例　（一覧名”ハローワーク”の情報を取得）</p>
+<p class="p12">GET	http://api.r-assistance.go.jp/v1/api.svc/getContactsText?appkey=0</p>
+<p class="p12">&amp;name=%e3%83%8f%e3%83%ad%e3%83%bc%e3%83%af%e3%83%bc%e3%82%af</p>
+<br></p>
+<p class="p17"> &lt;?xml version="1.0" encoding="utf-8"?&gt;</p>
+<p class="p17">&lt;ContactsText xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;</p>
+<p class="p17">&lt;Text&gt;                                   電話番号  　　　　　FAX番号&amp;#xD;</p>
+<p class="p17">〈岩手県〉&amp;#xD;</p>
+<p class="p17">盛岡 　　　 　 　　　　　　　　　019-651-8811  　　　019-654-9305&amp;#xD;</p>
+<p class="p17">沼宮内  　　  　　　　　　　　　 0195-62-2139  　　　0195-62-1312&amp;#xD;</p>
+<p class="p18">・・・</p>
+<p class="p17">&lt;/Text&gt;</p>
+<p class="p17">&lt;/ContactsText&gt;</p>
+<p class="p12"></p>
+<br></p>
+</div>
+
+<hr>
+
+<h2>補足資料</h2>
+<h3>OpenUMの定義説明</h3>
+<p class="p8"><b>「復旧復興支援制度データベース」</b><b>XML</b><b>スキーマ</b></p>
+<p class="p32">UM（Universal Menu)文書型(UmDocument型)</p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p34"><b>No.</b></p>
+<p class="p35"><b>タグ名</b></p>
+<p class="p35"><b>日本語名</b></p>
+<p class="p35"><b>種類</b></p>
+<p class="p35"><b>データ型</b></p>
+<p class="p34"><b>Usage</b></p>
+<p class="p35"><b>最小回数</b></p>
+<p class="p35"><b>最大回数</b></p>
+<p class="p35"><b>内容の例</b></p>
+<p class="p35"><b>備考</b></p>
+<p class="p34">1</p>
+<p class="p34">pathset</p>
+<p class="p35">パスセット</p>
+<p class="p35">要素</p>
+<p class="p34">PathSet</p>
+<p class="p34">-</p>
+<p class="p34">0</p>
+<p class="p35">任意</p>
+<p class="p35">　</p>
+<p class="p35">　</p>
+<p class="p34">2</p>
+<p class="p34">category_content</p>
+<p class="p35">カテゴリ系コンテンツ</p>
+<p class="p35">要素</p>
+<p class="p34">CategoryContent</p>
+<p class="p34">-</p>
+<p class="p34">0</p>
+<p class="p35">任意</p>
+<p class="p35">　</p>
+<p class="p36">　</p>
+<p class="p34">3</p>
+<p class="p34">notification_content</p>
+<p class="p35">申請系コンテンツ</p>
+<p class="p35">要素</p>
+<p class="p34">NotificationContent</p>
+<p class="p34">-</p>
+<p class="p34">0</p>
+<p class="p35">任意</p>
+<p class="p35">　</p>
+<p class="p36">　</p>
+<p class="p34">4</p>
+<p class="p34">r-assistance_Content</p>
+<p class="p8">復旧復興支援制度系コンテンツ</p>
+<p class="p35">要素</p>
+<p class="p34">r-assistance_Content</p>
+<p class="p34">-</p>
+<p class="p34">0</p>
+<p class="p35">任意</p>
+<p class="p35">　</p>
+<p class="p35">　</p>
+<p class="p34">5</p>
+<p class="p34">DocumentContent</p>
+<p class="p35">通知・通達コンテンツ</p>
+<p class="p35">要素</p>
+<p class="p34">DocumentContent</p>
+<p class="p34">-</p>
+<p class="p34">0</p>
+<p class="p35">任意</p>
+<p class="p35">　</p>
+<p class="p36">　</p>
+<p class="p33"><br></p>
+<p class="p32">カテゴリコンテンツ型(Universal Menu CategoryContent型) </p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p34"><b>No.</b></p>
+<p class="p35"><b>タグ名</b></p>
+<p class="p35"><b>日本語名</b></p>
+<p class="p35"><b>種類</b></p>
+<p class="p35"><b>データ型</b></p>
+<p class="p34"><b>Usage</b></p>
+<p class="p35"><b>最小回数</b></p>
+<p class="p35"><b>最大回数</b></p>
+<p class="p35"><b>内容の例</b></p>
+<p class="p35"><b>備考</b></p>
+<p class="p34">1</p>
+<p class="p34">uuid</p>
+<p class="p34">UUID</p>
+<p class="p35">属性</p>
+<p class="p34">UUID</p>
+<p class="p35">必須</p>
+<p class="p34">-</p>
+<p class="p34">-</p>
+<p class="p34">550e8400-e29b-41d4-a716-446655440001</p>
+<p class="p35">　※1</p>
+<p class="p34">2</p>
+<p class="p34">umcd</p>
+<p class="p35">UMコード</p>
+<p class="p35">要素</p>
+<p class="p35">文字列</p>
+<p class="p34">-</p>
+<p class="p34">0</p>
+<p class="p34">1</p>
+<p class="p34">01-01-01-01-02-01-00</p>
+<p class="p35">　※1</p>
+<p class="p34">3</p>
+<p class="p34">author</p>
+<p class="p35">作成者</p>
+<p class="p35">要素</p>
+<p class="p35">文字列</p>
+<p class="p34">-</p>
+<p class="p34">1</p>
+<p class="p34">1</p>
+<p class="p35">株式会社アスコエパートナーズ</p>
+<p class="p35">　※1</p>
+<p class="p34">4</p>
+<p class="p34">local_gov_id</p>
+<p class="p35">地方公共団体コード</p>
+<p class="p35">要素</p>
+<p class="p35">整数</p>
+<p class="p34">-</p>
+<p class="p34">1</p>
+<p class="p34">1</p>
+<p class="p34">0</p>
+<p class="p35">　※1</p>
+<p class="p34">5</p>
+<p class="p34">local_gov_name</p>
+<p class="p35">地方公共団体名</p>
+<p class="p35">要素</p>
+<p class="p35">文字列</p>
+<p class="p34">-</p>
+<p class="p34">1</p>
+<p class="p34">1</p>
+<p class="p35">▲▲市</p>
+<p class="p35">　※1</p>
+<p class="p34">6</p>
+<p class="p34">created_at</p>
+<p class="p35">作成日時</p>
+<p class="p35">要素</p>
+<p class="p35">日時</p>
+<p class="p34">-</p>
+<p class="p34">0</p>
+<p class="p34">1</p>
+<p class="p34">2001-12-31T12:00:00+09:00</p>
+<p class="p35">　※1</p>
+<p class="p34">7</p>
+<p class="p34">updated_at</p>
+<p class="p35">更新日時</p>
+<p class="p35">要素</p>
+<p class="p35">日時</p>
+<p class="p34">-</p>
+<p class="p34">0</p>
+<p class="p34">1</p>
+<p class="p34">2001-12-31T12:00:00+09:00</p>
+<p class="p35">　※1</p>
+<p class="p34">8</p>
+<p class="p34">org_uuid</p>
+<p class="p34">コピー元UUID</p>
+<p class="p35">要素</p>
+<p class="p34">UUID</p>
+<p class="p34">-</p>
+<p class="p34">0</p>
+<p class="p34">1</p>
+<p class="p34">550e8400-e29b-41d4-a716-446655440001</p>
+<p class="p35">　※1</p>
+<p class="p34">9</p>
+<p class="p34">governing_law</p>
+<p class="p35">根拠法</p>
+<p class="p35">要素</p>
+<p class="p35">文字列</p>
+<p class="p34">-</p>
+<p class="p34">0</p>
+<p class="p34">1</p>
+<p class="p35">災害援護法</p>
+<p class="p35">　※1</p>
+<p class="p34">10</p>
+<p class="p34">governing_law_id</p>
+<p class="p35">根拠法ID</p>
+<p class="p35">要素</p>
+<p class="p35">整数</p>
+<p class="p34">-</p>
+<p class="p34">0</p>
+<p class="p34">1</p>
+<p class="p34">2</p>
+<p class="p35">　※1</p>
+<p class="p34">11</p>
+<p class="p34">division</p>
+<p class="p35">管轄部署</p>
+<p class="p35">要素</p>
+<p class="p35">文字列</p>
+<p class="p34">-</p>
+<p class="p34">0</p>
+<p class="p34">1</p>
+<p class="p35">市民課</p>
+<p class="p35">　※1</p>
+<p class="p34">12</p>
+<p class="p34">gic</p>
+<p class="p35">実施区分</p>
+<p class="p35">要素</p>
+<p class="p35">文字列</p>
+<p class="p34">-</p>
+<p class="p34">0</p>
+<p class="p34">1</p>
+<p class="p34">5</p>
+<p class="p35">　※1</p>
+<p class="p34">13</p>
+<p class="p34">service_name</p>
+<p class="p35">行政サービス名</p>
+<p class="p35">要素</p>
+<p class="p35">文字列</p>
+<p class="p34">-</p>
+<p class="p34">0</p>
+<p class="p34">1</p>
+<p class="p35">災害援護資金</p>
+<p class="p35">　※1</p>
+<p class="p34">14</p>
+<p class="p34">meta</p>
+<p class="p35">メタ情報</p>
+<p class="p35">要素</p>
+<p class="p34">Meta</p>
+<p class="p34">-</p>
+<p class="p34">0</p>
+<p class="p35">任意</p>
+<p class="p35">　</p>
+<p class="p35">　※1</p>
+<p class="p34">15</p>
+<p class="p34">title</p>
+<p class="p35">名前</p>
+<p class="p35">要素</p>
+<p class="p34">ContentItem</p>
+<p class="p34">-</p>
+<p class="p34">1</p>
+<p class="p34">1</p>
+<p class="p36">　</p>
+<p class="p36">　</p>
+<p class="p36">※1 カテゴリコンテンツは、カテゴリの項目を継承しています。 </p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p32">コンテンツ参照型(ContentRef型) </p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p34"><b>No.</b></p>
+<p class="p35"><b>タグ名</b></p>
+<p class="p35"><b>日本語名</b></p>
+<p class="p35"><b>種類</b></p>
+<p class="p35"><b>データ型</b></p>
+<p class="p34"><b>Usage</b></p>
+<p class="p35"><b>最小回数</b></p>
+<p class="p35"><b>最大回数</b></p>
+<p class="p35"><b>内容の例</b></p>
+<p class="p35"><b>備考</b></p>
+<p class="p34">1</p>
+<p class="p34">uuid</p>
+<p class="p35">コンテンツUUID</p>
+<p class="p35">要素</p>
+<p class="p34">UUID</p>
+<p class="p34">-</p>
+<p class="p34">1</p>
+<p class="p34">1</p>
+<p class="p34">550e8400-e29b-41d4-a716-446655440001</p>
+<p class="p35">　</p>
+<br></p>
+<br></p>
+<br></p>
+<p class="p32">コンテンツ型(Content型)</p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p34"><b>No.</b></p>
+<p class="p35"><b>タグ名</b></p>
+<p class="p35"><b>日本語名</b></p>
+<p class="p35"><b>種類</b></p>
+<p class="p35"><b>データ型</b></p>
+<p class="p34"><b>Usage</b></p>
+<p class="p35"><b>最小回数</b></p>
+<p class="p35"><b>最大回数</b></p>
+<p class="p35"><b>内容の例</b></p>
+<p class="p35"><b>備考</b></p>
+<p class="p34">1</p>
+<p class="p34">uuid</p>
+<p class="p34">UUID</p>
+<p class="p35">属性</p>
+<p class="p34">UUID</p>
+<p class="p35">必須</p>
+<p class="p34">-</p>
+<p class="p34">-</p>
+<p class="p34">550e8400-e29b-41d4-a716-446655440001</p>
+<p class="p35">　</p>
+<p class="p34">2</p>
+<p class="p34">umcd</p>
+<p class="p35">UMコード</p>
+<p class="p35">要素</p>
+<p class="p35">文字列</p>
+<p class="p34">-</p>
+<p class="p34">0</p>
+<p class="p34">1</p>
+<p class="p12">01-01-01-01-02-01-00</p>
+<p class="p35">　</p>
+<p class="p34">3</p>
+<p class="p34">author</p>
+<p class="p35">作成者</p>
+<p class="p35">要素</p>
+<p class="p35">文字列</p>
+<p class="p34">-</p>
+<p class="p34">1</p>
+<p class="p34">1</p>
+<p class="p35">株式会社アスコエパートナーズ</p>
+<p class="p35">　</p>
+<p class="p34">4</p>
+<p class="p34">local_gov_id</p>
+<p class="p35">地方公共団体コード</p>
+<p class="p35">要素</p>
+<p class="p35">整数</p>
+<p class="p34">-</p>
+<p class="p34">1</p>
+<p class="p34">1</p>
+<p class="p34">0</p>
+<p class="p35">　</p>
+<p class="p34">5</p>
+<p class="p34">local_gov_name</p>
+<p class="p35">地方公共団体名</p>
+<p class="p35">要素</p>
+<p class="p35">文字列</p>
+<p class="p34">-</p>
+<p class="p34">1</p>
+<p class="p34">1</p>
+<p class="p35">▲▲市</p>
+<p class="p35">　</p>
+<p class="p34">6</p>
+<p class="p34">created_at</p>
+<p class="p35">作成日時</p>
+<p class="p35">要素</p>
+<p class="p35">日時</p>
+<p class="p34">-</p>
+<p class="p34">0</p>
+<p class="p34">1</p>
+<p class="p34">2001-12-31T12:00:00+09:00</p>
+<p class="p35">　</p>
+<p class="p34">7</p>
+<p class="p34">updated_at</p>
+<p class="p35">更新日時</p>
+<p class="p35">要素</p>
+<p class="p35">日時</p>
+<p class="p34">-</p>
+<p class="p34">0</p>
+<p class="p34">1</p>
+<p class="p34">2001-12-31T12:00:00+09:00</p>
+<p class="p35">　</p>
+<p class="p34">8</p>
+<p class="p34">org_uuid</p>
+<p class="p34">コピー元UUID</p>
+<p class="p35">要素</p>
+<p class="p34">UUID</p>
+<p class="p34">-</p>
+<p class="p34">0</p>
+<p class="p34">1</p>
+<p class="p34">550e8400-e29b-41d4-a716-446655440001</p>
+<p class="p35">　</p>
+<p class="p34">9</p>
+<p class="p34">governing_law</p>
+<p class="p35">根拠法</p>
+<p class="p35">要素</p>
+<p class="p35">文字列</p>
+<p class="p34">-</p>
+<p class="p34">0</p>
+<p class="p34">1</p>
+<p class="p35">災害援護法</p>
+<p class="p35">　</p>
+<p class="p34">10</p>
+<p class="p34">governing_law_id</p>
+<p class="p35">根拠法ID</p>
+<p class="p35">要素</p>
+<p class="p35">整数</p>
+<p class="p34">-</p>
+<p class="p34">0</p>
+<p class="p34">1</p>
+<p class="p34">2</p>
+<p class="p35">　</p>
+<p class="p34">11</p>
+<p class="p34">division</p>
+<p class="p35">管轄部署</p>
+<p class="p35">要素</p>
+<p class="p35">文字列</p>
+<p class="p34">-</p>
+<p class="p34">0</p>
+<p class="p34">1</p>
+<p class="p35">市民課</p>
+<p class="p35">　</p>
+<p class="p34">12</p>
+<p class="p34">gic</p>
+<p class="p35">実施区分</p>
+<p class="p35">要素</p>
+<p class="p35">文字列</p>
+<p class="p34">-</p>
+<p class="p34">0</p>
+<p class="p34">1</p>
+<p class="p34">5</p>
+<p class="p35">　</p>
+<p class="p34">13</p>
+<p class="p34">service_name</p>
+<p class="p35">行政サービス名</p>
+<p class="p35">要素</p>
+<p class="p35">文字列</p>
+<p class="p34">-</p>
+<p class="p34">0</p>
+<p class="p34">1</p>
+<p class="p35">災害援護資金</p>
+<p class="p35">　</p>
+<p class="p34">14</p>
+<p class="p34">meta</p>
+<p class="p35">メタ情報</p>
+<p class="p35">要素</p>
+<p class="p34">Meta</p>
+<p class="p34">-</p>
+<p class="p34">0</p>
+<p class="p35">任意</p>
+<p class="p35">　</p>
+<p class="p35">　</p>
+<p class="p32">コンテンツアイテム型(ContentItem型)</p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p34"><b>No.</b></p>
+<p class="p35"><b>タグ名</b></p>
+<p class="p35"><b>日本語名</b></p>
+<p class="p35"><b>種類</b></p>
+<p class="p35"><b>データ型</b></p>
+<p class="p34"><b>Usage</b></p>
+<p class="p35"><b>最小回数</b></p>
+<p class="p35"><b>最大回数</b></p>
+<p class="p35"><b>内容の例</b></p>
+<p class="p35"><b>備考</b></p>
+<p class="p34">1</p>
+<p class="p34">uuid</p>
+<p class="p34">UUID</p>
+<p class="p35">属性</p>
+<p class="p34">UUID</p>
+<p class="p35">必須</p>
+<p class="p34">-</p>
+<p class="p34">-</p>
+<p class="p34">550e8400-e29b-41d4-a716-446655440001</p>
+<p class="p35">　</p>
+<p class="p34">2</p>
+<p class="p34">umcd</p>
+<p class="p35">UMコード</p>
+<p class="p35">要素</p>
+<p class="p35">文字列</p>
+<p class="p34">-</p>
+<p class="p34">0</p>
+<p class="p34">1</p>
+<p class="p34">01-01-01-01-02-01-00-01</p>
+<p class="p35">　</p>
+<p class="p34">3</p>
+<p class="p34">title</p>
+<p class="p35">タイトル</p>
+<p class="p35">要素</p>
+<p class="p35">文字列</p>
+<p class="p34">-</p>
+<p class="p34">1</p>
+<p class="p34">1</p>
+<p class="p35">概要</p>
+<p class="p35">　</p>
+<p class="p34">4</p>
+<p class="p34">title_short</p>
+<p class="p35">タイトル（略称）</p>
+<p class="p35">要素</p>
+<p class="p35">文字列</p>
+<p class="p34">-</p>
+<p class="p34">1</p>
+<p class="p34">1</p>
+<p class="p35">概要</p>
+<p class="p35">　</p>
+<p class="p34">5</p>
+<p class="p34">summary</p>
+<p class="p35">概要</p>
+<p class="p35">要素</p>
+<p class="p35">文字列</p>
+<p class="p34">-</p>
+<p class="p34">1</p>
+<p class="p34">1</p>
+<p class="p35">復旧時に行う手続き、サービスについて</p>
+<p class="p35">　</p>
+<p class="p34">6</p>
+<p class="p34">body</p>
+<p class="p35">本文</p>
+<p class="p35">要素</p>
+<p class="p35">文字列</p>
+<p class="p34">-</p>
+<p class="p34">1</p>
+<p class="p34">1</p>
+<p class="p35">住宅の再建に利用できる支援制度</p>
+<p class="p35">　</p>
+<p class="p34">7</p>
+<p class="p34">note</p>
+<p class="p35">注釈</p>
+<p class="p35">要素</p>
+<p class="p35">文字列</p>
+<p class="p34">-</p>
+<p class="p34">0</p>
+<p class="p34">1</p>
+<p class="p35">　</p>
+<p class="p35">　</p>
+<p class="p34">8</p>
+<p class="p34">memo</p>
+<p class="p35">備考</p>
+<p class="p35">要素</p>
+<p class="p35">文字列</p>
+<p class="p34">-</p>
+<p class="p34">0</p>
+<p class="p34">1</p>
+<p class="p35">このコンテンツは今後削除する</p>
+<p class="p35">　</p>
+<p class="p34">9</p>
+<p class="p34">created_at</p>
+<p class="p35">作成日時</p>
+<p class="p35">要素</p>
+<p class="p35">日時</p>
+<p class="p34">-</p>
+<p class="p34">0</p>
+<p class="p34">1</p>
+<p class="p34">2001-12-31T12:00:00+09:00</p>
+<p class="p36">　</p>
+<p class="p34">10</p>
+<p class="p34">updated_at</p>
+<p class="p35">更新日時</p>
+<p class="p35">要素</p>
+<p class="p35">日時</p>
+<p class="p34">-</p>
+<p class="p34">0</p>
+<p class="p34">1</p>
+<p class="p34">2001-12-31T12:00:00+09:00</p>
+<p class="p36">　</p>
+<p class="p34">11</p>
+<p class="p34">org_uuid</p>
+<p class="p34">コピー元UUID</p>
+<p class="p35">要素</p>
+<p class="p34">UUID</p>
+<p class="p34">-</p>
+<p class="p34">0</p>
+<p class="p34">1</p>
+<p class="p34">550e8400-e29b-41d4-a716-446655440000</p>
+<p class="p35">　</p>
+<p class="p32">メタ情報型(Meta型)</p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p34"><b>No.</b></p>
+<p class="p35"><b>タグ名</b></p>
+<p class="p35"><b>日本語名</b></p>
+<p class="p35"><b>種類</b></p>
+<p class="p35"><b>データ型</b></p>
+<p class="p34"><b>Usage</b></p>
+<p class="p35"><b>最小回数</b></p>
+<p class="p35"><b>最大回数</b></p>
+<p class="p35"><b>内容の例</b></p>
+<p class="p35"><b>備考</b></p>
+<p class="p34">1</p>
+<p class="p34">name</p>
+<p class="p35">名前</p>
+<p class="p35">属性</p>
+<p class="p35">文字列</p>
+<p class="p35">必須</p>
+<p class="p34">-</p>
+<p class="p34">-</p>
+<p class="p35">名前</p>
+<p class="p35">　</p>
+<p class="p34">2</p>
+<p class="p34">value</p>
+<p class="p35">値</p>
+<p class="p35">属性</p>
+<p class="p35">文字列</p>
+<p class="p35">必須</p>
+<p class="p34">-</p>
+<p class="p34">-</p>
+<p class="p34">1</p>
+<p class="p35">　</p>
+<br></p>
+<p class="p32">復旧復興支援制度系コンテンツ型(r-assistance_Content型) </p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p34"><b>No.</b></p>
+<p class="p35"><b>タグ名</b></p>
+<p class="p35"><b>日本語名</b></p>
+<p class="p35"><b>種類</b></p>
+<p class="p35"><b>データ型</b></p>
+<p class="p34"><b>Usage</b></p>
+<p class="p35"><b>最小回数</b></p>
+<p class="p35"><b>最大回数</b></p>
+<p class="p35"><b>内容の例</b></p>
+<p class="p35"><b>備考</b></p>
+<p class="p34">1</p>
+<p class="p37">uuid</p>
+<p class="p32">UUID</p>
+<p class="p35">属性</p>
+<p class="p37">UUID</p>
+<p class="p35">必須</p>
+<p class="p34">-</p>
+<p class="p37">-</p>
+<p class="p36">　</p>
+<p class="p36">　</p>
+<p class="p34">2</p>
+<p class="p37">umcd</p>
+<p class="p36">UMコード</p>
+<p class="p35">要素</p>
+<p class="p38">文字列</p>
+<p class="p34">-</p>
+<p class="p34">0</p>
+<p class="p38">任意</p>
+<p class="p36">　</p>
+<p class="p36">　</p>
+<p class="p34">3</p>
+<p class="p37">author</p>
+<p class="p36">作成者</p>
+<p class="p35">要素</p>
+<p class="p38">文字列</p>
+<p class="p34">-</p>
+<p class="p34">1</p>
+<p class="p34">1</p>
+<p class="p36">　</p>
+<p class="p36">　</p>
+<p class="p34">4</p>
+<p class="p37">local_gov_id</p>
+<p class="p36">地方公共団体コード</p>
+<p class="p35">要素</p>
+<p class="p38">整数</p>
+<p class="p34">-</p>
+<p class="p34">1</p>
+<p class="p34">1</p>
+<p class="p36">　</p>
+<p class="p36">　</p>
+<p class="p34">5</p>
+<p class="p37">local_gov_name</p>
+<p class="p36">地方公共団体名</p>
+<p class="p35">要素</p>
+<p class="p38">文字列</p>
+<p class="p34">-</p>
+<p class="p34">1</p>
+<p class="p34">1</p>
+<p class="p36">　</p>
+<p class="p36">　</p>
+<p class="p34">6</p>
+<p class="p37">governing_law</p>
+<p class="p36">根拠法</p>
+<p class="p35">要素</p>
+<p class="p38">文字列</p>
+<p class="p34">-</p>
+<p class="p34">0</p>
+<p class="p38">任意</p>
+<p class="p36">　</p>
+<p class="p36">　</p>
+<p class="p34">7</p>
+<p class="p37">governing_law_url</p>
+<p class="p32">根拠法URL</p>
+<p class="p35">要素</p>
+<p class="p38">文字列</p>
+<p class="p34">-</p>
+<p class="p34">0</p>
+<p class="p38">任意</p>
+<p class="p36">　</p>
+<p class="p36">　</p>
+<p class="p34">8</p>
+<p class="p37">service name</p>
+<p class="p36">行政サービス名</p>
+<p class="p35">要素</p>
+<p class="p38">文字列</p>
+<p class="p34">-</p>
+<p class="p34">0</p>
+<p class="p37">1</p>
+<p class="p36">　</p>
+<p class="p36">　</p>
+<p class="p34">9</p>
+<p class="p37">title</p>
+<p class="p36">制度名</p>
+<p class="p35">要素</p>
+<p class="p37">ContentItem</p>
+<p class="p34">-</p>
+<p class="p34">1</p>
+<p class="p37">1</p>
+<p class="p36">　</p>
+<p class="p36">　</p>
+<p class="p34">10</p>
+<p class="p37">general_info</p>
+<p class="p36">内容</p>
+<p class="p35">要素</p>
+<p class="p37">ContentItem</p>
+<p class="p34">-</p>
+<p class="p34">1</p>
+<p class="p37">1</p>
+<p class="p36">　</p>
+<p class="p36">　</p>
+<p class="p34">11</p>
+<p class="p37">general_list</p>
+<p class="p36">概要（一覧用）</p>
+<p class="p35">要素</p>
+<p class="p37">ContentItem</p>
+<p class="p34">-</p>
+<p class="p34">0</p>
+<p class="p37">1</p>
+<p class="p36">　</p>
+<p class="p36">　</p>
+<p class="p34">12</p>
+<p class="p37">intended_person</p>
+<p class="p36">対象者</p>
+<p class="p35">要素</p>
+<p class="p37">ContentItem</p>
+<p class="p34">-</p>
+<p class="p34">1</p>
+<p class="p38">任意</p>
+<p class="p36">　</p>
+<p class="p36"><b>　</b></p>
+<p class="p34">13</p>
+<p class="p37">intended_area</p>
+<p class="p36">対象地域</p>
+<p class="p35">要素</p>
+<p class="p37">ContentItem</p>
+<p class="p34">-</p>
+<p class="p34">0</p>
+<p class="p38">任意</p>
+<p class="p36">　</p>
+<p class="p36"><b>　</b></p>
+<p class="p34">14</p>
+<p class="p37">application_procedure</p>
+<p class="p36">申請・届出方法</p>
+<p class="p35">要素</p>
+<p class="p37">ContentItem</p>
+<p class="p34">-</p>
+<p class="p34">0</p>
+<p class="p38">任意</p>
+<p class="p36">　</p>
+<p class="p36">　</p>
+<p class="p34">15</p>
+<p class="p37">applicatipon_deadline</p>
+<p class="p36">申請期限</p>
+<p class="p35">要素</p>
+<p class="p37">ContentItem</p>
+<p class="p34">-</p>
+<p class="p34">1</p>
+<p class="p37">1</p>
+<p class="p36">　</p>
+<p class="p36">　</p>
+<p class="p34">16</p>
+<p class="p37">support_term</p>
+<p class="p36">支援期間</p>
+<p class="p35">要素</p>
+<p class="p37">ContentItem</p>
+<p class="p34">-</p>
+<p class="p37">0</p>
+<p class="p37">1</p>
+<p class="p36">　</p>
+<p class="p36">　</p>
+<p class="p34">17</p>
+<p class="p37">application_form</p>
+<p class="p36">申請書類</p>
+<p class="p35">要素</p>
+<p class="p37">ContentItem</p>
+<p class="p34">-</p>
+<p class="p37">0</p>
+<p class="p38">任意</p>
+<p class="p36">　</p>
+<p class="p36">　</p>
+<p class="p34">18</p>
+<p class="p37">application_form_url</p>
+<p class="p36">申請書類入手URL</p>
+<p class="p35">要素</p>
+<p class="p37">ContentItem</p>
+<p class="p34">-</p>
+<p class="p37">0</p>
+<p class="p38">任意</p>
+<p class="p36">　</p>
+<p class="p36">　</p>
+<p class="p34">19</p>
+<p class="p37">related_link</p>
+<p class="p36">詳細参照先名</p>
+<p class="p35">要素</p>
+<p class="p37">ContentItem</p>
+<p class="p34">-</p>
+<p class="p37">0</p>
+<p class="p38">任意</p>
+<p class="p36">　</p>
+<p class="p36">　</p>
+<p class="p34">20</p>
+<p class="p37">related_link_url</p>
+<p class="p32">詳細URL</p>
+<p class="p35">要素</p>
+<p class="p37">ContentItem</p>
+<p class="p34">-</p>
+<p class="p37">0</p>
+<p class="p38">任意</p>
+<p class="p36">　</p>
+<p class="p36">　</p>
+<p class="p34">21</p>
+<p class="p37">e_application</p>
+<p class="p36">電子申請名称</p>
+<p class="p35">要素</p>
+<p class="p37">ContentItem</p>
+<p class="p34">-</p>
+<p class="p37">0</p>
+<p class="p38">任意</p>
+<p class="p36">　</p>
+<p class="p36">　</p>
+<p class="p34">22</p>
+<p class="p37">e_application_url</p>
+<p class="p36">電子申請URL</p>
+<p class="p35">要素</p>
+<p class="p37">ContentItem</p>
+<p class="p34">-</p>
+<p class="p37">0</p>
+<p class="p38">任意</p>
+<p class="p36">　</p>
+<p class="p36">　</p>
+<p class="p34">23</p>
+<p class="p37">contact</p>
+<p class="p36">お問合せ（組織・窓口名称）</p>
+<p class="p35">要素</p>
+<p class="p37">ContentItem</p>
+<p class="p34">-</p>
+<p class="p37">0</p>
+<p class="p38">任意</p>
+<p class="p36">　</p>
+<p class="p36">　</p>
+<p class="p34">24</p>
+<p class="p37">contact_postal_code</p>
+<p class="p36">お問合せ（郵便番号）</p>
+<p class="p35">要素</p>
+<p class="p37">ContentItem</p>
+<p class="p34">-</p>
+<p class="p37">0</p>
+<p class="p38">任意</p>
+<p class="p36">　</p>
+<p class="p36">　</p>
+<p class="p34">25</p>
+<p class="p37">contact_address</p>
+<p class="p36">お問合せ（住所）</p>
+<p class="p35">要素</p>
+<p class="p37">ContentItem</p>
+<p class="p34">-</p>
+<p class="p37">0</p>
+<p class="p38">任意</p>
+<p class="p36">　</p>
+<p class="p36">　</p>
+<p class="p34">26</p>
+<p class="p37">contact_tel</p>
+<p class="p36">お問合せ（TEL）</p>
+<p class="p35">要素</p>
+<p class="p37">ContentItem</p>
+<p class="p34">-</p>
+<p class="p37">0</p>
+<p class="p38">任意</p>
+<p class="p36">　</p>
+<p class="p36">　</p>
+<p class="p34">27</p>
+<p class="p37">contact_fax</p>
+<p class="p36">お問合せ（FAX）</p>
+<p class="p35">要素</p>
+<p class="p37">ContentItem</p>
+<p class="p34">-</p>
+<p class="p37">0</p>
+<p class="p38">任意</p>
+<p class="p36">　</p>
+<p class="p36">　</p>
+<p class="p34">28</p>
+<p class="p37">contact_mail</p>
+<p class="p36">お問合せ（メール）</p>
+<p class="p35">要素</p>
+<p class="p37">ContentItem</p>
+<p class="p34">-</p>
+<p class="p37">0</p>
+<p class="p38">任意</p>
+<p class="p36">　</p>
+<p class="p36">　</p>
+<p class="p34">29</p>
+<p class="p37">contact_free_description</p>
+<p class="p36">お問合せ（自由記述）</p>
+<p class="p35">要素</p>
+<p class="p37">ContentItem</p>
+<p class="p34">-</p>
+<p class="p37">0</p>
+<p class="p38">任意</p>
+<p class="p36">　</p>
+<p class="p36">　</p>
+<p class="p34">30</p>
+<p class="p37">contact_list</p>
+<p class="p36">お問合せ先一覧表示(対象県)</p>
+<p class="p35">要素</p>
+<p class="p37">ContentItem</p>
+<p class="p34">-</p>
+<p class="p37">0</p>
+<p class="p38">任意</p>
+<p class="p36">　</p>
+<p class="p36">　</p>
+<p class="p34">31</p>
+<p class="p37">budget</p>
+<p class="p36">予算枠の有無</p>
+<p class="p35">要素</p>
+<p class="p37">ContentItem</p>
+<p class="p34">-</p>
+<p class="p37">0</p>
+<p class="p37">1</p>
+<p class="p36">　</p>
+<p class="p36">　</p>
+<p class="p34">32</p>
+<p class="p37">meta</p>
+<p class="p36">メタ情報</p>
+<p class="p35">要素</p>
+<p class="p37">meta</p>
+<p class="p34">-</p>
+<p class="p37">0</p>
+<p class="p38">任意</p>
+<p class="p36">　</p>
+<p class="p36">　</p>
+<p class="p34">33</p>
+<p class="p36"><b>　</b></p>
+<p class="p36"><b>以下、予備フィールド</b></p>
+<p class="p36">　</p>
+<p class="p36"><b>　</b></p>
+<p class="p34">-</p>
+<p class="p37">0</p>
+<p class="p38">任意</p>
+<p class="p36">　</p>
+<p class="p36">　</p>
+<p class="p34">34</p>
+<p class="p36">　</p>
+<p class="p36">　</p>
+<p class="p36">　</p>
+<p class="p36">　</p>
+<p class="p36">　</p>
+<p class="p38">　</p>
+<p class="p38">　</p>
+<p class="p36">　</p>
+<p class="p36">　</p>
+<p class="p36">※2  「コンテンツ型」を継承します。</p>
+<p class="p33"><br></p>
+<p class="p36">抽出用項目 XMLタグ名称</p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p34"><b>No.</b></p>
+<p class="p35"><b>タグ名</b></p>
+<p class="p35"><b>日本語名</b></p>
+<p class="p35"><b>種類</b></p>
+<p class="p35"><b>データ型</b></p>
+<p class="p34"><b>Usage</b></p>
+<p class="p35"><b>最小回数</b></p>
+<p class="p35"><b>最大回数</b></p>
+<p class="p35"><b>内容の例</b></p>
+<p class="p35"><b>備考</b></p>
+<p class="p34">1</p>
+<p class="p37">assistance_type</p>
+<p class="p36">支援の種類</p>
+<p class="p35">要素</p>
+<p class="p37">ContentItem</p>
+<p class="p34">-</p>
+<p class="p37">0</p>
+<p class="p38">任意</p>
+<p class="p36">　</p>
+<p class="p36">　</p>
+<p class="p34">2</p>
+<p class="p37">citizens_housing</p>
+<p class="p36">個人向け：住まいのこと</p>
+<p class="p35">要素</p>
+<p class="p37">ContentItem</p>
+<p class="p34">-</p>
+<p class="p37">0</p>
+<p class="p38">任意</p>
+<p class="p36">　</p>
+<p class="p36">　</p>
+<p class="p34">3</p>
+<p class="p37">citizens_work</p>
+<p class="p36">個人向け：仕事のこと</p>
+<p class="p35">要素</p>
+<p class="p37">ContentItem</p>
+<p class="p34">-</p>
+<p class="p37">0</p>
+<p class="p38">任意</p>
+<p class="p36">　</p>
+<p class="p36">　</p>
+<p class="p34">4</p>
+<p class="p37">citizens_medical_welfare</p>
+<p class="p36">個人向け：医療・福祉のこと</p>
+<p class="p35">要素</p>
+<p class="p37">ContentItem</p>
+<p class="p34">-</p>
+<p class="p37">0</p>
+<p class="p38">任意</p>
+<p class="p36">　</p>
+<p class="p36">　</p>
+<p class="p34">5</p>
+<p class="p37">citizens_nurturing_education</p>
+<p class="p36">個人向け：子育て・教育のこと</p>
+<p class="p35">要素</p>
+<p class="p37">ContentItem</p>
+<p class="p34">-</p>
+<p class="p37">0</p>
+<p class="p38">任意</p>
+<p class="p36">　</p>
+<p class="p36">　</p>
+<p class="p34">6</p>
+<p class="p37">citizens_money</p>
+<p class="p36">個人向け：おかねのこと</p>
+<p class="p35">要素</p>
+<p class="p37">ContentItem</p>
+<p class="p34">-</p>
+<p class="p37">0</p>
+<p class="p38">任意</p>
+<p class="p36">　</p>
+<p class="p36">　</p>
+<p class="p34">7</p>
+<p class="p37">citizens_others_living</p>
+<p class="p36">個人向け：その他・暮らしにかかわること</p>
+<p class="p35">要素</p>
+<p class="p37">ContentItem</p>
+<p class="p34">-</p>
+<p class="p37">0</p>
+<p class="p38">任意</p>
+<p class="p36">　</p>
+<p class="p36">　</p>
+<p class="p34">8</p>
+<p class="p37">citizens_nuclear_power</p>
+<p class="p36">個人向け：原発関係のこと</p>
+<p class="p35">要素</p>
+<p class="p37">ContentItem</p>
+<p class="p34">-</p>
+<p class="p37">0</p>
+<p class="p38">任意</p>
+<p class="p36">　</p>
+<p class="p36">　</p>
+<p class="p34">9</p>
+<p class="p37">businesses _segments</p>
+<p class="p36">事業者向け：事業区分</p>
+<p class="p35">要素</p>
+<p class="p37">ContentItem</p>
+<p class="p34">-</p>
+<p class="p37">0</p>
+<p class="p38">任意</p>
+<p class="p36">　</p>
+<p class="p36">　</p>
+<p class="p34">10</p>
+<p class="p37">businesses _situation</p>
+<p class="p36">事業者向け：状況</p>
+<p class="p35">要素</p>
+<p class="p37">ContentItem</p>
+<p class="p34">-</p>
+<p class="p37">0</p>
+<p class="p38">任意</p>
+<p class="p36">　</p>
+<p class="p36">　</p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p32">通知・通達コンテンツ型(DocumentContent型) </p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p34"><b>No.</b></p>
+<p class="p35"><b>タグ名</b></p>
+<p class="p35"><b>日本語名</b></p>
+<p class="p35"><b>種類</b></p>
+<p class="p35"><b>データ型</b></p>
+<p class="p34"><b>Usage</b></p>
+<p class="p35"><b>最小回数</b></p>
+<p class="p35"><b>最大回数</b></p>
+<p class="p35"><b>内容の例</b></p>
+<p class="p35"><b>備考</b></p>
+<p class="p34">1</p>
+<p class="p37">uuid</p>
+<p class="p32">UUID</p>
+<p class="p35">属性</p>
+<p class="p37">UUID</p>
+<p class="p35">必須</p>
+<p class="p34">-</p>
+<p class="p37">-</p>
+<p class="p36">　</p>
+<p class="p36">　</p>
+<p class="p34">2</p>
+<p class="p37">document_number</p>
+<p class="p36">文書番号</p>
+<p class="p35">要素</p>
+<p class="p35">文字列</p>
+<p class="p34">-</p>
+<p class="p37">1</p>
+<p class="p37">1</p>
+<p class="p36">　</p>
+<p class="p36">　</p>
+<p class="p34">3</p>
+<p class="p37">document_date</p>
+<p class="p36">文書年月日</p>
+<p class="p35">要素</p>
+<p class="p35">日時</p>
+<p class="p34">-</p>
+<p class="p37">1</p>
+<p class="p37">1</p>
+<p class="p36">　</p>
+<p class="p36">　</p>
+<p class="p34">4</p>
+<p class="p37">document_destination</p>
+<p class="p36">宛先</p>
+<p class="p35">要素</p>
+<p class="p35">文字列</p>
+<p class="p34">-</p>
+<p class="p37">1</p>
+<p class="p37">1</p>
+<p class="p36">　</p>
+<p class="p36">　</p>
+<p class="p34">5</p>
+<p class="p37">document_sender</p>
+<p class="p36">発信者</p>
+<p class="p35">要素</p>
+<p class="p35">文字列</p>
+<p class="p34">-</p>
+<p class="p37">1</p>
+<p class="p37">1</p>
+<p class="p36">　</p>
+<p class="p36">　</p>
+<p class="p34">6</p>
+<p class="p37">document_name</p>
+<p class="p36">文書名</p>
+<p class="p35">要素</p>
+<p class="p35">文字列</p>
+<p class="p34">-</p>
+<p class="p37">1</p>
+<p class="p37">1</p>
+<p class="p36">　</p>
+<p class="p36">　</p>
+<p class="p34">7</p>
+<p class="p37">document_body</p>
+<p class="p36">本文</p>
+<p class="p35">要素</p>
+<p class="p35">文字列</p>
+<p class="p34">-</p>
+<p class="p37">1</p>
+<p class="p37">1</p>
+<p class="p36">　</p>
+<p class="p36">　</p>
+<p class="p34">8</p>
+<p class="p37">intended_service_name</p>
+<p class="p36">制度名　（通達対象の制度名を「//」区切り複数入力）</p>
+<p class="p35">要素</p>
+<p class="p35">文字列</p>
+<p class="p34">-</p>
+<p class="p37">0</p>
+<p class="p38">任意</p>
+<p class="p36">　</p>
+<p class="p36">　</p>
+<p class="p36">※3 「コンテンツ型」を継承します。</p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p33"><br></p>
+<p class="p8">ユニバーサルメニューXMLスキーマ by 一般社団法人ユニバーサルメニュー普及協会、震災復興支援ユニバーサルメニュープロジェクト </p>
+<p class="p12">OpenUM Project is licensed under a Creative Commons 表示 - 継承 2.1 日本 License.</p>
+<br></p>
+<br></p>
+<p class="p9">OpenUM Project の詳細は、下記ＵＲＬまで。 </p>
+<p class="p12">http://www.asukoe.org/openum/</p>
+<br></p>
+<br></p>
+<p class="p12"></p>
+<br></p>
+<h2>更新履歴</h2>
+<br></p>
+<p class="p8">ドキュメントの更新履歴について記載しています。</p>
+<p class="p8">日付</p>
+<p class="p8">内容</p>
+<p class="p12">2012-02-27</p>
+<p class="p8">初版</p>
+<br></p>
+<br></p>
+</body>
+</html>
