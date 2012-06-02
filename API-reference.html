@@ -431,27 +431,26 @@
 </table>
 <p class="bold">※配列は、復旧・復興支援制度データベースで指定された順序で返します。</p>
 <br></p>
-<p class="bold">リクエストの例</p>
-<p class="p12">GET	http://api.r-assistance.go.jp/v1/api.svc/getPrefectures?appkey=0</p>
-<br></p>
-<p class="p17">&lt;?xml version="1.0" encoding="utf-8"?&gt;</p>
-<p class="p17">&lt;ArrayOfLocalGoverment xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;</p>
-<p class="p17">  &lt;LocalGoverment PrefCode="03" LocalGovCode="03000"&gt;</p>
-<p class="p17">    &lt;LocalGovName&gt;岩手県&lt;/LocalGovName&gt;</p>
-<p class="p17">  &lt;/LocalGoverment&gt;</p>
-<p class="p17">  &lt;LocalGoverment PrefCode="04" LocalGovCode="04000"&gt;</p>
-<p class="p17">    &lt;LocalGovName&gt;宮城県&lt;/LocalGovName&gt;</p>
-<p class="p17">  &lt;/LocalGoverment&gt;</p>
-<p class="p17">  &lt;LocalGoverment PrefCode="07" LocalGovCode="07000"&gt;</p>
-<p class="p17">    &lt;LocalGovName&gt;福島県&lt;/LocalGovName&gt;</p>
-<p class="p17">  &lt;/LocalGoverment&gt;</p>
-<p class="p17">  &lt;LocalGoverment PrefCode="01" LocalGovCode="01000"&gt;</p>
-<p class="p17">    &lt;LocalGovName&gt;北海道&lt;/LocalGovName&gt;</p>
-<p class="p17">  &lt;/LocalGoverment&gt;</p>
-<p class="p17">  …</p>
-<p class="p17">&lt;/ArrayOfLocalGoverment&gt;</p>
-<p class="p20"><br></p>
-<p class="p20"><br></p>
+<h4>リクエストの例</h4>
+<blockquote>GET	http://api.r-assistance.go.jp/v1/api.svc/getPrefectures?appkey=0</blockquote>
+<blockquote class="code"><pre>
+&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;ArrayOfLocalGoverment xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;LocalGoverment PrefCode="03" LocalGovCode="03000"&gt;
+    &lt;LocalGovName&gt;岩手県&lt;/LocalGovName&gt;
+  &lt;/LocalGoverment&gt;
+  &lt;LocalGoverment PrefCode="04" LocalGovCode="04000"&gt;
+    &lt;LocalGovName&gt;宮城県&lt;/LocalGovName&gt;
+  &lt;/LocalGoverment&gt;
+  &lt;LocalGoverment PrefCode="07" LocalGovCode="07000"&gt;
+    &lt;LocalGovName&gt;福島県&lt;/LocalGovName&gt;
+  &lt;/LocalGoverment&gt;
+  &lt;LocalGoverment PrefCode="01" LocalGovCode="01000"&gt;
+    &lt;LocalGovName&gt;北海道&lt;/LocalGovName&gt;
+  &lt;/LocalGoverment&gt;
+  …
+&lt;/ArrayOfLocalGoverment&gt;
+</pre></blockquote>
 </div>
 
 <h3><a name="getMunicipalities">getMunicipalities</a></h3>
@@ -499,48 +498,44 @@
 <td>文字列
 </table>
 <br></p>
-<p class="bold">リクエストの例1</p>
+<h4>リクエストの例1</h4>
 <p class="bold">岩手県（PrefCode=03）の全ての市町村を取得する例</p>
-<br></p>
-<p class="p12">GET	http://api.r-assistance.go.jp/v1/api.svc/getMunicipalities?appkey=0&amp;prefcode=03</p>
-<br></p>
-<p class="p17">&lt;?xml version="1.0" encoding="utf-8"?&gt;</p>
-<p class="p17">&lt;ArrayOfLocalGoverment xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;</p>
-<p class="p17">  &lt;LocalGoverment PrefCode="03" LocalGovCode="03201"&gt;</p>
-<p class="p17">    &lt;LocalGovName&gt;盛岡市&lt;/LocalGovName&gt;</p>
-<p class="p17">  &lt;/LocalGoverment&gt;</p>
-<p class="p17">  &lt;LocalGoverment PrefCode="03" LocalGovCode="03202"&gt;</p>
-<p class="p17">    &lt;LocalGovName&gt;宮古市&lt;/LocalGovName&gt;</p>
-<p class="p17">  &lt;/LocalGoverment&gt;</p>
-<p class="p17">  &lt;LocalGoverment PrefCode="03" LocalGovCode="03203"&gt;</p>
-<p class="p17">    &lt;LocalGovName&gt;大船渡市&lt;/LocalGovName&gt;</p>
-<p class="p17">  &lt;/LocalGoverment&gt;</p>
-<p class="p17">  &lt;LocalGoverment PrefCode="03" LocalGovCode="03205"&gt;</p>
-<p class="p17">    &lt;LocalGovName&gt;花巻市&lt;/LocalGovName&gt;</p>
-<p class="p17">  &lt;/LocalGoverment&gt;</p>
-<p class="p17">  &lt;LocalGoverment PrefCode="03" LocalGovCode="03206"&gt;</p>
-<p class="p17">    &lt;LocalGovName&gt;北上市&lt;/LocalGovName&gt;</p>
-<p class="p17">  &lt;/LocalGoverment&gt;</p>
-<p class="p17">  …</p>
-<p class="p17">&lt;/ArrayOfLocalGoverment&gt;</p>
-<p class="p20"><br></p>
-<p class="p20"><br></p>
-<p class="bold">リクエストの例2</p>
-<p class="bold">岩手県（PrefCode=03）の特定の市町村を指定して取得する例</p>
-<br></p>
-<p class="p12">GET</p>
-<p class="p12">http://api.r-assistance.go.jp/v1/api.svc/getMunicipalities?appkey=0&amp;localgovcodes=03201|03205</p>
-<br></p>
-<p class="p17">&lt;ArrayOfLocalGoverment xmlns="http://schemas.datacontract.org/2004/07/SSDB.Site" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"&gt;</p>
-<p class="p17"> &lt;LocalGoverment PrefCode="03" IsPref="false" LocalGovCode="03201"&gt;</p>
-<p class="p17">    &lt;LocalGovName&gt;盛岡市&lt;/LocalGovName&gt; </p>
-<p class="p17">  &lt;/LocalGoverment&gt;</p>
-<p class="p17">&lt;LocalGoverment PrefCode="03" IsPref="false" LocalGovCode="03205"&gt;</p>
-<p class="p17">    &lt;LocalGovName&gt;花巻市&lt;/LocalGovName&gt; </p>
-<p class="p17">  &lt;/LocalGoverment&gt;</p>
-<p class="p17">&lt;/ArrayOfLocalGovInfo&gt;</p>
-<p class="p20"><br></p>
-<p class="p12"></p>
+<blockquote>GET	http://api.r-assistance.go.jp/v1/api.svc/getMunicipalities?appkey=0&amp;prefcode=03</blockquote>
+<blockquote class="code"><pre>
+&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;ArrayOfLocalGoverment xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;LocalGoverment PrefCode="03" LocalGovCode="03201"&gt;
+    &lt;LocalGovName&gt;盛岡市&lt;/LocalGovName&gt;
+  &lt;/LocalGoverment&gt;
+  &lt;LocalGoverment PrefCode="03" LocalGovCode="03202"&gt;
+    &lt;LocalGovName&gt;宮古市&lt;/LocalGovName&gt;
+  &lt;/LocalGoverment&gt;
+  &lt;LocalGoverment PrefCode="03" LocalGovCode="03203"&gt;
+    &lt;LocalGovName&gt;大船渡市&lt;/LocalGovName&gt;
+  &lt;/LocalGoverment&gt;
+  &lt;LocalGoverment PrefCode="03" LocalGovCode="03205"&gt;
+    &lt;LocalGovName&gt;花巻市&lt;/LocalGovName&gt;
+  &lt;/LocalGoverment&gt;
+  &lt;LocalGoverment PrefCode="03" LocalGovCode="03206"&gt;
+    &lt;LocalGovName&gt;北上市&lt;/LocalGovName&gt;
+  &lt;/LocalGoverment&gt;
+  …
+&lt;/ArrayOfLocalGoverment&gt;
+</pre></blockquote>
+
+<h4>リクエストの例2</h4>
+<p>岩手県（PrefCode=03）の特定の市町村を指定して取得する例</p>
+<blockquote>GET http://api.r-assistance.go.jp/v1/api.svc/getMunicipalities?appkey=0&amp;localgovcodes=03201|03205</blockquote>
+<blockquote class="code"><pre>
+&lt;ArrayOfLocalGoverment xmlns="http://schemas.datacontract.org/2004/07/SSDB.Site" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"&gt;
+ &lt;LocalGoverment PrefCode="03" IsPref="false" LocalGovCode="03201"&gt;
+    &lt;LocalGovName&gt;盛岡市&lt;/LocalGovName&gt; 
+  &lt;/LocalGoverment&gt;
+&lt;LocalGoverment PrefCode="03" IsPref="false" LocalGovCode="03205"&gt;
+    &lt;LocalGovName&gt;花巻市&lt;/LocalGovName&gt; 
+  &lt;/LocalGoverment&gt;
+&lt;/ArrayOfLocalGovInfo&gt;
+</pre></blockquote>
 </div>
 
 <h3><a name="searchSupportInformations">searchSupportInformations</a></h3>
@@ -637,17 +632,15 @@
 <br></p>
 <p class="bold">該当する制度が無い場合は、TotalCountの値=0、IDsは空要素となります。</p>
 <br></p>
-<p class="bold">リクエストの例</p>
-<p class="p12">GET	http://api.r-assistance.go.jp/v1/api.svc/searchSupportInformations?appkey=0</p>
-<p class="p12">&amp;maxcount=10&amp;pageno=1&amp;supporttarget=1</p>
-<br></p>
-<p class="p17">&lt;?xml version="1.0" encoding="utf-8" ?&gt; </p>
-<p class="p17">&lt;SearchResult xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;</p>
-<p class="p17"> &lt;IDs&gt;86,103,110&lt;/IDs&gt;</p>
-<p class="p17">&lt;TotalCount&gt;84&lt;/TotalCount&gt; </p>
-<p class="p17">&lt;/SearchResult&gt; </p>
-<p class="p20"><br></p>
-<p class="p12"></p>
+<h4>リクエストの例</h4>
+<blockquote>GET	http://api.r-assistance.go.jp/v1/api.svc/searchSupportInformations?appkey=0&amp;maxcount=10&amp;pageno=1&amp;supporttarget=1</blockquote>
+<blockquote class="code"><pre>
+&lt;?xml version="1.0" encoding="utf-8" ?&gt; 
+&lt;SearchResult xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+ &lt;IDs&gt;86,103,110&lt;/IDs&gt;
+&lt;TotalCount&gt;84&lt;/TotalCount&gt; 
+&lt;/SearchResult&gt; 
+</pre></blockquote>
 </div>
 
 <h3><a name="getSupportInformation">getSupportInformation</a></h3>
@@ -971,157 +964,156 @@
 <br></p>
 <p class="bold">※文字列値内の改行は、「CR+LF」または「LFのみ」の両方が混在する場合があります。詳細は「レスポンスの改行コード」を参照ください。</p>
 <br></p>
-<p class="bold">リクエストの例</p>
-<p class="p12">GET	http://api.r-assistance.go.jp/v1/api.svc/getSupportInformation?appkey=0&amp;id=1</p>
-<br></p>
-<p class="p17">&lt;?xml version="1.0" encoding="utf-8"?&gt;</p>
-<p class="p17">&lt;UM:UmDocument xmlns:UM="urn:UMDocument"&gt;</p>
-<p class="p17">  &lt;UM:r-assistance_Content uuid="29957cef-b51d-4954-9fbc-41939a349df3"&gt;</p>
-<p class="p17">    &lt;UM:service_name uuid="9c541990-8e6b-4cc6-b2c7-b4f827149b38"&gt;</p>
-<p class="p17">      &lt;UM:title&gt;制度名&lt;/UM:title&gt;</p>
-<p class="p17">      &lt;UM:title_short&gt;&lt;/UM:title_short&gt;</p>
-<p class="p17">      &lt;UM:summary&gt;&lt;/UM:summary&gt;</p>
-<p class="p17">      &lt;UM:body&gt;災害関係保証&lt;/UM:body&gt;</p>
-<p class="p17">    &lt;/UM:service_name&gt;</p>
-<p class="p17">    &lt;UM:general_list uuid="bd1cc782-8c0d-45fa-97c2-8f1b7a88a7bf"&gt;</p>
-<p class="p17">      &lt;UM:title&gt;概要&lt;/UM:title&gt;</p>
-<p class="p17">      &lt;UM:title_short&gt;&lt;/UM:title_short&gt;</p>
-<p class="p17">      &lt;UM:summary&gt;&lt;/UM:summary&gt;</p>
-<p class="p18">      &lt;UM:body&gt;●金融機関から事業の再建に必要な資金の借入を行う場合、信用保証協会が一般保証とは別枠で保証する制度です。&lt;/UM:body&gt;</p>
-<p class="p17">    &lt;/UM:general_list&gt;</p>
-<p class="p17">    &lt;UM:general_info uuid="ccdf796a-2d8a-4e0b-9d73-a25ebe39fb4a"&gt;</p>
-<p class="p17">      &lt;UM:title&gt;内容&lt;/UM:title&gt;</p>
-<p class="p17">      &lt;UM:title_short&gt;&lt;/UM:title_short&gt;</p>
-<p class="p17">      &lt;UM:summary&gt;&lt;/UM:summary&gt;</p>
-<p class="p17">      &lt;UM:body&gt;</p>
-<p class="p18">        ●金融機関から事業の再建に必要な資金の借入を行う場合、信用保証協会が一般保証とは別枠で保証する制度です。</p>
-<p class="p18">        ●融資額の全額を保証（１００％）し、保証料率は概ね０．７％～１．０％です。</p>
-<p class="p18">        ●無担保８千万円、最大で２億８千万円まで一般保証とは別枠で利用できます。</p>
-<p class="p18">        ＜出典：【内閣府】被災者支援に関する各種制度の概要（東日本大震災編）＞</p>
-<p class="p18">        ■ 保証限度額：無担保８千万円、最大で２億８千万円。</p>
-<p class="p18">        　　        　　一般保証とは、別枠。セーフティネット保証と同枠。</p>
-<p class="p18">        ■ 保証料率  ：概ね０．７％～１．０％　</p>
-<p class="p18">        ※詳しくは、各信用保証協会にお問い合わせください。</p>
-<p class="p18">        ■ 資金使途  ：事業再建に必要な資金</p>
-<p class="p18">        ■ 保証割合  ：借入額の全額（１００％）</p>
-<p class="p18">        ■　保証人    ：代表者保証のみ（第三者保証人については、原則不要。）</p>
-<p class="p18">        ＜出典：【中小企業庁】平成23年度　中小企業施策利用ガイドブック＞</p>
-<p class="p17">      &lt;/UM:body&gt;</p>
-<p class="p17">    &lt;/UM:general_info&gt;</p>
-<p class="p17">    &lt;UM:governing_law uuid="6e2700f5-7b91-40d1-bed8-e91ae410d363"&gt;</p>
-<p class="p17">      &lt;UM:title&gt;根拠法&lt;/UM:title&gt;</p>
-<p class="p17">      &lt;UM:title_short&gt;&lt;/UM:title_short&gt;</p>
-<p class="p17">      &lt;UM:summary&gt;&lt;/UM:summary&gt;</p>
-<p class="p17">      &lt;UM:body&gt;</p>
-<p class="p18">        中小企業信用保険法</p>
-<p class="p18">        激甚災害に対処するための特別の財政援助等に関する法律</p>
-<p class="p17">      &lt;/UM:body&gt;</p>
-<p class="p17">    &lt;/UM:governing_law&gt;</p>
-<p class="p17">    &lt;UM:governing_law_url uuid="31939bc8-e616-4855-819b-b04dc5431e1e"&gt;</p>
-<p class="p17">      &lt;UM:title&gt;根拠法URL&lt;/UM:title&gt;</p>
-<p class="p17">      &lt;UM:title_short&gt;&lt;/UM:title_short&gt;</p>
-<p class="p17">      &lt;UM:summary&gt;&lt;/UM:summary&gt;</p>
-<p class="p17">      &lt;UM:body&gt;</p>
-<p class="p17">        http://law.e-gov.go.jp/htmldata/S25/S25HO264.html</p>
-<p class="p17">        http://law.e-gov.go.jp/htmldata/S37/S37HO150.html</p>
-<p class="p17">      &lt;/UM:body&gt;</p>
-<p class="p17">    &lt;/UM:governing_law_url&gt;</p>
-<p class="p17">    &lt;UM:intended_person uuid="2acc6a5c-278b-4498-99c1-e3482e08c117"&gt;</p>
-<p class="p17">      &lt;UM:title&gt;対象者&lt;/UM:title&gt;</p>
-<p class="p17">      &lt;UM:title_short&gt;&lt;/UM:title_short&gt;</p>
-<p class="p17">      &lt;UM:summary&gt;&lt;/UM:summary&gt;</p>
-<p class="p17">      &lt;UM:body&gt;</p>
-<p class="p18">        下記のいずれかに該当する方</p>
-<p class="p18">        ・地震・津波等により直接被害を受けた方。</p>
-<p class="p18">        　→　市区町村等の罹災証明が必要。 （写しで可、事後提出可）</p>
-<p class="p18">        ・原発事故に係る警戒区域、計画的避難区域、緊急時避難準備区域の区域内の方。</p>
-<p class="p18">        　→ 　納税証明、商業登記簿等の確認書面が必要。 （写しで可、事後提出可）</p>
-<p class="p17">      &lt;/UM:body&gt;</p>
-<p class="p17">    &lt;/UM:intended_person&gt;</p>
-<p class="p17">    &lt;UM:application_procedure uuid="e2383cb8-4255-43cc-8d3a-0ba23db037e6"&gt;</p>
-<p class="p17">      &lt;UM:title&gt;申請・届出方法&lt;/UM:title&gt;</p>
-<p class="p17">      &lt;UM:title_short&gt;&lt;/UM:title_short&gt;</p>
-<p class="p17">      &lt;UM:summary&gt;&lt;/UM:summary&gt;</p>
-<p class="p17">      &lt;UM:body&gt;窓口にお問合せください。&lt;/UM:body&gt;</p>
-<p class="p17">    &lt;/UM:application_procedure&gt;</p>
-<p class="p17">    &lt;UM:applicatipon_deadline uuid="7e782f0f-d45d-4256-b561-4068a3b824a5"&gt;</p>
-<p class="p17">      &lt;UM:title&gt;申請期限&lt;/UM:title&gt;</p>
-<p class="p17">      &lt;UM:title_short&gt;&lt;/UM:title_short&gt;</p>
-<p class="p17">      &lt;UM:summary&gt;&lt;/UM:summary&gt;</p>
-<p class="p17">      &lt;UM:body&gt;窓口にお問合せください。&lt;/UM:body&gt;</p>
-<p class="p17">    &lt;/UM:applicatipon_deadline&gt;</p>
-<p class="p17">    &lt;UM:related_link uuid="33127bbd-5e87-4be5-9ff0-d59dba394ef3"&gt;</p>
-<p class="p17">      &lt;UM:title&gt;詳細参照先名&lt;/UM:title&gt;</p>
-<p class="p17">      &lt;UM:title_short&gt;&lt;/UM:title_short&gt;</p>
-<p class="p17">      &lt;UM:summary&gt;&lt;/UM:summary&gt;</p>
-<p class="p17">      &lt;UM:body&gt;</p>
-<p class="p18">        【内閣府】被災者支援に関する各種制度の概要（東日本大震災編）</p>
-<p class="p18">        【中小企業庁】平成23年度　中小企業施策利用ガイドブック</p>
-<p class="p17">      &lt;/UM:body&gt;</p>
-<p class="p17">    &lt;/UM:related_link&gt;</p>
-<p class="p17">    &lt;UM:related_link_url uuid="457b53b0-b5a9-467b-9203-241b5f0fc2c8"&gt;</p>
-<p class="p17">      &lt;UM:title&gt;詳細URL&lt;/UM:title&gt;</p>
-<p class="p17">      &lt;UM:title_short&gt;&lt;/UM:title_short&gt;</p>
-<p class="p17">      &lt;UM:summary&gt;&lt;/UM:summary&gt;</p>
-<p class="p17">      &lt;UM:body&gt;</p>
-<p class="p17">        http://www.bousai.go.jp/fukkou/kakusyuseido.pdf</p>
-<p class="p17">        http://www.chusho.meti.go.jp/pamflet/g_book/h23/pdf/111005Eq-v2.pdf</p>
-<p class="p17">      &lt;/UM:body&gt;</p>
-<p class="p17">    &lt;/UM:related_link_url&gt;</p>
-<p class="p17">    &lt;UM:contact uuid="2a41d0cc-b292-4e8d-8c60-9758b165d8e8"&gt;</p>
-<p class="p17">      &lt;UM:title&gt;お問合せ（組織・窓口名称）&lt;/UM:title&gt;</p>
-<p class="p17">      &lt;UM:title_short&gt;&lt;/UM:title_short&gt;</p>
-<p class="p17">      &lt;UM:summary&gt;&lt;/UM:summary&gt;</p>
-<p class="p17">      &lt;UM:body&gt;信用保証協会&lt;/UM:body&gt;</p>
-<p class="p17">    &lt;/UM:contact&gt;</p>
-<p class="p17">    &lt;UM:contact_free_description uuid="c9fded57-a88f-4220-89be-b829e33b5c37"&gt;</p>
-<p class="p17">      &lt;UM:title&gt;お問合せ（自由記述）&lt;/UM:title&gt;</p>
-<p class="p17">      &lt;UM:title_short&gt;&lt;/UM:title_short&gt;</p>
-<p class="p17">      &lt;UM:summary&gt;&lt;/UM:summary&gt;</p>
-<p class="p17">      &lt;UM:body&gt;</p>
-<p class="p18">        各都道府県等の信用保証協会</p>
-<p class="p17">        URL：http://www.zenshinhoren.or.jp/others/nearest.html</p>
-<p class="p17">      &lt;/UM:body&gt;</p>
-<p class="p17">    &lt;/UM:contact_free_description&gt;</p>
-<p class="p17">&lt;UM:contact_list uuid="7e526cb2-94b6-4b7c-b1bd-b9a0c5365cb9"&gt;</p>
-<p class="p17">&lt;UM:title&gt;お問合せ先一覧&lt;/UM:title&gt;</p>
-<p class="p17">&lt;UM:title_short&gt;&lt;/UM:title_short&gt;</p>
-<p class="p17">&lt;UM:summary&gt;&lt;/UM:summary&gt;</p>
-<p class="p18">&lt;UM:body&gt;岩手県//岩手県（税関係）//宮城県//宮城県（税関係）//福島県//福島県（税関係）&lt;/UM:body&gt;</p>
-<p class="p17">&lt;/UM:contact_list&gt;</p>
-<p class="p17">    &lt;UM:intended_area uuid="790c94e5-cafc-4166-bc47-158b77f3a9a1"&gt;</p>
-<p class="p17">      &lt;UM:title&gt;対象地域&lt;/UM:title&gt;</p>
-<p class="p17">      &lt;UM:title_short&gt;&lt;/UM:title_short&gt;</p>
-<p class="p17">      &lt;UM:summary&gt;&lt;/UM:summary&gt;</p>
-<p class="p17">      &lt;UM:body&gt;03000,04000,07000&lt;/UM:body&gt;</p>
-<p class="p17">    &lt;/UM:intended_area&gt;</p>
-<p class="p17">    &lt;UM:assistance_type uuid="858d880a-fbf4-42e9-a85e-0eaa94e81a63"&gt;</p>
-<p class="p17">      &lt;UM:title&gt;支援の種類&lt;/UM:title&gt;</p>
-<p class="p17">      &lt;UM:title_short&gt;&lt;/UM:title_short&gt;</p>
-<p class="p17">      &lt;UM:summary&gt;&lt;/UM:summary&gt;</p>
-<p class="p17">      &lt;UM:body&gt;信用保証&lt;/UM:body&gt;</p>
-<p class="p17">    &lt;/UM:assistance_type&gt;</p>
-<p class="p17">    &lt;UM:businesses_segments uuid="0f079875-24d3-4ab2-b15c-0f95837e7c90"&gt;</p>
-<p class="p17">      &lt;UM:title&gt;事業区分&lt;/UM:title&gt;</p>
-<p class="p17">      &lt;UM:title_short&gt;&lt;/UM:title_short&gt;</p>
-<p class="p17">      &lt;UM:summary&gt;&lt;/UM:summary&gt;</p>
-<p class="p17">      &lt;UM:body&gt;すべての事業主のみなさま&lt;/UM:body&gt;</p>
-<p class="p17">    &lt;/UM:businesses_segments&gt;</p>
-<p class="p17">    &lt;UM:businesses_situation uuid="1b481f15-52bb-46b8-a342-de78725918a8"&gt;</p>
-<p class="p17">      &lt;UM:title&gt;状況&lt;/UM:title&gt;</p>
-<p class="p17">      &lt;UM:title_short&gt;&lt;/UM:title_short&gt;</p>
-<p class="p17">      &lt;UM:summary&gt;&lt;/UM:summary&gt;</p>
-<p class="p17">      &lt;UM:body&gt;資金繰りの支援&lt;/UM:body&gt;</p>
-<p class="p17">    &lt;/UM:businesses_situation&gt;</p>
-<p class="p17">    &lt;UM:author&gt;事務局&lt;/UM:author&gt;</p>
-<p class="p17">    &lt;UM:created_at&gt;2012-01-16T07:26:00+09:00&lt;/UM:created_at&gt;</p>
-<p class="p17">    &lt;UM:updated_at&gt;2012-01-16T07:26:00+09:00&lt;/UM:updated_at&gt;</p>
-<p class="p17">    &lt;UM:meta name="update_kind" value="0"/&gt;</p>
-<p class="p17">&lt;UM:meta name="update_comment" value="対象者が更新されました。"/&gt;</p>
-<p class="p17">  &lt;/UM:r-assistance_Content&gt;</p>
-<p class="p17">&lt;/UM:UmDocument&gt;</p>
-<p class="p20"><br></p>
-<p class="p12"></p>
+<h4>リクエストの例</h4>
+<blockquote>GET	http://api.r-assistance.go.jp/v1/api.svc/getSupportInformation?appkey=0&amp;id=1</blockquote>
+<blockquote class="code"><pre>
+&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;UM:UmDocument xmlns:UM="urn:UMDocument"&gt;
+  &lt;UM:r-assistance_Content uuid="29957cef-b51d-4954-9fbc-41939a349df3"&gt;
+    &lt;UM:service_name uuid="9c541990-8e6b-4cc6-b2c7-b4f827149b38"&gt;
+      &lt;UM:title&gt;制度名&lt;/UM:title&gt;
+      &lt;UM:title_short&gt;&lt;/UM:title_short&gt;
+      &lt;UM:summary&gt;&lt;/UM:summary&gt;
+      &lt;UM:body&gt;災害関係保証&lt;/UM:body&gt;
+    &lt;/UM:service_name&gt;
+    &lt;UM:general_list uuid="bd1cc782-8c0d-45fa-97c2-8f1b7a88a7bf"&gt;
+      &lt;UM:title&gt;概要&lt;/UM:title&gt;
+      &lt;UM:title_short&gt;&lt;/UM:title_short&gt;
+      &lt;UM:summary&gt;&lt;/UM:summary&gt;
+      &lt;UM:body&gt;●金融機関から事業の再建に必要な資金の借入を行う場合、信用保証協会が一般保証とは別枠で保証する制度です。&lt;/UM:body&gt;
+    &lt;/UM:general_list&gt;
+    &lt;UM:general_info uuid="ccdf796a-2d8a-4e0b-9d73-a25ebe39fb4a"&gt;
+      &lt;UM:title&gt;内容&lt;/UM:title&gt;
+      &lt;UM:title_short&gt;&lt;/UM:title_short&gt;
+      &lt;UM:summary&gt;&lt;/UM:summary&gt;
+      &lt;UM:body&gt;
+        ●金融機関から事業の再建に必要な資金の借入を行う場合、信用保証協会が一般保証とは別枠で保証する制度です。
+        ●融資額の全額を保証（１００％）し、保証料率は概ね０．７％～１．０％です。
+        ●無担保８千万円、最大で２億８千万円まで一般保証とは別枠で利用できます。
+        ＜出典：【内閣府】被災者支援に関する各種制度の概要（東日本大震災編）＞
+        ■ 保証限度額：無担保８千万円、最大で２億８千万円。
+        　　        　　一般保証とは、別枠。セーフティネット保証と同枠。
+        ■ 保証料率  ：概ね０．７％～１．０％　
+        ※詳しくは、各信用保証協会にお問い合わせください。
+        ■ 資金使途  ：事業再建に必要な資金
+        ■ 保証割合  ：借入額の全額（１００％）
+        ■　保証人    ：代表者保証のみ（第三者保証人については、原則不要。）
+        ＜出典：【中小企業庁】平成23年度　中小企業施策利用ガイドブック＞
+      &lt;/UM:body&gt;
+    &lt;/UM:general_info&gt;
+    &lt;UM:governing_law uuid="6e2700f5-7b91-40d1-bed8-e91ae410d363"&gt;
+      &lt;UM:title&gt;根拠法&lt;/UM:title&gt;
+      &lt;UM:title_short&gt;&lt;/UM:title_short&gt;
+      &lt;UM:summary&gt;&lt;/UM:summary&gt;
+      &lt;UM:body&gt;
+        中小企業信用保険法
+        激甚災害に対処するための特別の財政援助等に関する法律
+      &lt;/UM:body&gt;
+    &lt;/UM:governing_law&gt;
+    &lt;UM:governing_law_url uuid="31939bc8-e616-4855-819b-b04dc5431e1e"&gt;
+      &lt;UM:title&gt;根拠法URL&lt;/UM:title&gt;
+      &lt;UM:title_short&gt;&lt;/UM:title_short&gt;
+      &lt;UM:summary&gt;&lt;/UM:summary&gt;
+      &lt;UM:body&gt;
+        http://law.e-gov.go.jp/htmldata/S25/S25HO264.html
+        http://law.e-gov.go.jp/htmldata/S37/S37HO150.html
+      &lt;/UM:body&gt;
+    &lt;/UM:governing_law_url&gt;
+    &lt;UM:intended_person uuid="2acc6a5c-278b-4498-99c1-e3482e08c117"&gt;
+      &lt;UM:title&gt;対象者&lt;/UM:title&gt;
+      &lt;UM:title_short&gt;&lt;/UM:title_short&gt;
+      &lt;UM:summary&gt;&lt;/UM:summary&gt;
+      &lt;UM:body&gt;
+        下記のいずれかに該当する方
+        ・地震・津波等により直接被害を受けた方。
+        　→　市区町村等の罹災証明が必要。 （写しで可、事後提出可）
+        ・原発事故に係る警戒区域、計画的避難区域、緊急時避難準備区域の区域内の方。
+        　→ 　納税証明、商業登記簿等の確認書面が必要。 （写しで可、事後提出可）
+      &lt;/UM:body&gt;
+    &lt;/UM:intended_person&gt;
+    &lt;UM:application_procedure uuid="e2383cb8-4255-43cc-8d3a-0ba23db037e6"&gt;
+      &lt;UM:title&gt;申請・届出方法&lt;/UM:title&gt;
+      &lt;UM:title_short&gt;&lt;/UM:title_short&gt;
+      &lt;UM:summary&gt;&lt;/UM:summary&gt;
+      &lt;UM:body&gt;窓口にお問合せください。&lt;/UM:body&gt;
+    &lt;/UM:application_procedure&gt;
+    &lt;UM:applicatipon_deadline uuid="7e782f0f-d45d-4256-b561-4068a3b824a5"&gt;
+      &lt;UM:title&gt;申請期限&lt;/UM:title&gt;
+      &lt;UM:title_short&gt;&lt;/UM:title_short&gt;
+      &lt;UM:summary&gt;&lt;/UM:summary&gt;
+      &lt;UM:body&gt;窓口にお問合せください。&lt;/UM:body&gt;
+    &lt;/UM:applicatipon_deadline&gt;
+    &lt;UM:related_link uuid="33127bbd-5e87-4be5-9ff0-d59dba394ef3"&gt;
+      &lt;UM:title&gt;詳細参照先名&lt;/UM:title&gt;
+      &lt;UM:title_short&gt;&lt;/UM:title_short&gt;
+      &lt;UM:summary&gt;&lt;/UM:summary&gt;
+      &lt;UM:body&gt;
+        【内閣府】被災者支援に関する各種制度の概要（東日本大震災編）
+        【中小企業庁】平成23年度　中小企業施策利用ガイドブック
+      &lt;/UM:body&gt;
+    &lt;/UM:related_link&gt;
+    &lt;UM:related_link_url uuid="457b53b0-b5a9-467b-9203-241b5f0fc2c8"&gt;
+      &lt;UM:title&gt;詳細URL&lt;/UM:title&gt;
+      &lt;UM:title_short&gt;&lt;/UM:title_short&gt;
+      &lt;UM:summary&gt;&lt;/UM:summary&gt;
+      &lt;UM:body&gt;
+        http://www.bousai.go.jp/fukkou/kakusyuseido.pdf
+        http://www.chusho.meti.go.jp/pamflet/g_book/h23/pdf/111005Eq-v2.pdf
+      &lt;/UM:body&gt;
+    &lt;/UM:related_link_url&gt;
+    &lt;UM:contact uuid="2a41d0cc-b292-4e8d-8c60-9758b165d8e8"&gt;
+      &lt;UM:title&gt;お問合せ（組織・窓口名称）&lt;/UM:title&gt;
+      &lt;UM:title_short&gt;&lt;/UM:title_short&gt;
+      &lt;UM:summary&gt;&lt;/UM:summary&gt;
+      &lt;UM:body&gt;信用保証協会&lt;/UM:body&gt;
+    &lt;/UM:contact&gt;
+    &lt;UM:contact_free_description uuid="c9fded57-a88f-4220-89be-b829e33b5c37"&gt;
+      &lt;UM:title&gt;お問合せ（自由記述）&lt;/UM:title&gt;
+      &lt;UM:title_short&gt;&lt;/UM:title_short&gt;
+      &lt;UM:summary&gt;&lt;/UM:summary&gt;
+      &lt;UM:body&gt;
+        各都道府県等の信用保証協会
+        URL：http://www.zenshinhoren.or.jp/others/nearest.html
+      &lt;/UM:body&gt;
+    &lt;/UM:contact_free_description&gt;
+&lt;UM:contact_list uuid="7e526cb2-94b6-4b7c-b1bd-b9a0c5365cb9"&gt;
+&lt;UM:title&gt;お問合せ先一覧&lt;/UM:title&gt;
+&lt;UM:title_short&gt;&lt;/UM:title_short&gt;
+&lt;UM:summary&gt;&lt;/UM:summary&gt;
+&lt;UM:body&gt;岩手県//岩手県（税関係）//宮城県//宮城県（税関係）//福島県//福島県（税関係）&lt;/UM:body&gt;
+&lt;/UM:contact_list&gt;
+    &lt;UM:intended_area uuid="790c94e5-cafc-4166-bc47-158b77f3a9a1"&gt;
+      &lt;UM:title&gt;対象地域&lt;/UM:title&gt;
+      &lt;UM:title_short&gt;&lt;/UM:title_short&gt;
+      &lt;UM:summary&gt;&lt;/UM:summary&gt;
+      &lt;UM:body&gt;03000,04000,07000&lt;/UM:body&gt;
+    &lt;/UM:intended_area&gt;
+    &lt;UM:assistance_type uuid="858d880a-fbf4-42e9-a85e-0eaa94e81a63"&gt;
+      &lt;UM:title&gt;支援の種類&lt;/UM:title&gt;
+      &lt;UM:title_short&gt;&lt;/UM:title_short&gt;
+      &lt;UM:summary&gt;&lt;/UM:summary&gt;
+      &lt;UM:body&gt;信用保証&lt;/UM:body&gt;
+    &lt;/UM:assistance_type&gt;
+    &lt;UM:businesses_segments uuid="0f079875-24d3-4ab2-b15c-0f95837e7c90"&gt;
+      &lt;UM:title&gt;事業区分&lt;/UM:title&gt;
+      &lt;UM:title_short&gt;&lt;/UM:title_short&gt;
+      &lt;UM:summary&gt;&lt;/UM:summary&gt;
+      &lt;UM:body&gt;すべての事業主のみなさま&lt;/UM:body&gt;
+    &lt;/UM:businesses_segments&gt;
+    &lt;UM:businesses_situation uuid="1b481f15-52bb-46b8-a342-de78725918a8"&gt;
+      &lt;UM:title&gt;状況&lt;/UM:title&gt;
+      &lt;UM:title_short&gt;&lt;/UM:title_short&gt;
+      &lt;UM:summary&gt;&lt;/UM:summary&gt;
+      &lt;UM:body&gt;資金繰りの支援&lt;/UM:body&gt;
+    &lt;/UM:businesses_situation&gt;
+    &lt;UM:author&gt;事務局&lt;/UM:author&gt;
+    &lt;UM:created_at&gt;2012-01-16T07:26:00+09:00&lt;/UM:created_at&gt;
+    &lt;UM:updated_at&gt;2012-01-16T07:26:00+09:00&lt;/UM:updated_at&gt;
+    &lt;UM:meta name="update_kind" value="0"/&gt;
+&lt;UM:meta name="update_comment" value="対象者が更新されました。"/&gt;
+  &lt;/UM:r-assistance_Content&gt;
+&lt;/UM:UmDocument&gt;
+</pre></blockquote>
 </div>
 
 <h3><a name="getSupportInformationSummaries">getSupportInformationSummaries</a></h3>
