@@ -31,7 +31,7 @@
     p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 20.0px Times; min-height: 24.0px}
     p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 14.0px 'Hiragino Mincho ProN'}
     p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; min-height: 18.0px}
-    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Hiragino Mincho ProN'}
+    p.bold {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Hiragino Mincho ProN'}
     p.p9 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px Times}
     p.p10 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px 'Hiragino Mincho ProN'}
     p.p11 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px Times; min-height: 11.0px}
@@ -196,77 +196,83 @@ APIにパラメータを指定する場合は、APIのURLに「?」を連結し�
 <hr>
 
 <h2>APIリファレンス</h2>
-<br></p>
 <h3>getSupportTargets</h3>
 <div class="item">
-支援対象の配列を取得します。</p>
-支援対象は、制度の大分類である「個人向け」や「事業者向け」を表します。</p>
-<br></p>
-<p class="p12">URL</p>
-<p class="p12">http://api.r-assistance.go.jp/v1/api.svc/getSupportTargets</p>
-<br></p>
-パラメータ</p>
-<p class="p12">appkey</p>
-<p class="p16">省略不可。指定する値は「appkeyについて」を参照ください。</p>
-<br></p>
-<p class="p8"><b>戻り値</b></p>
-<p class="p17">(ArrayOf)SupportTarget</p>
-<p class="p8">要素/属性</p>
-<p class="p8">データの内容</p>
-<p class="p8">データ型</p>
-<p class="p17">ID</p>
-<p class="p8">支援対象のID</p>
-<p class="p8">数値</p>
-<p class="p17">Name</p>
-<p class="p8">支援対象の名前</p>
-<p class="p8">文字列</p>
-<br></p>
-<p class="p8">リクエストの例</p>
-<p class="p12">GET	http://api.r-assistance.go.jp/v1/api.svc/getSupportTargets?appkey=0</p>
-<br></p>
-<p class="p17">&lt;?xml version="1.0" encoding="utf-8" ?&gt; </p>
-<p class="p17">&lt;ArrayOfSupportTarget xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;</p>
-<p class="p17">&lt;SupportTarget ID=”1”&gt;</p>
-<p class="p17">&lt;Name&gt;個人向け&lt;/Name&gt;</p>
-<p class="p17">&lt;/SupportTarget&gt;</p>
-<p class="p17">&lt;SupportTarget ID=”2”&gt;</p>
-<p class="p17">&lt;Name&gt;事業者向け&lt;/Name&gt;</p>
-<p class="p17">&lt;/SupportTarget&gt;</p>
-<p class="p17">&lt;SupportTarget ID=”3”&gt;</p>
-<p class="p17">&lt;Name&gt;地方公共団体向け&lt;/Name&gt;</p>
-<p class="p17">&lt;/SupportTarget&gt;</p>
-<p class="p17">&lt;/ArrayOfSupportTarget&gt; </p>
+<p>支援対象の配列を取得します。<br>支援対象は、制度の大分類である「個人向け」や「事業者向け」を表します。</p>
+<h4>URL</h4>
+<p>http://api.r-assistance.go.jp/v1/api.svc/getSupportTargets</p>
+<h4>パラメータ</h4>
+<ul>
+<li>appkey
+<ul>
+<li>省略不可。指定する値は「appkeyについて」を参照ください。
+</ul>
+</ul>
+<h4>戻り値</h4>
+<table class="table">
+<tr>(ArrayOf)SupportTarget</p>
+<th>要素/属性
+<th>データの内容
+<th>データ型
+<tr>
+<td>ID
+<td>支援対象のID
+<td>数値
+<tr>
+<td>Name
+<td>支援対象の名前
+<td>文字列
+</table>
+
+<h4>リクエストの例</h4>
+<blockquote>
+GET	http://api.r-assistance.go.jp/v1/api.svc/getSupportTargets?appkey=0
+</blockquote>
+
+<blockquote class="code"><pre>
+&lt;?xml version="1.0" encoding="utf-8" ?&gt; 
+&lt;ArrayOfSupportTarget xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+&lt;SupportTarget ID=”1”&gt;
+&lt;Name&gt;個人向け&lt;/Name&gt;
+&lt;/SupportTarget&gt;
+&lt;SupportTarget ID=”2”&gt;
+&lt;Name&gt;事業者向け&lt;/Name&gt;
+&lt;/SupportTarget&gt;
+&lt;SupportTarget ID=”3”&gt;
+&lt;Name&gt;地方公共団体向け&lt;/Name&gt;
+&lt;/SupportTarget&gt;
+&lt;/ArrayOfSupportTarget&gt; 
+</pre></blockquote>
 </div>
 
 <h3>getSearchCategories</h3>
 <div class="item">
-<p class="p8">指定した支援対象に含まれる検索カテゴリの配列を取得します。</p>
-<br></p>
-<p class="p12">URL</p>
-<p class="p12">http://api.r-assistance.go.jp/v1/api.svc/getSearchCategories</p>
-<br></p>
-<p class="p8">パラメータ</p>
+<p>指定した支援対象に含まれる検索カテゴリの配列を取得します。</p>
+<h4>URL</h4>
+<blockquote>http://api.r-assistance.go.jp/v1/api.svc/getSearchCategories</blockquote>
+<h4>パラメータ</h4>
 <p class="p12">appkey</p>
 <p class="p16">省略不可。指定する値は「appkeyについて」を参照ください。</p>
 <p class="p12">supporttarget</p>
 <p class="p16">省略可。支援対象のID。省略した場合、共通の検索カテゴリを取得します。</p>
 <p class="p16">getSupportTargetsリクエストで取得されたSupportTarget要素のID属性の値を指定します。</p>
-<p class="p8">　　　※数値以外の値を指定した場合、<i>(400)</i>エラーとなります。</p>
-<p class="p8">　　　※指定した<i>ID</i>のデータが存在しない場合、該当データが含まれない配列が返ります。</p>
+<p class="bold">　　　※数値以外の値を指定した場合、<i>(400)</i>エラーとなります。</p>
+<p class="bold">　　　※指定した<i>ID</i>のデータが存在しない場合、該当データが含まれない配列が返ります。</p>
 <i></i><br></p>
-<p class="p8"><b>戻り値</b></p>
+
+<h4>戻り値</h4>
 <p class="p17">(ArrayOf)SearchCategory</p>
-<p class="p8">要素/属性</p>
-<p class="p8">データの内容</p>
-<p class="p8">データ型</p>
+<p class="bold">要素/属性</p>
+<p class="bold">データの内容</p>
+<p class="bold">データ型</p>
 <p class="p17">ID</p>
-<p class="p8">検索カテゴリのID</p>
-<p class="p8">数値</p>
+<p class="bold">検索カテゴリのID</p>
+<p class="bold">数値</p>
 <p class="p17">Name</p>
-<p class="p8">検索カテゴリの名称</p>
-<p class="p8">文字列</p>
+<p class="bold">検索カテゴリの名称</p>
+<p class="bold">文字列</p>
 <br></p>
-<p class="p8">リクエストの例</p>
+<p class="bold">リクエストの例</p>
 <p class="p12">GET	http://api.r-assistance.go.jp/v1/api.svc/getSearchCategories?appkey=0&amp;supporttarget=1</p>
 <br></p>
 <p class="p17">&lt;?xml version="1.0" encoding="utf-8" ?&gt; </p>
@@ -283,34 +289,34 @@ APIにパラメータを指定する場合は、APIのURLに「?」を連結し�
 
 <h3>getSearchConditionItems</h3>
 <div class="item">
-<p class="p8">指定した検索カテゴリに含まれる抽出項目の配列を取得します。</p>
-<p class="p8">抽出項目のIDをsearchSupportInformationsリクエストで指定することにより、該当する制度情報を検索できます。</p>
+<p class="bold">指定した検索カテゴリに含まれる抽出項目の配列を取得します。</p>
+<p class="bold">抽出項目のIDをsearchSupportInformationsリクエストで指定することにより、該当する制度情報を検索できます。</p>
 <br></p>
-<p class="p12">URL</p>
+<h4>URL</h4>
 <p class="p12">http://api.r-assistance.go.jp/v1/api.svc/getSearchConditionItems</p>
 <br></p>
-<p class="p8">パラメータ</p>
+<h4>パラメータ</h4>
 <p class="p12">appkey</p>
 <p class="p16">省略不可。指定する値は「appkeyについて」を参照ください。</p>
 <p class="p12">category</p>
 <p class="p16">省略不可。検索カテゴリのID。</p>
 <p class="p16">getSearchCategoriesリクエストで取得されたSearchCategory要素のID属性の値を指定します。</p>
-<p class="p8">　　　※数値以外の値を指定した場合、<i>(400)</i>エラーとなります。</p>
-<p class="p8">　　　※指定した<i>ID</i>のデータが存在しない場合、該当データが含まれない配列が返ります。</p>
+<p class="bold">　　　※数値以外の値を指定した場合、<i>(400)</i>エラーとなります。</p>
+<p class="bold">　　　※指定した<i>ID</i>のデータが存在しない場合、該当データが含まれない配列が返ります。</p>
 <i></i><br></p>
-<p class="p8"><b>戻り値</b></p>
+<h4>戻り値</h4>
 <p class="p17">(ArrayOf)SearchConditionItem</p>
-<p class="p8">要素/属性</p>
-<p class="p8">データの内容</p>
-<p class="p8">データ型</p>
+<p class="bold">要素/属性</p>
+<p class="bold">データの内容</p>
+<p class="bold">データ型</p>
 <p class="p17">ID</p>
-<p class="p8">抽出項目のID</p>
-<p class="p8">数値</p>
+<p class="bold">抽出項目のID</p>
+<p class="bold">数値</p>
 <p class="p17">Name</p>
-<p class="p8">抽出項目の名称</p>
-<p class="p8">文字列</p>
+<p class="bold">抽出項目の名称</p>
+<p class="bold">文字列</p>
 <br></p>
-<p class="p8">リクエストの例</p>
+<p class="bold">リクエストの例</p>
 <p class="p12">GET	http://api.r-assistance.go.jp/v1/api.svc/getSearchConditionItems?appkey=0&amp;category=2</p>
 <br></p>
 <p class="p17">&lt;?xml version="1.0" encoding="utf-8" ?&gt; </p>
@@ -327,37 +333,37 @@ APIにパラメータを指定する場合は、APIのURLに「?」を連結し�
 
 <h3>getPrefectures</h3>
 <div class="item">
-<p class="p8">都道府県を表す地方公共団体（コードおよび名称）の配列を取得します。</p>
+<p class="bold">都道府県を表す地方公共団体（コードおよび名称）の配列を取得します。</p>
 <br></p>
-<p class="p12">URL</p>
+<h4>URL</h4>
 <p class="p12">http://api.r-assistance.go.jp/v1/api.svc/getPrefectures</p>
 <br></p>
-<p class="p8">パラメータ</p>
+<h4>パラメータ</h4>
 <p class="p12">appkey</p>
 <p class="p16">省略不可。指定する値は「appkeyについて」を参照ください。</p>
 <p class="p12"><i>prefcodes</i></p>
-<p class="p8">省略可。都道府県コード。</p>
-<p class="p8">複数のコードを指定する場合は、パイプ( | )文字で区切ります。</p>
-<p class="p8">省略した場合は、全ての都道府県が対象となります。</p>
-<p class="p8">　　　※指定したコードのデータが存在しない場合、該当データが含まれない配列が返ります。</p>
+<p class="bold">省略可。都道府県コード。</p>
+<p class="bold">複数のコードを指定する場合は、パイプ( | )文字で区切ります。</p>
+<p class="bold">省略した場合は、全ての都道府県が対象となります。</p>
+<p class="bold">　　　※指定したコードのデータが存在しない場合、該当データが含まれない配列が返ります。</p>
 <i></i><br></p>
-<p class="p8"><b>戻り値</b></p>
+<h4>戻り値</h4>
 <p class="p17">(ArrayOf)LocalGoverment</p>
-<p class="p8">要素/属性</p>
-<p class="p8">データの内容</p>
-<p class="p8">データ型</p>
+<p class="bold">要素/属性</p>
+<p class="bold">データの内容</p>
+<p class="bold">データ型</p>
 <p class="p17">PrefCode</p>
-<p class="p8">都道府県コード</p>
-<p class="p8">文字列</p>
+<p class="bold">都道府県コード</p>
+<p class="bold">文字列</p>
 <p class="p17">LocalGovCode</p>
-<p class="p8">地方公共団体コード</p>
-<p class="p8">文字列</p>
+<p class="bold">地方公共団体コード</p>
+<p class="bold">文字列</p>
 <p class="p19">LocalGovName</p>
-<p class="p8">地方公共団体名</p>
-<p class="p8">文字列</p>
-<p class="p8">※配列は、復旧・復興支援制度データベースで指定された順序で返します。</p>
+<p class="bold">地方公共団体名</p>
+<p class="bold">文字列</p>
+<p class="bold">※配列は、復旧・復興支援制度データベースで指定された順序で返します。</p>
 <br></p>
-<p class="p8">リクエストの例</p>
+<p class="bold">リクエストの例</p>
 <p class="p12">GET	http://api.r-assistance.go.jp/v1/api.svc/getPrefectures?appkey=0</p>
 <br></p>
 <p class="p17">&lt;?xml version="1.0" encoding="utf-8"?&gt;</p>
@@ -382,12 +388,12 @@ APIにパラメータを指定する場合は、APIのURLに「?」を連結し�
 
 <h3>getMunicipalities</h3>
 <div class="item">
-<p class="p8">市町村を表す地方公共団体（コードおよび名称）を取得します。</p>
+<p class="bold">市町村を表す地方公共団体（コードおよび名称）を取得します。</p>
 <br></p>
-<p class="p12">URL</p>
+<h4>URL</h4>
 <p class="p12">http://api.r-assistance.go.jp/v1/api.svc/getMunicipalities</p>
 <br></p>
-<p class="p8">パラメータ</p>
+<h4>パラメータ</h4>
 <p class="p12">appkey</p>
 <p class="p16">省略不可。指定する値は「appkeyについて」を参照ください。</p>
 <p class="p12"><i>prefcode</i></p>
@@ -397,30 +403,30 @@ APIにパラメータを指定する場合は、APIのURLに「?」を連結し�
 <p class="p12"><i>localgovcodes</i></p>
 <p class="p16">省略可。地方公共団体コード。</p>
 <p class="p16">複数のコードを指定する場合は、パイプ( | )文字で区切ります。</p>
-<p class="p8">    ※指定したコードのデータが存在しない場合、該当データが含まれない配列が返ります。</p>
+<p class="bold">    ※指定したコードのデータが存在しない場合、該当データが含まれない配列が返ります。</p>
 <i></i><br></p>
-<p class="p8">※都道府県コードから関連する地方公共団体のコードおよび名前を取得する場合は、prefcodeのみ指定します。</p>
-<p class="p8">※地方公共団体コードから名前を取得する場合は、localgovcodesのみ指定します。</p>
-<p class="p8">※両方のパラメータを指定した場合は、(400)エラーとなります。</p>
-<p class="p8">※戻り値には、都道府県を示す地方公共団体は含まれません。</p>
+<p class="bold">※都道府県コードから関連する地方公共団体のコードおよび名前を取得する場合は、prefcodeのみ指定します。</p>
+<p class="bold">※地方公共団体コードから名前を取得する場合は、localgovcodesのみ指定します。</p>
+<p class="bold">※両方のパラメータを指定した場合は、(400)エラーとなります。</p>
+<p class="bold">※戻り値には、都道府県を示す地方公共団体は含まれません。</p>
 <br></p>
-<p class="p8"><b>戻り値</b></p>
+<h4>戻り値</h4>
 <p class="p17">(ArrayOf)LocalGoverment</p>
-<p class="p8">要素/属性</p>
-<p class="p8">データの内容</p>
-<p class="p8">データ型</p>
+<p class="bold">要素/属性</p>
+<p class="bold">データの内容</p>
+<p class="bold">データ型</p>
 <p class="p17">PrefCode</p>
-<p class="p8">都道府県コード</p>
-<p class="p8">文字列</p>
+<p class="bold">都道府県コード</p>
+<p class="bold">文字列</p>
 <p class="p17">LocalGovCode</p>
-<p class="p8">地方公共団体コード</p>
-<p class="p8">文字列</p>
+<p class="bold">地方公共団体コード</p>
+<p class="bold">文字列</p>
 <p class="p17">LocalGovName</p>
-<p class="p8">地方公共団体名</p>
-<p class="p8">文字列</p>
+<p class="bold">地方公共団体名</p>
+<p class="bold">文字列</p>
 <br></p>
-<p class="p8">リクエストの例1</p>
-<p class="p8">岩手県（PrefCode=03）の全ての市町村を取得する例</p>
+<p class="bold">リクエストの例1</p>
+<p class="bold">岩手県（PrefCode=03）の全ての市町村を取得する例</p>
 <br></p>
 <p class="p12">GET	http://api.r-assistance.go.jp/v1/api.svc/getMunicipalities?appkey=0&amp;prefcode=03</p>
 <br></p>
@@ -445,8 +451,8 @@ APIにパラメータを指定する場合は、APIのURLに「?」を連結し�
 <p class="p17">&lt;/ArrayOfLocalGoverment&gt;</p>
 <p class="p20"><br></p>
 <p class="p20"><br></p>
-<p class="p8">リクエストの例2</p>
-<p class="p8">岩手県（PrefCode=03）の特定の市町村を指定して取得する例</p>
+<p class="bold">リクエストの例2</p>
+<p class="bold">岩手県（PrefCode=03）の特定の市町村を指定して取得する例</p>
 <br></p>
 <p class="p12">GET</p>
 <p class="p12">http://api.r-assistance.go.jp/v1/api.svc/getMunicipalities?appkey=0&amp;localgovcodes=03201|03205</p>
@@ -465,12 +471,12 @@ APIにパラメータを指定する場合は、APIのURLに「?」を連結し�
 
 <h3>searchSupportInformations</h3>
 <div class="item">
-<p class="p8">指定した条件に該当する制度情報を検索します。条件に該当する制度IDを返します。</p>
+<p class="bold">指定した条件に該当する制度情報を検索します。条件に該当する制度IDを返します。</p>
 <br></p>
-<p class="p12">URL</p>
+<h4>URL</h4>
 <p class="p12">http://api.r-assistance.go.jp/v1/api.svc/searchSupportInformations</p>
 <br></p>
-<p class="p8">パラメータ</p>
+<h4>パラメータ</h4>
 <p class="p12">appkey</p>
 <p class="p16">省略不可。指定する値は「appkeyについて」を参照ください。</p>
 <p class="p21"><i>maxcount</i></p>
@@ -492,7 +498,7 @@ APIにパラメータを指定する場合は、APIのURLに「?」を連結し�
 <p class="p16">省略可。フリーワード検索の条件文字列を指定します。</p>
 <p class="p16">複数の文字列による検索を指定する場合は、文字列を全角スペース（‘　’）または半角スペース（‘ ’）で区切ります。</p>
 <p class="p16">条件文字列はURLエンコード（UTF-8）する必要があります。URLエンコードしていない場合は正しい検索結果が得られません。</p>
-<p class="p8">※全体で100文字を超える値を指定した場合、<i>(400)</i>エラーとなります。</p>
+<p class="bold">※全体で100文字を超える値を指定した場合、<i>(400)</i>エラーとなります。</p>
 <p class="p24">※全角または半角スペース(‘　’,' ')区切りで複数指定した条件の個数が5項目を超える場合、<i>(400)</i>エラーとなります。</p>
 <p class="p21"><i>qmode</i></p>
 <p class="p22">省略可。フリーワード検索の検索モードを指定します。</p>
@@ -536,23 +542,23 @@ APIにパラメータを指定する場合は、APIのURLに「?」を連結し�
 <p class="p16">※上記の値以外を指定した場合、省略時と同じ並び順になります。</p>
 <p class="p16">※数値以外の値を指定した場合、<i>(400)</i>エラーとなります。</p>
 <i></i><br></p>
-<p class="p8">※各検索パラメータ間の検索条件はAND条件となります。</p>
+<p class="bold">※各検索パラメータ間の検索条件はAND条件となります。</p>
 <br></p>
-<p class="p8"><b>戻り値</b></p>
+<h4>戻り値</h4>
 <p class="p17">SearchResult</p>
-<p class="p8">要素/属性</p>
-<p class="p8">データの内容</p>
-<p class="p8">データ型</p>
+<p class="bold">要素/属性</p>
+<p class="bold">データの内容</p>
+<p class="bold">データ型</p>
 <p class="p17">IDs</p>
-<p class="p8">該当する制度情報のID。該当の制度が複数ある場合は、各IDがカンマで区切られます。</p>
-<p class="p8">文字列</p>
+<p class="bold">該当する制度情報のID。該当の制度が複数ある場合は、各IDがカンマで区切られます。</p>
+<p class="bold">文字列</p>
 <p class="p17">TotalCount</p>
-<p class="p8">該当する制度情報の総件数</p>
-<p class="p8">数値</p>
+<p class="bold">該当する制度情報の総件数</p>
+<p class="bold">数値</p>
 <br></p>
-<p class="p8">該当する制度が無い場合は、TotalCountの値=0、IDsは空要素となります。</p>
+<p class="bold">該当する制度が無い場合は、TotalCountの値=0、IDsは空要素となります。</p>
 <br></p>
-<p class="p8">リクエストの例</p>
+<p class="bold">リクエストの例</p>
 <p class="p12">GET	http://api.r-assistance.go.jp/v1/api.svc/searchSupportInformations?appkey=0</p>
 <p class="p12">&amp;maxcount=10&amp;pageno=1&amp;supporttarget=1</p>
 <br></p>
@@ -567,12 +573,12 @@ APIにパラメータを指定する場合は、APIのURLに「?」を連結し�
 
 <h3>getSupportInformation</h3>
 <div class="item">
-<p class="p8">指定したIDの制度情報をOpenUMの形式で取得します。</p>
+<p class="bold">指定したIDの制度情報をOpenUMの形式で取得します。</p>
 <br></p>
-<p class="p12">URL</p>
+<h4>URL</h4>
 <p class="p12">http://api.r-assistance.go.jp/v1/api.svc/getSupportInformation</p>
 <br></p>
-<p class="p8">パラメータ</p>
+<h4>パラメータ</h4>
 <p class="p12">appkey</p>
 <p class="p16">省略不可。指定する値は「appkeyについて」を参照ください。</p>
 <p class="p21"><i>id</i></p>
@@ -581,35 +587,35 @@ APIにパラメータを指定する場合は、APIのURLに「?」を連結し�
 <p class="p16">※数値以外の値を指定した場合、<i>(400)</i>エラーとなります。</p>
 <p class="p16">※指定した<i>ID</i>のデータが存在しない場合、<i>r-assistance_Content </i>要素を含まないデータが返されます。</p>
 <i></i><br></p>
-<p class="p8"><b>戻り値</b></p>
+<h4>戻り値</h4>
 <p class="p17">XMLDocument（OpenUM形式）</p>
 <p class="p12">※制度情報は、OpenUM形式のr-assistance_Content型として出力されます。</p>
-<p class="p8">OpenUMの定義については、補足資料「OpenUMの定義説明」を参照してください。</p>
+<p class="bold">OpenUMの定義については、補足資料「OpenUMの定義説明」を参照してください。</p>
 <br></p>
-<p class="p8">r-assistance_Content型への設定内容　（記載のない要素は出力しません。）</p>
+<p class="bold">r-assistance_Content型への設定内容　（記載のない要素は出力しません。）</p>
 <p class="p12">No.</p>
-<p class="p8">要素/属性</p>
-<p class="p8">設定内容</p>
-<p class="p8">備考</p>
+<p class="bold">要素/属性</p>
+<p class="bold">設定内容</p>
+<p class="bold">備考</p>
 <p class="p12">1</p>
 <p class="p12">uuid</p>
-<p class="p8">制度情報のUUID</p>
+<p class="bold">制度情報のUUID</p>
 <br></p>
 <p class="p29">2</p>
 <p class="p29">author</p>
-<p class="p8">制度情報の作成者（組織名）</p>
+<p class="bold">制度情報の作成者（組織名）</p>
 <br></p>
 <p class="p9">3</p>
 <p class="p9">local_gov_id</p>
-<p class="p8">（設定されません。）</p>
+<p class="bold">（設定されません。）</p>
 <br></p>
 <p class="p9">4</p>
 <p class="p9">local_gov_name</p>
-<p class="p8">（設定されません。）</p>
+<p class="bold">（設定されません。）</p>
 <br></p>
 <p class="p9">5</p>
 <p class="p9">governing_law </p>
-<p class="p8">根拠法</p>
+<p class="bold">根拠法</p>
 <p class="p12">※1</p>
 <p class="p9">6</p>
 <p class="p9">governing_law_url</p>
@@ -617,35 +623,35 @@ APIにパラメータを指定する場合は、APIのURLに「?」を連結し�
 <p class="p12">※1、※2</p>
 <p class="p9">7</p>
 <p class="p9">service name</p>
-<p class="p8">制度名</p>
+<p class="bold">制度名</p>
 <br></p>
 <p class="p9">8</p>
 <p class="p9">title</p>
-<p class="p8">自治体独自名</p>
+<p class="bold">自治体独自名</p>
 <p class="p12">※1</p>
 <p class="p9">9</p>
 <p class="p9">general_info</p>
-<p class="p8">内容</p>
+<p class="bold">内容</p>
 <p class="p12">※1</p>
 <p class="p9">10</p>
 <p class="p9">general_list</p>
-<p class="p8">概要</p>
+<p class="bold">概要</p>
 <p class="p12">※1</p>
 <p class="p9">11</p>
 <p class="p9">intended_person</p>
-<p class="p8">対象者</p>
+<p class="bold">対象者</p>
 <p class="p12">※1</p>
 <p class="p9">12</p>
 <p class="p9">intended_area</p>
-<p class="p8">対象地域</p>
+<p class="bold">対象地域</p>
 <p class="p12">※1</p>
 <p class="p9">13</p>
 <p class="p9">application_procedure</p>
-<p class="p8">申請・届出方法</p>
+<p class="bold">申請・届出方法</p>
 <p class="p12">※1</p>
 <p class="p9">14</p>
 <p class="p9">applicatipon_deadline</p>
-<p class="p8">申請期限</p>
+<p class="bold">申請期限</p>
 <p class="p12">※1</p>
 <p class="p9">15</p>
 <p class="p9">support_term</p>
@@ -653,7 +659,7 @@ APIにパラメータを指定する場合は、APIのURLに「?」を連結し�
 <p class="p12">※1</p>
 <p class="p9">16</p>
 <p class="p9">application_form</p>
-<p class="p8">申請書類</p>
+<p class="bold">申請書類</p>
 <p class="p12">※1</p>
 <p class="p9">17</p>
 <p class="p9">application_form_url</p>
@@ -661,7 +667,7 @@ APIにパラメータを指定する場合は、APIのURLに「?」を連結し�
 <p class="p12">※1、※2</p>
 <p class="p9">18</p>
 <p class="p9">related_link</p>
-<p class="p8">詳細参照先名</p>
+<p class="bold">詳細参照先名</p>
 <p class="p12">※1</p>
 <p class="p9">19</p>
 <p class="p9">related_link_url</p>
@@ -669,7 +675,7 @@ APIにパラメータを指定する場合は、APIのURLに「?」を連結し�
 <p class="p12">※1、※2</p>
 <p class="p9">20</p>
 <p class="p9">e_application</p>
-<p class="p8">電子申請名称</p>
+<p class="bold">電子申請名称</p>
 <p class="p12">※1</p>
 <p class="p9">21</p>
 <p class="p9">e_application_url</p>
@@ -705,27 +711,27 @@ APIにパラメータを指定する場合は、APIのURLに「?」を連結し�
 <p class="p12">※1</p>
 <p class="p9">29</p>
 <p class="p9">contact_list</p>
-<p class="p8">お問合せ先一覧</p>
+<p class="bold">お問合せ先一覧</p>
 <p class="p12">※1</p>
 <p class="p9">30</p>
 <p class="p9">budget</p>
-<p class="p8">予算枠の有無</p>
+<p class="bold">予算枠の有無</p>
 <p class="p12">※1</p>
 <p class="p29">31</p>
 <p class="p29">meta</p>
-<p class="p8">メタ情報 </p>
+<p class="bold">メタ情報 </p>
 <p class="p12">※3</p>
 <p class="p29">32</p>
 <p class="p29">created_at</p>
-<p class="p8">制度情報の作成日</p>
+<p class="bold">制度情報の作成日</p>
 <br></p>
 <p class="p29">33</p>
 <p class="p29">updated_at</p>
-<p class="p8">制度情報の更新日</p>
+<p class="bold">制度情報の更新日</p>
 <br></p>
 <p class="p9">34</p>
 <p class="p9">assistance_type</p>
-<p class="p8">支援の種類</p>
+<p class="bold">支援の種類</p>
 <p class="p12">※1</p>
 <p class="p9">35</p>
 <p class="p9">citizens_housing</p>
@@ -766,28 +772,28 @@ APIにパラメータを指定する場合は、APIのURLに「?」を連結し�
 <br></p>
 <br></p>
 <p class="p12">※1：ContentItem型について</p>
-<p class="p8">備考欄に※1と記載されている項目は、OpenUM形式のContentItem型として出力されます。（OpenUMの定義については、補足資料「OpenUMの定義説明」を参照してください。）</p>
-<p class="p8">下表は、ContentItem型への設定内容です。　（記載のない要素は出力しません。）</p>
-<p class="p8">要素/属性</p>
-<p class="p8">設定内容</p>
+<p class="bold">備考欄に※1と記載されている項目は、OpenUM形式のContentItem型として出力されます。（OpenUMの定義については、補足資料「OpenUMの定義説明」を参照してください。）</p>
+<p class="bold">下表は、ContentItem型への設定内容です。　（記載のない要素は出力しません。）</p>
+<p class="bold">要素/属性</p>
+<p class="bold">設定内容</p>
 <p class="p19">uuid</p>
 <p class="p12">項目のUUID</p>
 <p class="p17">title</p>
-<p class="p8">項目の名称</p>
+<p class="bold">項目の名称</p>
 <p class="p17">title_short</p>
-<p class="p8">（設定されません。）</p>
+<p class="bold">（設定されません。）</p>
 <p class="p17">summary</p>
-<p class="p8">（設定されません。）</p>
+<p class="bold">（設定されません。）</p>
 <p class="p17">body</p>
-<p class="p8">項目の値</p>
-<p class="p8">※intended_area (No.12：対象地域) は、地方公共団体コードが設定されます。複数の場合、カンマ( , )区切りで設定されます。未設定の場合、全国が対象であることを示します。</p>
-<p class="p8">※contact_list (No.29：お問合せ先一覧) は、一覧名が設定されます。複数の場合、2重スラッシュ( // )区切りで設定されます。一覧名に対応する情報は、getContactsTextリクエストで取得できます。</p>
-<p class="p8">※抽出用項目(No.34～43)は、項目の名称が設定されます。複数の場合、2重スラッシュ( // )区切りで設定されます。</p>
+<p class="bold">項目の値</p>
+<p class="bold">※intended_area (No.12：対象地域) は、地方公共団体コードが設定されます。複数の場合、カンマ( , )区切りで設定されます。未設定の場合、全国が対象であることを示します。</p>
+<p class="bold">※contact_list (No.29：お問合せ先一覧) は、一覧名が設定されます。複数の場合、2重スラッシュ( // )区切りで設定されます。一覧名に対応する情報は、getContactsTextリクエストで取得できます。</p>
+<p class="bold">※抽出用項目(No.34～43)は、項目の名称が設定されます。複数の場合、2重スラッシュ( // )区切りで設定されます。</p>
 <br></p>
-<p class="p8">※2：URL項目について</p>
-<p class="p8">下記「URL項目要素」に値が設定されている場合、値は「対応する項目要素」のURLを示します。</p>
-<p class="p8">URL項目要素</p>
-<p class="p8">対応する項目要素</p>
+<p class="bold">※2：URL項目について</p>
+<p class="bold">下記「URL項目要素」に値が設定されている場合、値は「対応する項目要素」のURLを示します。</p>
+<p class="bold">URL項目要素</p>
+<p class="bold">対応する項目要素</p>
 <p class="p9">governing_law_url  </p>
 <p class="p9">(根拠法URL)</p>
 <p class="p9">governing_law</p>
@@ -804,22 +810,22 @@ APIにパラメータを指定する場合は、APIのURLに「?」を連結し�
 <p class="p9">(電子申請URL)</p>
 <p class="p9">e_application</p>
 <p class="p10">(電子申請名称)</p>
-<p class="p8">「URL項目要素」の値は改行区切りで複数設定される場合があり、その場合は、「対応する項目」を改行区切りで分割した、行数が一致する値に対するURLを示します。（※改行数が一致しない場合や、URL以外の値が設定される場合があります。）</p>
-<p class="p8">設定例は後述の「リクエストの例」を参照下さい。</p>
+<p class="bold">「URL項目要素」の値は改行区切りで複数設定される場合があり、その場合は、「対応する項目」を改行区切りで分割した、行数が一致する値に対するURLを示します。（※改行数が一致しない場合や、URL以外の値が設定される場合があります。）</p>
+<p class="bold">設定例は後述の「リクエストの例」を参照下さい。</p>
 <br></p>
 <p class="p12">※3：metaについて</p>
-<p class="p8">次のmeta要素が設定されます。</p>
+<p class="bold">次のmeta要素が設定されます。</p>
 <p class="p12">name</p>
 <p class="p12">Value</p>
 <p class="p30">update_kind</p>
-<p class="p8">更新種別を表す数値が設定されます。</p>
-<p class="p8">0=追加、1=更新</p>
+<p class="bold">更新種別を表す数値が設定されます。</p>
+<p class="bold">0=追加、1=更新</p>
 <p class="p12">update_comment</p>
-<p class="p8">更新コメントが設定されます。</p>
+<p class="bold">更新コメントが設定されます。</p>
 <br></p>
-<p class="p8">※文字列値内の改行は、「CR+LF」または「LFのみ」の両方が混在する場合があります。詳細は「レスポンスの改行コード」を参照ください。</p>
+<p class="bold">※文字列値内の改行は、「CR+LF」または「LFのみ」の両方が混在する場合があります。詳細は「レスポンスの改行コード」を参照ください。</p>
 <br></p>
-<p class="p8">リクエストの例</p>
+<p class="bold">リクエストの例</p>
 <p class="p12">GET	http://api.r-assistance.go.jp/v1/api.svc/getSupportInformation?appkey=0&amp;id=1</p>
 <br></p>
 <p class="p17">&lt;?xml version="1.0" encoding="utf-8"?&gt;</p>
@@ -974,12 +980,12 @@ APIにパラメータを指定する場合は、APIのURLに「?」を連結し�
 
 <h3>getSupportInformationSummaries</h3>
 <div class="item">
-<p class="p8">指定したIDの制度情報の概要を取得します。</p>
+<p class="bold">指定したIDの制度情報の概要を取得します。</p>
 <br></p>
-<p class="p12">URL</p>
+<h4>URL</h4>
 <p class="p12">http://api.r-assistance.go.jp/v1/api.svc/getSupportInformationSummaries</p>
 <br></p>
-<p class="p8">パラメータ</p>
+<h4>パラメータ</h4>
 <p class="p12">appkey</p>
 <p class="p16">省略不可。指定する値は「appkeyについて」を参照ください。</p>
 <p class="p21"><i>ids</i></p>
@@ -987,7 +993,7 @@ APIにパラメータを指定する場合は、APIのURLに「?」を連結し�
 <p class="p16">複数の<i>ID</i>を指定する場合はパイプ( | )文字で区切ります。</p>
 <p class="p22">一度に指定できるIDの数は最大で100です。</p>
 <p class="p16">制度のIDを取得する方法は、searchSupportInformationsリクエストを参照して下さい。</p>
-<p class="p8">※パイプ( | )文字で区切られたIDに数値以外の値が設定された場合、<i>(400)</i>エラーとなります。</p>
+<p class="bold">※パイプ( | )文字で区切られたIDに数値以外の値が設定された場合、<i>(400)</i>エラーとなります。</p>
 <p class="p22">※指定したIDの個数が100を超える場合、<i>(400)</i>エラーとなります。</p>
 <p class="p16">※指定した<i>ID</i>のデータが存在しない場合、該当データを含まない配列が返ります。</p>
 <p class="p21"><i>get_title</i></p>
@@ -1011,31 +1017,31 @@ APIにパラメータを指定する場合は、APIのURLに「?」を連結し�
 <p class="p16">※数値以外の値を指定した場合、<i>(400)</i>エラーとなります。</p>
 <p class="p16">※<i>1</i>以外の値を指定した場合、戻り値に制度の概要は含まれません。</p>
 <i></i><br></p>
-<p class="p8"><b>戻り値</b></p>
+<h4>戻り値</h4>
 <p class="p17">(ArrayOf)SupportInformationSummary</p>
-<p class="p8">要素/属性</p>
-<p class="p8">データの内容</p>
-<p class="p8">データ型</p>
+<p class="bold">要素/属性</p>
+<p class="bold">データの内容</p>
+<p class="bold">データ型</p>
 <p class="p19">ID</p>
-<p class="p8">制度のID。</p>
-<p class="p8">数値</p>
+<p class="bold">制度のID。</p>
+<p class="bold">数値</p>
 <p class="p17">Title</p>
-<p class="p8">制度名。</p>
-<p class="p8">※自治体独自名が存在する制度の場合、自治体独自名が返ります。</p>
-<p class="p8">文字列</p>
+<p class="bold">制度名。</p>
+<p class="bold">※自治体独自名が存在する制度の場合、自治体独自名が返ります。</p>
+<p class="bold">文字列</p>
 <p class="p17">Contact</p>
-<p class="p8">制度のお問合せ先。</p>
-<p class="p8">文字列</p>
+<p class="bold">制度のお問合せ先。</p>
+<p class="bold">文字列</p>
 <p class="p17">IntendedArea</p>
-<p class="p8">制度の対象地域を表す地方公共団体コード。複数の場合、カンマ( , )区切りで設定されます。未設定の場合、全国が対象であることを示します。</p>
-<p class="p8">文字列</p>
+<p class="bold">制度の対象地域を表す地方公共団体コード。複数の場合、カンマ( , )区切りで設定されます。未設定の場合、全国が対象であることを示します。</p>
+<p class="bold">文字列</p>
 <p class="p17">Summary</p>
-<p class="p8">制度の概要。</p>
-<p class="p8">文字列</p>
+<p class="bold">制度の概要。</p>
+<p class="bold">文字列</p>
 <br></p>
-<p class="p8">※文字列値内の改行は、「CR+LF」または「LFのみ」の両方が混在する場合があります。詳細は「レスポンスの改行コード」を参照ください。</p>
+<p class="bold">※文字列値内の改行は、「CR+LF」または「LFのみ」の両方が混在する場合があります。詳細は「レスポンスの改行コード」を参照ください。</p>
 <br></p>
-<p class="p8">リクエストの例</p>
+<p class="bold">リクエストの例</p>
 <p class="p12">GET	http://api.r-assistance.go.jp/v1/api.svc/getSupportInformationSummaries?appkey=0&amp;ids=1|2</p>
 <br></p>
 <p class="p17">&lt;?xml version="1.0" encoding="utf-8" ?&gt; </p>
@@ -1059,12 +1065,12 @@ APIにパラメータを指定する場合は、APIのURLに「?」を連結し�
 
 <h3>getSupportInformationNotifications</h3>
 <div class="item">
-<p class="p8">指定した制度を対象とする通達のID配列を取得します。</p>
+<p class="bold">指定した制度を対象とする通達のID配列を取得します。</p>
 <br></p>
-<p class="p12">URL</p>
+<h4>URL</h4>
 <p class="p12">http://api.r-assistance.go.jp/v1/api.svc/getSupportInformationNotifications</p>
 <br></p>
-<p class="p8">パラメータ</p>
+<h4>パラメータ</h4>
 <p class="p12">appkey</p>
 <p class="p16">省略不可。指定する値は「appkeyについて」を参照ください。</p>
 <p class="p21"><i>id</i></p>
@@ -1073,16 +1079,16 @@ APIにパラメータを指定する場合は、APIのURLに「?」を連結し�
 <p class="p16">※数値以外の値を指定した場合、<i>(400)</i>エラーとなります。</p>
 <p class="p16">※指定した<i>ID</i>のデータが存在しない場合、空のデータが返されます。</p>
 <i></i><br></p>
-<p class="p8"><b>戻り値</b></p>
+<h4>戻り値</h4>
 <p class="p17">SupportInformationNotifications</p>
-<p class="p8">要素/属性</p>
-<p class="p8">データの内容</p>
-<p class="p8">データ型</p>
+<p class="bold">要素/属性</p>
+<p class="bold">データの内容</p>
+<p class="bold">データ型</p>
 <p class="p17">IDs</p>
-<p class="p8">通達のID（カンマ区切り）</p>
-<p class="p8">文字列</p>
+<p class="bold">通達のID（カンマ区切り）</p>
+<p class="bold">文字列</p>
 <br></p>
-<p class="p8">リクエストの例</p>
+<p class="bold">リクエストの例</p>
 <p class="p12">GET	http://api.r-assistance.go.jp/v1/api.svc/getSupportInformationNotifications?appkey=0&amp;id=1</p>
 <br></p>
 <p class="p17">&lt;?xml version="1.0" encoding="utf-8" ?&gt; </p>
@@ -1095,12 +1101,12 @@ APIにパラメータを指定する場合は、APIのURLに「?」を連結し�
 
 <h3>getNotification</h3>
 <div class="item">
-<p class="p8">指定したIDの通達をOpenUMの形式で取得します。</p>
+<p class="bold">指定したIDの通達をOpenUMの形式で取得します。</p>
 <br></p>
-<p class="p12">URL</p>
+<h4>URL</h4>
 <p class="p12">http://api.r-assistance.go.jp/v1/api.svc/getNotification</p>
 <br></p>
-<p class="p8">パラメータ</p>
+<h4>パラメータ</h4>
 <p class="p12">appkey</p>
 <p class="p16">省略不可。指定する値は「appkeyについて」を参照ください。</p>
 <p class="p21"><i>id</i></p>
@@ -1109,26 +1115,26 @@ APIにパラメータを指定する場合は、APIのURLに「?」を連結し�
 <p class="p16">※数値以外の値を指定した場合、<i>(400)</i>エラーとなります。</p>
 <p class="p16">※指定した<i>ID</i>のデータが存在しない場合、DocumentContent要素を含まないデータが返ります。</p>
 <i></i><br></p>
-<p class="p8"><b>戻り値</b></p>
+<h4>戻り値</h4>
 <p class="p17">XMLDocument（OpenUM）</p>
 <p class="p12">※通達は、OpenUM形式のDocumentContent型として出力されます。</p>
-<p class="p8">OpenUMの定義については補足資料「OpenUMの定義説明」を参照してください。</p>
+<p class="bold">OpenUMの定義については補足資料「OpenUMの定義説明」を参照してください。</p>
 <br></p>
 <p class="p12"><b>DocumentContent</b><b>型への設定内容</b></p>
-<p class="p8">要素/属性</p>
-<p class="p8">設定内容</p>
-<p class="p8">備考</p>
+<p class="bold">要素/属性</p>
+<p class="bold">設定内容</p>
+<p class="bold">備考</p>
 <p class="p12">uuid</p>
 <p class="p12">通達のUUID</p>
 <br></p>
 <p class="p29">author</p>
-<p class="p8">通達の作成者（組織名）</p>
+<p class="bold">通達の作成者（組織名）</p>
 <br></p>
 <p class="p9">local_gov_id</p>
-<p class="p8">（設定されません。）</p>
+<p class="bold">（設定されません。）</p>
 <br></p>
 <p class="p9">local_gov_name</p>
-<p class="p8">（設定されません。）</p>
+<p class="bold">（設定されません。）</p>
 <br></p>
 <p class="p9">document_number</p>
 <p class="p10">番号</p>
@@ -1155,26 +1161,26 @@ APIにパラメータを指定する場合は、APIのURLに「?」を連結し�
 <p class="p10">通達の更新日</p>
 <p class="p11"><br></p>
 <p class="p9">meta</p>
-<p class="p8">メタ情報 </p>
+<p class="bold">メタ情報 </p>
 <p class="p12">※2</p>
 <br></p>
 <br></p>
-<p class="p8"><b>※</b><b>1</b><b>：対象制度について</b></p>
-<p class="p8"><b>通達の対象となる制度名が、「</b><b>//</b><b>」区切りで設定されます。</b></p>
+<p class="bold"><b>※</b><b>1</b><b>：対象制度について</b></p>
+<p class="bold"><b>通達の対象となる制度名が、「</b><b>//</b><b>」区切りで設定されます。</b></p>
 <b></b><br></p>
 <p class="p12">※2：metaについて</p>
-<p class="p8">次のmeta要素が設定されます。</p>
+<p class="bold">次のmeta要素が設定されます。</p>
 <p class="p12">name</p>
 <p class="p12">Value</p>
 <p class="p30">update_kind</p>
-<p class="p8">更新種別を表す数値が設定されます。</p>
-<p class="p8">0=追加、1=更新</p>
+<p class="bold">更新種別を表す数値が設定されます。</p>
+<p class="bold">0=追加、1=更新</p>
 <p class="p12">update_comment</p>
-<p class="p8">更新コメントが設定されます。</p>
+<p class="bold">更新コメントが設定されます。</p>
 <br></p>
-<p class="p8">※文字列値内の改行は、「CR+LF」または「LFのみ」の両方が混在する場合があります。詳細は「レスポンスの改行コード」を参照ください。</p>
+<p class="bold">※文字列値内の改行は、「CR+LF」または「LFのみ」の両方が混在する場合があります。詳細は「レスポンスの改行コード」を参照ください。</p>
 <br></p>
-<p class="p8">リクエストの例</p>
+<p class="bold">リクエストの例</p>
 <p class="p12">GET	http://api.r-assistance.go.jp/v1/api.svc/getNotification?appkey=0&amp;id=1</p>
 <br></p>
 <p class="p17">&lt;?xml version="1.0" encoding="utf-8"?&gt;</p>
@@ -1201,12 +1207,12 @@ APIにパラメータを指定する場合は、APIのURLに「?」を連結し�
 
 <h3>getContactsText</h3>
 <div class="item">
-<p class="p8">指定された名前のお問合せ先一覧（テキスト形式）を取得します。</p>
+<p class="bold">指定された名前のお問合せ先一覧（テキスト形式）を取得します。</p>
 <br></p>
-<p class="p12">URL</p>
+<h4>URL</h4>
 <p class="p12">http://api.r-assistance.go.jp/v1/api.svc/getContactsText</p>
 <br></p>
-<p class="p8">パラメータ</p>
+<h4>パラメータ</h4>
 <p class="p12">appkey</p>
 <p class="p16">省略不可。指定する値は「appkeyについて」を参照ください。</p>
 <p class="p21"><i>name</i></p>
@@ -1215,19 +1221,19 @@ APIにパラメータを指定する場合は、APIのURLに「?」を連結し�
 <p class="p16">※指定した名前のデータが存在しない場合、<i>Text</i>が空の<i>ContactsText</i>が返ります。</p>
 <p class="p16">※文字列はURLエンコード（UTF-8）する必要があります。URLエンコードしていない場合は正しい検索結果が得られません。</p>
 <br></p>
-<p class="p8"><b>戻り値</b></p>
+<h4>戻り値</h4>
 <p class="p17">ContactsText</p>
-<p class="p8">要素/属性</p>
-<p class="p8">データの内容</p>
-<p class="p8">データ型</p>
+<p class="bold">要素/属性</p>
+<p class="bold">データの内容</p>
+<p class="bold">データ型</p>
 <p class="p12">Text</p>
-<p class="p8">お問合せ先一覧(テキスト形式)。</p>
-<p class="p8">※スペースおよび改行で位置合わせされたテキストです。</p>
-<p class="p8">文字列</p>
+<p class="bold">お問合せ先一覧(テキスト形式)。</p>
+<p class="bold">※スペースおよび改行で位置合わせされたテキストです。</p>
+<p class="bold">文字列</p>
 <br></p>
-<p class="p8">※文字列値内の改行は、「CR+LF」または「LFのみ」の両方が混在する場合があります。詳細は「レスポンスの改行コード」を参照ください。</p>
+<p class="bold">※文字列値内の改行は、「CR+LF」または「LFのみ」の両方が混在する場合があります。詳細は「レスポンスの改行コード」を参照ください。</p>
 <br></p>
-<p class="p8">リクエストの例　（一覧名”ハローワーク”の情報を取得）</p>
+<p class="bold">リクエストの例　（一覧名”ハローワーク”の情報を取得）</p>
 <p class="p12">GET	http://api.r-assistance.go.jp/v1/api.svc/getContactsText?appkey=0</p>
 <p class="p12">&amp;name=%e3%83%8f%e3%83%ad%e3%83%bc%e3%83%af%e3%83%bc%e3%82%af</p>
 <br></p>
@@ -1248,7 +1254,7 @@ APIにパラメータを指定する場合は、APIのURLに「?」を連結し�
 
 <h2>補足資料</h2>
 <h3>OpenUMの定義説明</h3>
-<p class="p8"><b>「復旧復興支援制度データベース」</b><b>XML</b><b>スキーマ</b></p>
+<p class="bold"><b>「復旧復興支援制度データベース」</b><b>XML</b><b>スキーマ</b></p>
 <p class="p32">UM（Universal Menu)文書型(UmDocument型)</p>
 <p class="p33"><br></p>
 <p class="p33"><br></p>
@@ -1299,7 +1305,7 @@ APIにパラメータを指定する場合は、APIのURLに「?」を連結し�
 <p class="p36">　</p>
 <p class="p34">4</p>
 <p class="p34">r-assistance_Content</p>
-<p class="p8">復旧復興支援制度系コンテンツ</p>
+<p class="bold">復旧復興支援制度系コンテンツ</p>
 <p class="p35">要素</p>
 <p class="p34">r-assistance_Content</p>
 <p class="p34">-</p>
@@ -2436,7 +2442,7 @@ APIにパラメータを指定する場合は、APIのURLに「?」を連結し�
 <p class="p33"><br></p>
 <p class="p33"><br></p>
 <p class="p33"><br></p>
-<p class="p8">ユニバーサルメニューXMLスキーマ by 一般社団法人ユニバーサルメニュー普及協会、震災復興支援ユニバーサルメニュープロジェクト </p>
+<p class="bold">ユニバーサルメニューXMLスキーマ by 一般社団法人ユニバーサルメニュー普及協会、震災復興支援ユニバーサルメニュープロジェクト </p>
 <p class="p12">OpenUM Project is licensed under a Creative Commons 表示 - 継承 2.1 日本 License.</p>
 <br></p>
 <br></p>
@@ -2448,11 +2454,11 @@ APIにパラメータを指定する場合は、APIのURLに「?」を連結し�
 <br></p>
 <h2>更新履歴</h2>
 <br></p>
-<p class="p8">ドキュメントの更新履歴について記載しています。</p>
-<p class="p8">日付</p>
-<p class="p8">内容</p>
+<p class="bold">ドキュメントの更新履歴について記載しています。</p>
+<p class="bold">日付</p>
+<p class="bold">内容</p>
 <p class="p12">2012-02-27</p>
-<p class="p8">初版</p>
+<p class="bold">初版</p>
 <br></p>
 <br></p>
 </body>
